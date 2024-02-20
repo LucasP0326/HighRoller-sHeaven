@@ -71,6 +71,18 @@ public class GameManager : MonoBehaviour
         // Clear any existing notifications
         textNotifications.text = "";
 
+        // Disable all cards in player deck
+        foreach (Card card in playerDeck)
+        {
+            card.gameObject.SetActive(false);
+        }
+
+        // Disable all cards in opponent deck
+        foreach (Card card in opponentDeck)
+        {
+            card.gameObject.SetActive(false);
+        }
+
         // Restart the game
         Start();
     }
