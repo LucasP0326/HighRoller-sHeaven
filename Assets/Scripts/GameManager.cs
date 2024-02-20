@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     // Reference to the TextMeshPro text objects for displaying messages
     public TextMeshProUGUI textNotifications;
+    public TextMeshProUGUI opponentCardText;
+    public TextMeshProUGUI playerCardText;
 
     // Define card types
     public enum CardType { Holy, Terrestrial, Demonic }
@@ -31,6 +33,8 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         textNotifications.text = "";
+        opponentCardText.text = "";
+        playerCardText.text = "";
         // Shuffle player's deck and play the top 3 cards
         ShuffleDeck(playerDeck);
         for (int i = 0; i < Mathf.Min(playerDeck.Count, 3); i++)
@@ -200,11 +204,28 @@ public class GameManager : MonoBehaviour
     public void StartBattle(Card playerCard, Card opponentCard)
     {
         textNotifications.text = "";
+        opponentCardText.text = "";
+        playerCardText.text = "";
+        
         // Determine card types
         Debug.Log("Getting Component for player");
         CardType playerCardType = playerCard.GetComponent<Card>().cardType;
         Debug.Log("Getting Component for Ai");
         CardType opponentCardType = opponentCard.GetComponent<Card>().cardType;
+
+        //display who played what
+        if (playerCardType == CardType.Holy)
+            playerCardText.text = "Player played Holy";
+        if (playerCardType == CardType.Demonic)
+            playerCardText.text = "Player played Demonic";
+        if (playerCardType == CardType.Terrestrial)
+            playerCardText.text = "Player played Terrestrial";
+        if (opponentCardType == CardType.Holy)
+            opponentCardText.text = "Opponent played Holy";
+        if (opponentCardType == CardType.Demonic)
+            opponentCardText.text = "Opponent played Demonic";
+        if (opponentCardType == CardType.Terrestrial)
+            opponentCardText.text = "Opponent played Terrestrial";
 
         // Determine the winner based on card types
         if ((playerCardType == CardType.Holy && opponentCardType == CardType.Demonic) ||
