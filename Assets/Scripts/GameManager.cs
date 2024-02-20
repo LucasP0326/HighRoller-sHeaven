@@ -2,9 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    // Reference to the TextMeshPro text objects for displaying messages
+    public TextMeshProUGUI playerWinsMessage;
+    public TextMeshProUGUI opponentWinsMessage;
+    public TextMeshProUGUI playerPointMessage;
+    public TextMeshProUGUI opponentPointMessage;
+
     // Define card types
     public enum CardType { Holy, Terrestrial, Demonic }
 
@@ -12,13 +19,11 @@ public class GameManager : MonoBehaviour
     public List<Card> playerDeck;
     public Transform[] playerCardSlots;
     public bool[] playerAvailableCardSlots;
-    public Transform playerBattleSlot; // Player's battle slot
 
     // Opponent's deck and related variables
     public List<Card> opponentDeck;
     public Transform[] opponentCardSlots;
     public bool[] opponentAvailableCardSlots;
-    public Transform opponentBattleSlot; // Opponent's battle slot
 
     private void Start()
     {
@@ -29,6 +34,26 @@ public class GameManager : MonoBehaviour
             PlayCard(playerDeck[i], i, true);
             OpponentDrawCard();
         }
+    }
+
+    public int GetHandIndex(Card card)
+    {
+        // Find the index of the card in the player's deck
+        return playerDeck.IndexOf(card);
+    }
+
+    public Card DrawRandomCardFromDeck(List<Card> deck)
+    {
+        if (deck.Count == 0)
+        {
+            Debug.LogWarning("Attempted to draw a card from an empty deck.");
+            return null;
+        }
+
+        int randomIndex = Random.Range(0, deck.Count);
+        Card drawnCard = deck[randomIndex];
+        deck.RemoveAt(randomIndex);
+        return drawnCard;
     }
 
     public void PlayerDrawCard()
@@ -44,7 +69,7 @@ public class GameManager : MonoBehaviour
                     randomCard.handIndex = i;
                     randomCard.transform.position = playerCardSlots[i].position;
                     randomCard.hasBeenPlayed = false;
-                    playerDeck.Remove(randomCard);
+                    playerDeck.Remove(randomCard); // Remove the drawn card from the deck
                     playerAvailableCardSlots[i] = false;
 
                     // Log the current deck count to the console
@@ -60,18 +85,17 @@ public class GameManager : MonoBehaviour
     {
         if (opponentDeck.Count >= 1)
         {
-            Card randomCard = opponentDeck[Random.Range(0, opponentDeck.Count)];
+            int randomIndex = Random.Range(0, opponentDeck.Count);
+            Card randomCard = opponentDeck[randomIndex];
             for (int i = 0; i < opponentAvailableCardSlots.Length; i++)
             {
                 if (opponentAvailableCardSlots[i] == true)
                 {
                     randomCard.gameObject.SetActive(true);
-                    // For opponent, you might handle the handIndex differently
-                    // For example, you might set it to -1 or some other value
                     randomCard.handIndex = -1; // Placeholder value for opponent
                     randomCard.transform.position = opponentCardSlots[i].position;
                     randomCard.hasBeenPlayed = false;
-                    opponentDeck.Remove(randomCard);
+                    opponentDeck.RemoveAt(randomIndex); // Remove the drawn card from the deck
                     opponentAvailableCardSlots[i] = false;
                     return;
                 }
@@ -130,8 +154,6 @@ public class GameManager : MonoBehaviour
             if (index < opponentCardSlots.Length)
             {
                 card.gameObject.SetActive(true);
-                // For opponent, you might handle the handIndex differently
-                // For example, you might set it to -1 or some other value
                 card.handIndex = -1; // Placeholder value for opponent
                 card.transform.position = opponentCardSlots[index].position;
                 card.hasBeenPlayed = false;
@@ -151,53 +173,33 @@ public class GameManager : MonoBehaviour
             (playerCardType == CardType.Demonic && opponentCardType == CardType.Terrestrial) ||
             (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
         {
-            Debug.Log("Player Wins!");
+            playerPointMessage.text = "Player wins a point!";
         }
         else if (playerCardType == opponentCardType)
         {
-            Debug.Log("It's a Tie!");
+            playerPointMessage.text = "It's a tie!";
         }
         else
         {
-            Debug.Log("Opponent Wins!");
+            opponentPointMessage.text = "Opponent wins a point!";
         }
 
-        StartCoroutine(ReturnCards(playerCard, opponentCard));
+        // Check if either player has won the game
+        CheckGameEnd();
     }
 
-    IEnumerator ReturnCards(Card playerCard, Card opponentCard)
+    // CheckGameEnd method modified to display final win/lose messages permanently
+    private void CheckGameEnd()
     {
-        yield return new WaitForSeconds(10f);
-
-        PlayerDiscard(playerCard);
-        OpponentDiscard(opponentCard);
-
-        // Draw new cards for player and opponent
-        PlayerDrawCard();
-        OpponentDrawCard();
-    }
-
-    public void OpponentPlayCard()
-    {
-        if (opponentDeck.Count > 0)
+        // Check game end conditions
+        bool playerWins = true; // For example, set to true if player wins
+        if (playerWins)
         {
-            // Choose a random available card slot for the opponent
-            int randomIndex = Random.Range(0, opponentAvailableCardSlots.Length);
-            while (!opponentAvailableCardSlots[randomIndex])
-            {
-                randomIndex = Random.Range(0, opponentAvailableCardSlots.Length);
-            }
-
-            // Play the card in the chosen slot
-            Card opponentCard = opponentDeck[Random.Range(0, opponentDeck.Count)];
-            PlayCard(opponentCard, randomIndex, false);
-
-            // Start the battle between player's card and opponent's card
-            StartBattle(playerBattleSlot.GetComponentInChildren<Card>(), opponentCard);
+            playerWinsMessage.text = "Player wins the game!";
         }
         else
         {
-            Debug.LogWarning("Opponent's deck is empty!");
+            opponentWinsMessage.text = "Opponent wins the game!";
         }
     }
 }

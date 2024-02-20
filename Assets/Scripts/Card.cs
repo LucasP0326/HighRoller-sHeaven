@@ -1,7 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Card : MonoBehaviour
 {
     public bool hasBeenPlayed;
@@ -26,46 +27,15 @@ public class Card : MonoBehaviour
             Debug.Log("Left mouse button clicked!");
             hasBeenPlayed = true;
             gm.PlayerDiscard(this); // Notify the GameManager that this card has been played
-            MoveToBattleSlot();
 
-            // Trigger opponent's card play
-            gm.OpponentPlayCard();
-        }
-    }
+            // Get a random card from the AI's deck
+            Card aiCard = gm.opponentDeck[UnityEngine.Random.Range(0, gm.opponentDeck.Count)];
 
-    private void MoveToBattleSlot()
-    {
-        if (!hasBeenPlayed && gm != null) // Check if the card has not been played yet
-        {
-            Debug.Log("Card not played yet. Checking slot availability...");
+            // Start battle after both player and AI have selected cards
+            gm.StartBattle(this, aiCard);
 
-            if (handIndex < gm.playerAvailableCardSlots.Length && gm.playerAvailableCardSlots[handIndex]) // Check if the slot is available
-            {
-                Debug.Log("Moving to player battle slot");
-                // Move the card to the player's battle slot
-                transform.position = gm.playerBattleSlot.position;
-                gm.playerAvailableCardSlots[handIndex] = false;
-            }
-            else if (handIndex < gm.opponentAvailableCardSlots.Length && gm.opponentAvailableCardSlots[handIndex]) // Check if the slot is available
-            {
-                Debug.Log("Moving to opponent battle slot");
-                // Move the card to the opponent's battle slot
-                transform.position = gm.opponentBattleSlot.position;
-                gm.opponentAvailableCardSlots[handIndex] = false;
-            }
-            else
-            {
-                Debug.LogWarning("Cannot move card to battle slot: Slot not available.");
-                Debug.Log("handIndex: " + handIndex);
-                Debug.Log("PlayerAvailableCardSlots: " + string.Join(", ", gm.playerAvailableCardSlots));
-            }
-
-            hasBeenPlayed = true; // Mark the card as played after moving to the battle slot
-            Debug.Log("Card marked as played.");
-        }
-        else
-        {
-            Debug.LogWarning("Card has already been played.");
+            // Replace the played card with the next card from the player's deck
+            gm.playerDeck[handIndex] = gm.DrawRandomCardFromDeck(gm.playerDeck);
         }
     }
 }
