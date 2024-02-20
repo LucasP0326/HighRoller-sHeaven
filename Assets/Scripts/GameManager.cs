@@ -40,6 +40,37 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        // Check for input to reset the game
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ResetGame();
+        }
+    }
+
+    // Method to reset the game
+    void ResetGame()
+    {
+        // Reset game state
+        playerWinsCount = 0;
+        opponentWinsCount = 0;
+        playerWins = 0;
+
+        // Reset card slots availability
+        for (int i = 0; i < playerAvailableCardSlots.Length; i++)
+        {
+            playerAvailableCardSlots[i] = true;
+            opponentAvailableCardSlots[i] = true;
+        }
+
+        // Clear any existing notifications
+        textNotifications.text = "";
+
+        // Restart the game
+        Start();
+    }
+
     public int GetHandIndex(Card card)
     {
         // Find the index of the card in the player's deck

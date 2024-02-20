@@ -3393,6 +3393,26 @@ MonoBehaviour:
   - {fileID: 236763013}
   - {fileID: 1968758755}
   - {fileID: 1727082445}
+  - {fileID: 107363010}
+  - {fileID: 224530404}
+  - {fileID: 1857531914}
+  - {fileID: 644998192}
+  - {fileID: 1304097463}
+  - {fileID: 2116984136}
+  - {fileID: 290351061}
+  - {fileID: 236763013}
+  - {fileID: 1968758755}
+  - {fileID: 1727082445}
+  - {fileID: 107363010}
+  - {fileID: 224530404}
+  - {fileID: 1857531914}
+  - {fileID: 644998192}
+  - {fileID: 1304097463}
+  - {fileID: 2116984136}
+  - {fileID: 290351061}
+  - {fileID: 236763013}
+  - {fileID: 1968758755}
+  - {fileID: 1727082445}
   opponentCardSlots:
   - {fileID: 812282006}
   - {fileID: 989987283}
