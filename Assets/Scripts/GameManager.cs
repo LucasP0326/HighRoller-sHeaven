@@ -7,10 +7,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     // Reference to the TextMeshPro text objects for displaying messages
-    public TextMeshProUGUI playerWinsMessage;
-    public TextMeshProUGUI opponentWinsMessage;
-    public TextMeshProUGUI playerPointMessage;
-    public TextMeshProUGUI opponentPointMessage;
+    public TextMeshProUGUI textNotifications;
 
     // Define card types
     public enum CardType { Holy, Terrestrial, Demonic }
@@ -33,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        textNotifications.text = "";
         // Shuffle player's deck and play the top 3 cards
         ShuffleDeck(playerDeck);
         for (int i = 0; i < Mathf.Min(playerDeck.Count, 3); i++)
@@ -170,6 +168,7 @@ public class GameManager : MonoBehaviour
 
     public void StartBattle(Card playerCard, Card opponentCard)
     {
+        textNotifications.text = "";
         // Determine card types
         Debug.Log("Getting Component for player");
         CardType playerCardType = playerCard.GetComponent<Card>().cardType;
@@ -182,19 +181,19 @@ public class GameManager : MonoBehaviour
             (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
         {
             Debug.Log("Player Won");
-            playerPointMessage.text = "Player wins a point!";
+            textNotifications.text = "Player wins a point!";
             playerWinsCount++;
         }
         else if (playerCardType == opponentCardType)
         {
             Debug.Log("Tie");
 
-            playerPointMessage.text = "It's a tie!";
+            textNotifications.text = "It's a tie!";
         }
         else
         {
             Debug.Log("Player lose");
-            opponentPointMessage.text = "Opponent wins a point!";
+            textNotifications.text = "Opponent wins a point!";
             opponentWinsCount++;
         }
 
@@ -219,12 +218,12 @@ public class GameManager : MonoBehaviour
         if (playerWins == 1)
         {
             Debug.Log("Player Won game end");
-            playerWinsMessage.text = "Player wins the game!";
+            textNotifications.text = "Player wins the game!";
         }
         else if (playerWins == 2)
         {
             Debug.Log("Player Lose game end");
-            opponentWinsMessage.text = "Opponent wins the game!";
+            textNotifications.text = "Opponent wins the game!";
         }
     }
 }
