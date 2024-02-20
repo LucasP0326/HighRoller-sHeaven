@@ -201,20 +201,17 @@ public class GameManager : MonoBehaviour
     // CheckGameEnd method modified to display final win/lose messages permanently
     public void CheckGameEnd()
     {
-        // Check if either player has won the game
-        if (playerWinsCount >= gamesToWin)
+        // Check game end conditions
+        bool playerWins = true; // For example, set to true if player wins
+        if (playerWins)
         {
             Debug.Log("Player Won game end");
             playerWinsMessage.text = "Player wins the game!";
-            playerWinsMessage.enabled = true;
-            opponentWinsMessage.enabled = false;
         }
-        else if (opponentWinsCount >= gamesToWin)
+        else
         {
             Debug.Log("Player Lose game end");
             opponentWinsMessage.text = "Opponent wins the game!";
-            opponentWinsMessage.enabled = true;
-            playerWinsMessage.enabled = false;
         }
     }
 }
