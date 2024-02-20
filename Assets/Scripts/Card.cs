@@ -20,7 +20,7 @@ public class Card : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         if (!hasBeenPlayed && gm != null)
         {
@@ -29,9 +29,11 @@ public class Card : MonoBehaviour
             gm.PlayerDiscard(this); // Notify the GameManager that this card has been played
 
             // Get a random card from the AI's deck
+            Debug.Log("Ai Picking Card");
             Card aiCard = gm.opponentDeck[UnityEngine.Random.Range(0, gm.opponentDeck.Count)];
 
             // Start battle after both player and AI have selected cards
+            Debug.Log("Start Battle");
             gm.StartBattle(this, aiCard);
 
             // Replace the played card with the next card from the player's deck

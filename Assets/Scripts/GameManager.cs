@@ -25,7 +25,11 @@ public class GameManager : MonoBehaviour
     public Transform[] opponentCardSlots;
     public bool[] opponentAvailableCardSlots;
 
-    private void Start()
+    public int playerWinsCount = 0;
+    public int opponentWinsCount = 0;
+    public int gamesToWin = 3;
+
+    public void Start()
     {
         // Shuffle player's deck and play the top 3 cards
         ShuffleDeck(playerDeck);
@@ -103,15 +107,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void PlayerShuffle()
-    {
+    //public void PlayerShuffle()
+    //{
         // Shuffling is not needed since cards go back to the bottom of the deck when used
-    }
+   // }
 
-    public void OpponentShuffle()
-    {
+   // public void OpponentShuffle()
+   // {
         // Shuffling is not needed since cards go back to the bottom of the deck when used
-    }
+   // }
 
     public void PlayerDiscard(Card card)
     {
@@ -125,7 +129,7 @@ public class GameManager : MonoBehaviour
         opponentDeck.Add(card);
     }
 
-    private void ShuffleDeck(List<Card> deck)
+    public void ShuffleDeck(List<Card> deck)
     {
         for (int i = 0; i < deck.Count; i++)
         {
@@ -136,7 +140,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void PlayCard(Card card, int index, bool isPlayer)
+    public void PlayCard(Card card, int index, bool isPlayer)
     {
         if (isPlayer)
         {
@@ -165,7 +169,9 @@ public class GameManager : MonoBehaviour
     public void StartBattle(Card playerCard, Card opponentCard)
     {
         // Determine card types
+        Debug.Log("Getting Component for player");
         CardType playerCardType = playerCard.GetComponent<Card>().cardType;
+        Debug.Log("Getting Component for Ai");
         CardType opponentCardType = opponentCard.GetComponent<Card>().cardType;
 
         // Determine the winner based on card types
@@ -173,14 +179,18 @@ public class GameManager : MonoBehaviour
             (playerCardType == CardType.Demonic && opponentCardType == CardType.Terrestrial) ||
             (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
         {
+            Debug.Log("Player Won");
             playerPointMessage.text = "Player wins a point!";
         }
         else if (playerCardType == opponentCardType)
         {
+            Debug.Log("Tie");
+
             playerPointMessage.text = "It's a tie!";
         }
         else
         {
+            Debug.Log("Player lose");
             opponentPointMessage.text = "Opponent wins a point!";
         }
 
@@ -189,17 +199,22 @@ public class GameManager : MonoBehaviour
     }
 
     // CheckGameEnd method modified to display final win/lose messages permanently
-    private void CheckGameEnd()
+    public void CheckGameEnd()
     {
-        // Check game end conditions
-        bool playerWins = true; // For example, set to true if player wins
-        if (playerWins)
+        // Check if either player has won the game
+        if (playerWinsCount >= gamesToWin)
         {
+            Debug.Log("Player Won game end");
             playerWinsMessage.text = "Player wins the game!";
+            playerWinsMessage.enabled = true;
+            opponentWinsMessage.enabled = false;
         }
-        else
+        else if (opponentWinsCount >= gamesToWin)
         {
+            Debug.Log("Player Lose game end");
             opponentWinsMessage.text = "Opponent wins the game!";
+            opponentWinsMessage.enabled = true;
+            playerWinsMessage.enabled = false;
         }
     }
 }
