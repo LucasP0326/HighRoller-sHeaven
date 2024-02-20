@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public int opponentWinsCount = 0;
     public int gamesToWin = 3;
 
+    public int playerWins; //0 is nothing, 1 is win, 2 is lose
+
     public void Start()
     {
         // Shuffle player's deck and play the top 3 cards
@@ -181,6 +183,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Player Won");
             playerPointMessage.text = "Player wins a point!";
+            playerWinsCount++;
         }
         else if (playerCardType == opponentCardType)
         {
@@ -192,6 +195,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Player lose");
             opponentPointMessage.text = "Opponent wins a point!";
+            opponentWinsCount++;
         }
 
         // Check if either player has won the game
@@ -201,14 +205,23 @@ public class GameManager : MonoBehaviour
     // CheckGameEnd method modified to display final win/lose messages permanently
     public void CheckGameEnd()
     {
+        if (playerWinsCount == gamesToWin)
+        {
+            playerWins = 1;
+        }
+
+        if (opponentWinsCount == gamesToWin)
+        {
+            playerWins = 2;
+        }
         // Check game end conditions
-        bool playerWins = true; // For example, set to true if player wins
-        if (playerWins)
+        // For example, set to true if player wins
+        if (playerWins == 1)
         {
             Debug.Log("Player Won game end");
             playerWinsMessage.text = "Player wins the game!";
         }
-        else
+        else if (playerWins == 2)
         {
             Debug.Log("Player Lose game end");
             opponentWinsMessage.text = "Opponent wins the game!";
