@@ -24,6 +24,10 @@ public class GameManager : MonoBehaviour
     public Transform[] opponentCardSlots;
     public bool[] opponentAvailableCardSlots;
 
+    // Original decks to replenish at game reset
+    public List<Card> originalPlayerDeck = new List<Card>();
+    public List<Card> originalOpponentDeck = new List<Card>();
+
     public int playerWinsCount = 0;
     public int opponentWinsCount = 0;
     public int gamesToWin = 3;
@@ -81,6 +85,20 @@ public class GameManager : MonoBehaviour
         foreach (Card card in opponentDeck)
         {
             card.gameObject.SetActive(false);
+        }
+
+        // Replenish player's deck to its original state
+        playerDeck.Clear();
+        foreach (Card card in originalPlayerDeck)
+        {
+            playerDeck.Add(card);
+        }
+
+        // Replenish opponent's deck to its original state
+        opponentDeck.Clear();
+        foreach (Card card in originalOpponentDeck)
+        {
+            opponentDeck.Add(card);
         }
 
         // Restart the game

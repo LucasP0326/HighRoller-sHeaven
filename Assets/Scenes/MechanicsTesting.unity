@@ -3557,6 +3557,48 @@ MonoBehaviour:
   - {fileID: 989987283}
   - {fileID: 1280335961}
   opponentAvailableCardSlots: 010101
+  originalPlayerDeck:
+  - {fileID: 1645807626}
+  - {fileID: 1971885476}
+  - {fileID: 1234706243}
+  - {fileID: 1349121185}
+  - {fileID: 1634945410}
+  - {fileID: 1233868340}
+  - {fileID: 752050104}
+  - {fileID: 1136546493}
+  - {fileID: 992116311}
+  - {fileID: 1676724657}
+  originalOpponentDeck:
+  - {fileID: 107363010}
+  - {fileID: 224530404}
+  - {fileID: 1857531914}
+  - {fileID: 644998192}
+  - {fileID: 1304097463}
+  - {fileID: 2116984136}
+  - {fileID: 290351061}
+  - {fileID: 236763013}
+  - {fileID: 1968758755}
+  - {fileID: 1727082445}
+  - {fileID: 107363010}
+  - {fileID: 224530404}
+  - {fileID: 1857531914}
+  - {fileID: 644998192}
+  - {fileID: 1304097463}
+  - {fileID: 2116984136}
+  - {fileID: 290351061}
+  - {fileID: 236763013}
+  - {fileID: 1968758755}
+  - {fileID: 1727082445}
+  - {fileID: 107363010}
+  - {fileID: 224530404}
+  - {fileID: 1857531914}
+  - {fileID: 644998192}
+  - {fileID: 1304097463}
+  - {fileID: 2116984136}
+  - {fileID: 290351061}
+  - {fileID: 236763013}
+  - {fileID: 1968758755}
+  - {fileID: 1727082445}
   playerWinsCount: 0
   opponentWinsCount: 0
   gamesToWin: 1
