@@ -3601,7 +3601,7 @@ MonoBehaviour:
   - {fileID: 1727082445}
   playerWinsCount: 0
   opponentWinsCount: 0
-  gamesToWin: 1
+  gamesToWin: 3
   playerWins: 0
 --- !u!4 &1147371470
 Transform:
