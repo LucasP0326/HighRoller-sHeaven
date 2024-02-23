@@ -65,10 +65,15 @@ public class GameManager : MonoBehaviour
         opponentWinsCount = 0;
         playerWins = 0;
 
-        // Reset card slots availability
+        // Reset player card slots availability
         for (int i = 0; i < playerAvailableCardSlots.Length; i++)
         {
             playerAvailableCardSlots[i] = true;
+        }
+
+        // Reset opponent card slots availability
+        for (int i = 0; i < opponentAvailableCardSlots.Length; i++)
+        {
             opponentAvailableCardSlots[i] = true;
         }
 
@@ -161,7 +166,7 @@ public class GameManager : MonoBehaviour
                 if (opponentAvailableCardSlots[i] == true)
                 {
                     randomCard.gameObject.SetActive(true);
-                    randomCard.handIndex = -1; // Placeholder value for opponent
+                    randomCard.handIndex = i; // Placeholder value for opponent
                     randomCard.transform.position = opponentCardSlots[i].position;
                     randomCard.hasBeenPlayed = false;
                     opponentDeck.RemoveAt(randomIndex); // Remove the drawn card from the deck
@@ -186,12 +191,24 @@ public class GameManager : MonoBehaviour
     {
         // Add the card to the bottom of the player's deck (no discard pile)
         playerDeck.Add(card);
+
+        // Deactivate the card
+        card.gameObject.SetActive(false);
+
+        // Make the card slot available again
+        playerAvailableCardSlots[card.handIndex] = true;
     }
 
     public void OpponentDiscard(Card card)
     {
         // Add the card to the bottom of the opponent's deck (no discard pile)
         opponentDeck.Add(card);
+
+        // Deactivate the card
+        card.gameObject.SetActive(false);
+
+        // Make the card slot available again
+        opponentAvailableCardSlots[card.handIndex] = true;
     }
 
     public void ShuffleDeck(List<Card> deck)
@@ -278,6 +295,10 @@ public class GameManager : MonoBehaviour
             textNotifications.text = "Opponent wins a point!";
             opponentWinsCount++;
         }
+
+        //Have player and opponent draw new card
+        PlayerDrawCard();
+        OpponentDrawCard();
 
         // Check if either player has won the game
         CheckGameEnd();

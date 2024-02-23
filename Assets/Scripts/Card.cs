@@ -26,11 +26,15 @@ public class Card : MonoBehaviour
         {
             Debug.Log("Left mouse button clicked!");
             hasBeenPlayed = true;
+
             gm.PlayerDiscard(this); // Notify the GameManager that this card has been played
 
-            // Get a random card from the AI's deck
+            // Get a random card from the AI's deck (Let's try making this the hand)
             Debug.Log("Ai Picking Card");
-            Card aiCard = gm.opponentDeck[UnityEngine.Random.Range(0, gm.opponentDeck.Count)];
+            int opponentHandIndex = UnityEngine.Random.Range(0, gm.opponentDeck.Count);
+            Card aiCard = gm.opponentDeck[opponentHandIndex];
+
+            gm.OpponentDiscard(aiCard); // For the opponent
 
             // Start battle after both player and AI have selected cards
             Debug.Log("Start Battle");
@@ -38,6 +42,12 @@ public class Card : MonoBehaviour
 
             // Replace the played card with the next card from the player's deck
             gm.playerDeck[handIndex] = gm.DrawRandomCardFromDeck(gm.playerDeck);
+
+            // Replace the played card with the next card from the opponent's hand
+            gm.opponentDeck[opponentHandIndex] = gm.DrawRandomCardFromDeck(gm.opponentDeck);
+
+            // Deactivate opponent's card game object
+            aiCard.gameObject.SetActive(false);
         }
     }
 }
