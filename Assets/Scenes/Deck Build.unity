@@ -856,6 +856,7 @@ GameObject:
   - component: {fileID: 449234715}
   - component: {fileID: 449234716}
   - component: {fileID: 449234717}
+  - component: {fileID: 449234718}
   m_Layer: 0
   m_Name: Heaven
   m_TagString: Holy
@@ -942,6 +943,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &449234718
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449234714}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &450874926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,6 +1510,7 @@ GameObject:
   - component: {fileID: 1178466000}
   - component: {fileID: 1178466001}
   - component: {fileID: 1178466002}
+  - component: {fileID: 1178466003}
   m_Layer: 0
   m_Name: Hell (2)
   m_TagString: Demonic
@@ -1550,6 +1597,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1178466003
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178465999}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &1233960374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1653,7 @@ GameObject:
   - component: {fileID: 1233960375}
   - component: {fileID: 1233960376}
   - component: {fileID: 1233960377}
+  - component: {fileID: 1233960378}
   m_Layer: 0
   m_Name: Hell
   m_TagString: Demonic
@@ -1647,6 +1740,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1233960378
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233960374}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &1262932901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,6 +1827,7 @@ GameObject:
   - component: {fileID: 1267559690}
   - component: {fileID: 1267559691}
   - component: {fileID: 1267559692}
+  - component: {fileID: 1267559693}
   m_Layer: 0
   m_Name: Terrestrial (2)
   m_TagString: Demonic
@@ -1775,6 +1914,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1267559693
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267559689}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &1313194176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,6 +2032,7 @@ GameObject:
   - component: {fileID: 1391337303}
   - component: {fileID: 1391337304}
   - component: {fileID: 1391337305}
+  - component: {fileID: 1391337306}
   m_Layer: 0
   m_Name: Hell (1)
   m_TagString: Demonic
@@ -1934,6 +2119,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1391337306
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391337302}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &1408843023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +2237,7 @@ GameObject:
   - component: {fileID: 1423912702}
   - component: {fileID: 1423912703}
   - component: {fileID: 1423912704}
+  - component: {fileID: 1423912705}
   m_Layer: 0
   m_Name: Terrestrial (3)
   m_TagString: Demonic
@@ -2093,6 +2324,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1423912705
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423912701}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &1513983736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,6 +2411,7 @@ GameObject:
   - component: {fileID: 1596896498}
   - component: {fileID: 1596896499}
   - component: {fileID: 1596896500}
+  - component: {fileID: 1596896501}
   m_Layer: 0
   m_Name: Heaven (2)
   m_TagString: Holy
@@ -2221,6 +2498,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1596896501
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596896497}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &1628911056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2838,6 +3160,7 @@ GameObject:
   - component: {fileID: 1879681645}
   - component: {fileID: 1879681646}
   - component: {fileID: 1879681647}
+  - component: {fileID: 1879681648}
   m_Layer: 0
   m_Name: Terrestrial
   m_TagString: Demonic
@@ -2924,6 +3247,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1879681648
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879681644}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &1923858735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,6 +3303,7 @@ GameObject:
   - component: {fileID: 1923858736}
   - component: {fileID: 1923858737}
   - component: {fileID: 1923858738}
+  - component: {fileID: 1923858739}
   m_Layer: 0
   m_Name: Terrestrial (1)
   m_TagString: Demonic
@@ -3021,6 +3390,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1923858739
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923858735}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &2016583395
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,7 +3610,7 @@ Camera:
   m_GameObject: {fileID: 2042570362}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.4745098, g: 0.19481458, b: 0.19215688, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -3220,7 +3634,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 26.991467
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -3264,6 +3678,7 @@ GameObject:
   - component: {fileID: 2068582475}
   - component: {fileID: 2068582476}
   - component: {fileID: 2068582477}
+  - component: {fileID: 2068582478}
   m_Layer: 0
   m_Name: Heaven (1)
   m_TagString: Holy
@@ -3350,6 +3765,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2068582478
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068582474}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 10.8, y: 15.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.8, y: 15.12}
+  m_EdgeRadius: 0
 --- !u!1 &2070371093
 GameObject:
   m_ObjectHideFlags: 0
