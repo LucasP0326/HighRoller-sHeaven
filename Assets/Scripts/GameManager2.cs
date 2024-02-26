@@ -68,8 +68,8 @@ public class GameManager2 : MonoBehaviour
 
         // Shuffle player and opponent's deck and play the top 3 cards
 
-        DrawPlayerCards();
-        DrawOpponentCards();
+        StartCoroutine(DrawPlayerCards());
+        StartCoroutine(DrawOpponentCards());
     }
 
     // Update is called once per frame
@@ -136,7 +136,7 @@ public class GameManager2 : MonoBehaviour
         Start();
     }
     
-    public void DrawPlayerCards()
+    public IEnumerator DrawPlayerCards()
     {
         List<int> availableSlots = new List<int>();
 
@@ -170,6 +170,7 @@ public class GameManager2 : MonoBehaviour
                     randomCard.hasBeenPlayed = false;
                     playerDeck.Remove(randomCard);
                     playerAvailableCardSlots[slotIndex] = false;
+                    yield return new WaitForSeconds(0.5f);
                 }
                 else
                 {
@@ -179,7 +180,7 @@ public class GameManager2 : MonoBehaviour
         }
     }
 
-    public void DrawOpponentCards()
+    public IEnumerator DrawOpponentCards()
     {
         List<int> availableSlots = new List<int>();
 
@@ -216,6 +217,7 @@ public class GameManager2 : MonoBehaviour
 
                     // Add the drawn card to the opponent's hand
                     opponentHand.Add(randomCard);
+                    yield return new WaitForSeconds(0.5f);
                 }
                 else
                 {
@@ -335,8 +337,8 @@ public class GameManager2 : MonoBehaviour
         // Check if either player has won the game
         CheckGameEnd();
 
-        DrawPlayerCards();
-        DrawOpponentCards();
+        StartCoroutine(DrawPlayerCards());
+        StartCoroutine(DrawOpponentCards());
     }
 
     public void CheckGameEnd()
@@ -369,6 +371,7 @@ public class GameManager2 : MonoBehaviour
     public IEnumerator SimpleDelay(float delayInSeconds)
     {
         yield return new WaitForSeconds(delayInSeconds);
+        Debug.Log("Time delay should be there");
     }
 
 }
