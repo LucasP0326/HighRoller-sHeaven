@@ -82,6 +82,12 @@ public class GameManager2 : MonoBehaviour
         }
     }
 
+    public void SavePlayerDeck()
+    {
+        // Save the player's current deck state
+        // You can implement saving functionality here, such as saving the card identifiers or other relevant data
+        Debug.Log("Player's current deck has been saved.");
+    }
     public void ResetGame()
     {
         // Reset game state
@@ -370,6 +376,5 @@ public class GameManager2 : MonoBehaviour
     {
         yield return new WaitForSeconds(delayInSeconds);
     }
-
 }
 
