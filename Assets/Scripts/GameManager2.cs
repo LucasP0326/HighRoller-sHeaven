@@ -75,6 +75,9 @@ public class GameManager2 : MonoBehaviour
 
         StartCoroutine(DrawPlayerCards());
         StartCoroutine(DrawOpponentCards());
+
+        // Load the saved deck data when entering the scene
+        LoadSavedDeck();
     }
 
     // Update is called once per frame
@@ -87,6 +90,28 @@ public class GameManager2 : MonoBehaviour
         }
     }
 
+    void LoadSavedDeck()
+    {
+        string deckData = PlayerPrefs.GetString("CurrentDeck", "");
+        string[] cardNames = deckData.Split(',');
+        playerDeck.Clear(); // Clear existing deck data
+        foreach (string cardName in cardNames)
+        {
+            if (cardName != "Empty")
+            {
+                // Instantiate and add the card to the player deck
+                GameObject cardPrefab = Resources.Load<GameObject>("Prefabs/Cards/" + cardName); // Assuming card prefabs are stored in "Resources/Prefabs/Cards" folder
+                if (cardPrefab != null)
+                {
+                    Card2 cardComponent = cardPrefab.GetComponent<Card2>(); // Assuming Card2 script is attached to card prefabs
+                    if (cardComponent != null)
+                    {
+                        playerDeck.Add(cardComponent);
+                    }
+                }
+            }
+        }
+    }
     public void SavePlayerDeck()
     {
         // Save the player's current deck state

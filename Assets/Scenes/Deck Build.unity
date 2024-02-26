@@ -265,7 +265,6 @@ GameObject:
   - component: {fileID: 167739760}
   - component: {fileID: 167739759}
   - component: {fileID: 167739758}
-  - component: {fileID: 167739761}
   m_Layer: 5
   m_Name: Save Changes (Button)
   m_TagString: Untagged
@@ -376,19 +375,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167739756}
   m_CullTransparentMesh: 1
---- !u!114 &167739761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167739756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad426640cd593a4393210219860c06e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!1 &179092154
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +495,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Return to Lobby
+  m_text: 'To Battle
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1015,6 +1003,7 @@ GameObject:
   - component: {fileID: 449234716}
   - component: {fileID: 449234717}
   - component: {fileID: 449234718}
+  - component: {fileID: 449234719}
   m_Layer: 0
   m_Name: Heaven
   m_TagString: Holy
@@ -1147,6 +1136,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 15.12}
   m_EdgeRadius: 0
+--- !u!114 &449234719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449234714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenPlayed: 0
+  playerCard: 0
+  handIndex: 0
+  cardType: 0
 --- !u!1 &450874926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2826,7 @@ GameObject:
   - component: {fileID: 1233960376}
   - component: {fileID: 1233960377}
   - component: {fileID: 1233960378}
+  - component: {fileID: 1233960379}
   m_Layer: 0
   m_Name: Hell
   m_TagString: Demonic
@@ -2953,6 +2959,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 15.12}
   m_EdgeRadius: 0
+--- !u!114 &1233960379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233960374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenPlayed: 0
+  playerCard: 0
+  handIndex: 0
+  cardType: 2
 --- !u!1 &1262932901
 GameObject:
   m_ObjectHideFlags: 0
@@ -3994,6 +4016,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628911056}
   m_CullTransparentMesh: 1
+--- !u!1 &1645958975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645958977}
+  - component: {fileID: 1645958976}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1645958976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645958975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51de56f3b1be4f04b817e9e2c120693e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1645958977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645958975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 550.3574, y: 323.7005, z: 10.232239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1658723648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4308,7 +4374,7 @@ GameObject:
   - component: {fileID: 1713618566}
   - component: {fileID: 1713618565}
   m_Layer: 5
-  m_Name: Save Changes (Button) (1)
+  m_Name: Reset Changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4332,7 +4398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 342.7334, y: -366.46664}
+  m_AnchoredPosition: {x: 194, y: -287}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1713618565
@@ -4541,6 +4607,9 @@ MonoBehaviour:
   - {fileID: 1233960374}
   demonicCardPrefabs:
   - {fileID: 1879681644}
+  saveButton: {fileID: 167739758}
+  transitionButton: {fileID: 2088207480}
+  sceneToLoad: {fileID: 102900000, guid: 9bf0ddd447ef0f34d86f737b42297371, type: 3}
 --- !u!4 &1802057561
 Transform:
   m_ObjectHideFlags: 0
@@ -4599,6 +4668,7 @@ GameObject:
   - component: {fileID: 1879681646}
   - component: {fileID: 1879681647}
   - component: {fileID: 1879681648}
+  - component: {fileID: 1879681649}
   m_Layer: 0
   m_Name: Terrestrial
   m_TagString: Demonic
@@ -4731,6 +4801,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.8, y: 15.12}
   m_EdgeRadius: 0
+--- !u!114 &1879681649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879681644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasBeenPlayed: 0
+  playerCard: 0
+  handIndex: 0
+  cardType: 1
 --- !u!1 &1923858735
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,7 +5375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 197.3645, y: -286.11163}
+  m_AnchoredPosition: {x: -58, y: -286.11163}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070371095
