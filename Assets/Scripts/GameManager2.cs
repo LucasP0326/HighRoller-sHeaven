@@ -14,17 +14,22 @@ public class GameManager2 : MonoBehaviour
     public GameObject winscreen;
     public TextMeshProUGUI fateText;
 
+    public AudioSource cardDrawAudioSource; // Reference to the AudioSource component
+    public AudioSource cardPlayAudioSource; // Reference to the AudioSource component
+
     // Define card types
     public enum CardType { Holy, Terrestrial, Demonic }
 
     // Player's deck and related variables
     public List<Card2> playerDeck;
     public Transform[] playerCardSlots;
+    public Transform playerBattlePosition;
     public bool[] playerAvailableCardSlots;
 
     // Opponent's deck and related variables
     public List<Card2> opponentDeck;
     public Transform[] opponentCardSlots;
+    public Transform opponentBattlePosition;
     public bool[] opponentAvailableCardSlots;
 
     // Opponent's hand
@@ -176,6 +181,7 @@ public class GameManager2 : MonoBehaviour
                     randomCard.hasBeenPlayed = false;
                     playerDeck.Remove(randomCard);
                     playerAvailableCardSlots[slotIndex] = false;
+                    cardDrawAudioSource.Play();
                     yield return new WaitForSeconds(0.5f);
                 }
                 else
@@ -223,6 +229,7 @@ public class GameManager2 : MonoBehaviour
 
                     // Add the drawn card to the opponent's hand
                     opponentHand.Add(randomCard);
+                    cardDrawAudioSource.Play();
                     yield return new WaitForSeconds(0.5f);
                 }
                 else
@@ -259,11 +266,15 @@ public class GameManager2 : MonoBehaviour
 
     public void PlayerPlayCard(Card2 selectedCard)
     {
+        //Flavor
+        cardPlayAudioSource.Play();
+
         // Find opponent's card
         Card2 opponentCard = FindOpponentCard();
+        cardPlayAudioSource.Play();
 
         // Start the battle
-        StartBattle(selectedCard, opponentCard);
+        StartCoroutine(StartBattle(selectedCard, opponentCard));
     }
 
     private Card2 FindOpponentCard()
@@ -281,11 +292,16 @@ public class GameManager2 : MonoBehaviour
         return opponentCard;
     }
 
-    public void StartBattle(Card2 playerCard, Card2 opponentCard)
+    public IEnumerator StartBattle(Card2 playerCard, Card2 opponentCard)
     {
         textNotifications.text = "";
         opponentCardText.text = "";
         playerCardText.text = "";
+
+        //Move Cards to battle spot
+        playerCard.transform.position = playerBattlePosition.position;
+        opponentCard.transform.position = opponentBattlePosition.position;
+        yield return new WaitForSeconds(1f);
 
         // Determine card types
         Debug.Log("Getting Component for player");
@@ -342,6 +358,8 @@ public class GameManager2 : MonoBehaviour
 
         // Check if either player has won the game
         CheckGameEnd();
+
+        yield return new WaitForSeconds(0.5f);
 
         StartCoroutine(DrawPlayerCards());
         StartCoroutine(DrawOpponentCards());
