@@ -77,7 +77,7 @@ public class GameManager2 : MonoBehaviour
         StartCoroutine(DrawOpponentCards());
 
         // Load the saved deck data when entering the scene
-        LoadSavedDeck();
+        //LoadSavedDeck();
     }
 
     // Update is called once per frame
@@ -90,28 +90,43 @@ public class GameManager2 : MonoBehaviour
         }
     }
 
-    void LoadSavedDeck()
-    {
-        string deckData = PlayerPrefs.GetString("CurrentDeck", "");
-        string[] cardNames = deckData.Split(',');
-        playerDeck.Clear(); // Clear existing deck data
-        foreach (string cardName in cardNames)
-        {
-            if (cardName != "Empty")
-            {
-                // Instantiate and add the card to the player deck
-                GameObject cardPrefab = Resources.Load<GameObject>("Prefabs/Cards/" + cardName); // Assuming card prefabs are stored in "Resources/Prefabs/Cards" folder
-                if (cardPrefab != null)
-                {
-                    Card2 cardComponent = cardPrefab.GetComponent<Card2>(); // Assuming Card2 script is attached to card prefabs
-                    if (cardComponent != null)
-                    {
-                        playerDeck.Add(cardComponent);
-                    }
-                }
-            }
-        }
-    }
+    //void LoadSavedDeck()
+    //{
+        //string deckData = PlayerPrefs.GetString("CurrentDeck", "");
+        //Debug.Log("Loaded deck data: " + deckData); // Debug log to see the loaded deck data
+
+       // string[] cardNames = deckData.Split(',');
+        //startingPlayerDeck.Clear(); // Clear existing starter deck data
+        //foreach (string cardName in cardNames)
+      //  {
+         //   if (cardName != "Empty")
+        //    {
+                // Load the prefab directly from the "Assets/Prefabs/Cards" folder
+        //        GameObject cardPrefab = Resources.Load<GameObject>("Prefabs/Cards/" + cardName); // Assuming card prefabs are stored in "Assets/Prefabs/Cards" folder
+        //        if (cardPrefab != null)
+        //        {
+                    // Instantiate the prefab
+       //             GameObject cardInstance = Instantiate(cardPrefab);
+       //             Card2 cardComponent = cardInstance.GetComponent<Card2>(); // Assuming Card2 script is attached to card prefabs
+       //             if (cardComponent != null)
+        //            {
+       //                 startingPlayerDeck.Add(cardComponent);
+        //            }
+        //            else
+        //            {
+       //                 Debug.LogError("Card prefab does not have Card2 component: " + cardName);
+      //                  Destroy(cardInstance); // Destroy the instance if it doesn't have the Card2 component
+      //              }
+      //          }
+     //           else
+     //           {
+     //           }
+     //       }
+       // }
+
+        // Debug log to see the number of cards loaded into the starting player deck
+      //  Debug.Log("Number of cards loaded into starting player deck: " + startingPlayerDeck.Count);
+   // }
     public void SavePlayerDeck()
     {
         // Save the player's current deck state

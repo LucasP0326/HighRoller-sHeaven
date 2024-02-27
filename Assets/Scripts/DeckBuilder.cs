@@ -9,13 +9,12 @@ public class DeckBuilder : MonoBehaviour
     public Transform[] availableDeckSlots; // Array of available deck slots transformation points
     public Transform[] currentDeckSlots;   // Array of current deck slots transformation points
 
-    public GameObject[] holyCardPrefabs;   // Array of prefabs for Holy cards
-    public GameObject[] terrestrialCardPrefabs; // Array of prefabs for Terrestrial cards
-    public GameObject[] demonicCardPrefabs; // Array of prefabs for Demonic cards
-
     public Button saveButton; // Reference to the save button
     public Button transitionButton; // Reference to the button that triggers the scene transition
     public SceneAsset sceneToLoad; // Reference to the scene to load
+    public Button resetButton; // Reference to the reset button
+
+    public GameObject[] specificAvailableCards; // Specific card game objects to assign to available deck slots
 
     void Start()
     {
@@ -31,7 +30,15 @@ public class DeckBuilder : MonoBehaviour
             transitionButton.onClick.AddListener(TransitionToScene);
         }
 
-        SpawnAvailableCards();
+        // Attach the ResetScene method to the reset button click event
+        if (resetButton != null)
+        {
+            resetButton.onClick.AddListener(ResetScene);
+        }
+
+        AssignSpecificAvailableCards();
+
+        PrintPlayerPrefsData(); // Call the method to print PlayerPrefs data
     }
 
     void TransitionToScene()
@@ -48,36 +55,35 @@ public class DeckBuilder : MonoBehaviour
         }
     }
 
-
-    void SpawnAvailableCards()
+    void AssignSpecificAvailableCards()
     {
+        // Check if the number of specific available cards matches the number of available deck slots
+        if (specificAvailableCards.Length != availableDeckSlots.Length)
+        {
+            Debug.LogError("Number of specific available cards does not match the number of available deck slots.");
+            return;
+        }
+
+        // Assign specific cards to available deck slots
         for (int i = 0; i < availableDeckSlots.Length; i++)
         {
-            // Determine which type of card to spawn
-            int cardTypeIndex = Random.Range(0, 3); // Assuming 3 types of cards (Holy, Terrestrial, Demonic)
-            GameObject[] cardPrefabs = null;
-
-            // Select the appropriate array of prefabs based on the card type
-            switch (cardTypeIndex)
+            if (specificAvailableCards[i] != null)
             {
-                case 0:
-                    cardPrefabs = holyCardPrefabs;
-                    break;
-                case 1:
-                    cardPrefabs = terrestrialCardPrefabs;
-                    break;
-                case 2:
-                    cardPrefabs = demonicCardPrefabs;
-                    break;
+                specificAvailableCards[i].transform.position = availableDeckSlots[i].position;
+                specificAvailableCards[i].transform.SetParent(availableDeckSlots[i]);
             }
-
-            // Select a random prefab from the array
-            int prefabIndex = Random.Range(0, cardPrefabs.Length);
-            GameObject cardPrefab = cardPrefabs[prefabIndex];
-
-            // Instantiate the selected prefab at the current available deck slot
-            Instantiate(cardPrefab, availableDeckSlots[i].position, Quaternion.identity, availableDeckSlots[i]);
+            else
+            {
+                Debug.LogError("Specific card game object is null for available deck slot " + i);
+            }
         }
+    }
+
+    // Method to reset the scene
+    void ResetScene()
+    {
+        // Reload the current scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
     // Method to add a card to the current deck slots
@@ -119,44 +125,38 @@ public class DeckBuilder : MonoBehaviour
     // Method to save the current deck data
     public void SaveCurrentDeck()
     {
-        // Check if the current deck has at least 10 cards
-        if (CountCardsInCurrentDeck() >= 10)
+        // Create a string to store the card names in the deck
+        List<string> cardNames = new List<string>();
+
+        // Iterate through the current deck slots and add card names to the list
+        for (int i = 0; i < currentDeckSlots.Length; i++)
         {
-            string deckData = "";
-            for (int i = 0; i < currentDeckSlots.Length; i++)
+            if (currentDeckSlots[i].childCount > 0)
             {
-                if (currentDeckSlots[i].childCount > 0)
-                {
-                    GameObject cardObject = currentDeckSlots[i].GetChild(0).gameObject;
-                    string cardName = cardObject.name; // Assuming card name represents its data
-                    deckData += cardName + ",";
-                }
-                else
-                {
-                    deckData += "Empty,";
-                }
+                // Get the card's name from its child game object
+                string cardName = currentDeckSlots[i].GetChild(0).name;
+                cardNames.Add(cardName);
             }
-            PlayerPrefs.SetString("CurrentDeck", deckData);
-            PlayerPrefs.Save();
-            Debug.Log("Current deck saved successfully.");
+            else
+            {
+                // If the slot is empty, add "Empty" to signify no card
+                cardNames.Add("Empty");
+            }
         }
-        else
-        {
-            Debug.Log("Cannot save deck. Current deck must contain at least 10 cards.");
-        }
+
+        // Convert the list of card names to a comma-separated string
+        string deckData = string.Join(",", cardNames);
+
+        // Save the deck data to PlayerPrefs
+        PlayerPrefs.SetString("CurrentDeck", deckData);
+        PlayerPrefs.Save(); // Save changes immediately
+
+        // Debug log to verify if the deck data is saved
+        Debug.Log("Current deck data saved: " + deckData);
     }
 
-    // Method to count the number of cards in the current deck
-    private int CountCardsInCurrentDeck()
+    public void PrintPlayerPrefsData()
     {
-        int count = 0;
-        foreach (Transform slot in currentDeckSlots)
-        {
-            if (slot.childCount > 0)
-            {
-                count++;
-            }
-        }
-        return count;
+        Debug.Log("CurrentDeck PlayerPrefs Data: " + PlayerPrefs.GetString("CurrentDeck", "No data found"));
     }
 }
