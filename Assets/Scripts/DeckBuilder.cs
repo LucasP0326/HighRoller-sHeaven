@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DeckBuilder : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class DeckBuilder : MonoBehaviour
 
     public Button saveButton; // Reference to the save button
     public Button transitionButton; // Reference to the button that triggers the scene transition
-    public SceneAsset sceneToLoad; // Reference to the scene to load
+    public string MechanicsTesting2; // Name of the scene to load
     public Button resetButton; // Reference to the reset button
 
     public GameObject[] specificAvailableCards; // Specific card game objects to assign to available deck slots
@@ -44,10 +45,10 @@ public class DeckBuilder : MonoBehaviour
     void TransitionToScene()
     {
         // Check if the sceneToLoad reference is not null
-        if (sceneToLoad != null)
+        if (!string.IsNullOrEmpty(MechanicsTesting2))
         {
             // Load the scene by its name
-            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad.name);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(MechanicsTesting2);
         }
         else
         {

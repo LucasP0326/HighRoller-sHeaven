@@ -4972,7 +4972,7 @@ MonoBehaviour:
   - {fileID: 1416967728}
   saveButton: {fileID: 167739758}
   transitionButton: {fileID: 2088207480}
-  sceneToLoad: {fileID: 102900000, guid: 9bf0ddd447ef0f34d86f737b42297371, type: 3}
+  MechanicsTesting2: MechanicsTesting2
   resetButton: {fileID: 1713618565}
   specificAvailableCards:
   - {fileID: 1617941643}
