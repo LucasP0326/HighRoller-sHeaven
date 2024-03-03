@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MechanicsTesting.unity
     guid: 90d3207d63d20f149867e42aceda4efd
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d61016f21e0e98645b6fc2340670a517
+  - enabled: 1
     path: Assets/Scenes/Deck Build.unity
     guid: 096c5ccabe6340b4397d3df2022e14b6
   - enabled: 1
