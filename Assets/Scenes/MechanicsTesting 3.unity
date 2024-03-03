@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &73159036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &78215380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1120,7 +1120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &128878236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1138,7 +1138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1444, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &128878237
@@ -1490,7 +1490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &218907197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2546,7 +2546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &308967689
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2707,7 +2707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &337228191
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3405,7 +3405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -58, y: -286.11163}
+  m_AnchoredPosition: {x: -1502, y: -286.11163}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &462902849
@@ -3769,7 +3769,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 517273329}
-  - component: {fileID: 517273328}
+  - component: {fileID: 517273330}
   m_Layer: 0
   m_Name: Deck Handler
   m_TagString: Untagged
@@ -3777,64 +3777,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &517273328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517273327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4573046ad48fad249b980144f764a58f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  availableDeckSlots:
-  - {fileID: 90838845}
-  - {fileID: 1461151095}
-  - {fileID: 898938552}
-  - {fileID: 1673795017}
-  - {fileID: 1406156784}
-  - {fileID: 2114165848}
-  - {fileID: 743397679}
-  - {fileID: 641916106}
-  - {fileID: 1902871211}
-  - {fileID: 258719423}
-  - {fileID: 418537146}
-  - {fileID: 982367857}
-  - {fileID: 1717765035}
-  - {fileID: 1030053221}
-  - {fileID: 1669868195}
-  currentDeckSlots:
-  - {fileID: 166374166}
-  - {fileID: 721302631}
-  - {fileID: 2134122736}
-  - {fileID: 172759171}
-  - {fileID: 1579136274}
-  - {fileID: 939285612}
-  - {fileID: 950641793}
-  - {fileID: 835496306}
-  - {fileID: 1118135777}
-  - {fileID: 750022092}
-  saveButton: {fileID: 1352450371}
-  transitionButton: {fileID: 1971814245}
-  sceneToLoad: {fileID: 102900000, guid: 9bf0ddd447ef0f34d86f737b42297371, type: 3}
-  specificAvailableCards:
-  - {fileID: 653123435}
-  - {fileID: 78215377}
-  - {fileID: 836480016}
-  - {fileID: 1754752463}
-  - {fileID: 1877586414}
-  - {fileID: 1915289087}
-  - {fileID: 337228188}
-  - {fileID: 1434075260}
-  - {fileID: 1806622298}
-  - {fileID: 73159033}
-  - {fileID: 308967686}
-  - {fileID: 589543738}
-  - {fileID: 218907194}
-  - {fileID: 947247784}
-  - {fileID: 1763384420}
 --- !u!4 &517273329
 Transform:
   m_ObjectHideFlags: 0
@@ -3843,13 +3785,56 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517273327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 502.44693, y: 206.87671, z: 40.25934}
+  m_LocalPosition: {x: -3160, y: 206.87671, z: 40.25934}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &517273330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517273327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0867c36eb8a5f3340856e0257c5eea3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deckBuildingCanvas: {fileID: 128878235}
+  battleCanvas: {fileID: 1253549935}
+  toBattleButton: {fileID: 1971814245}
+  saveButton: {fileID: 1352450371}
+  resetButton: {fileID: 1674289269}
+  availableDeckSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentDeckSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  specificAvailableCards:
+  - {fileID: 616097908862690497, guid: cd5a81f631fa9c54098a9cfee2ccea1a, type: 3}
+  - {fileID: 4851024633022729843, guid: 081e83c3a574d4243bdba9963b41bedc, type: 3}
+  - {fileID: 1961778849593847646, guid: 5985301cd89a6ed4f80d328e4cc9c230, type: 3}
 --- !u!1 &535792804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4413,7 +4398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &589543741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4550,7 +4535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613559247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 553.60596, y: 418.81427, z: -17.633001}
+  m_LocalPosition: {x: -3108.8413, y: 418.81427, z: -17.633001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4608,7 +4593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -243.2915, y: 144.95834}
+  m_AnchoredPosition: {x: -1687.2915, y: 144.95834}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &640223953
@@ -5069,7 +5054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &653123438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5290,7 +5275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!212 &663955546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6377,7 +6362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &836480019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7023,7 +7008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &947247787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7470,7 +7455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975371280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 985.13934, y: 419.60907, z: 64.0379}
+  m_LocalPosition: {x: -722, y: 561, z: 64.0379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8234,9 +8219,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1147371470}
-  - component: {fileID: 1147371471}
   - component: {fileID: 1147371472}
   - component: {fileID: 1147371473}
+  - component: {fileID: 1147371474}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8259,86 +8244,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1147371471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147371468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2fc2c7652f8d4e43aca305cd581c96d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textNotifications: {fileID: 1620504348}
-  opponentCardText: {fileID: 1696016799}
-  playerCardText: {fileID: 1100262527}
-  winscreen: {fileID: 1445104015}
-  fateText: {fileID: 582068624}
-  cardDrawAudioSource: {fileID: 1147371472}
-  cardPlayAudioSource: {fileID: 1147371473}
-  playerDeck:
-  - {fileID: 1645807628}
-  - {fileID: 1971885478}
-  - {fileID: 1234706245}
-  - {fileID: 1349121188}
-  - {fileID: 1634945413}
-  - {fileID: 1233868343}
-  - {fileID: 752050107}
-  - {fileID: 1136546496}
-  - {fileID: 992116314}
-  - {fileID: 1676724660}
-  playerCardSlots:
-  - {fileID: 8257518}
-  - {fileID: 727345094}
-  - {fileID: 1682414006}
-  playerBattlePosition: {fileID: 159776508}
-  playerAvailableCardSlots: 010101
-  opponentDeck:
-  - {fileID: 107363012}
-  - {fileID: 224530406}
-  - {fileID: 644998195}
-  - {fileID: 1304097466}
-  - {fileID: 1304097466}
-  - {fileID: 2116984139}
-  - {fileID: 290351064}
-  - {fileID: 236763016}
-  - {fileID: 1968758758}
-  - {fileID: 1727082448}
-  opponentCardSlots:
-  - {fileID: 812282006}
-  - {fileID: 989987283}
-  - {fileID: 1280335961}
-  opponentBattlePosition: {fileID: 1825578116}
-  opponentAvailableCardSlots: 010101
-  opponentHand: []
-  startingPlayerDeck:
-  - {fileID: 1645807628}
-  - {fileID: 1971885478}
-  - {fileID: 1234706245}
-  - {fileID: 1349121188}
-  - {fileID: 1634945413}
-  - {fileID: 1233868343}
-  - {fileID: 752050107}
-  - {fileID: 1136546496}
-  - {fileID: 992116314}
-  - {fileID: 1676724660}
-  startingOpponentDeck:
-  - {fileID: 107363012}
-  - {fileID: 224530406}
-  - {fileID: 1857531916}
-  - {fileID: 644998195}
-  - {fileID: 1304097466}
-  - {fileID: 2116984139}
-  - {fileID: 290351064}
-  - {fileID: 236763016}
-  - {fileID: 1968758758}
-  - {fileID: 1727082448}
-  playerWinsCount: 0
-  opponentWinsCount: 0
-  gamesToWin: 3
-  playerWins: 0
 --- !u!82 &1147371472
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8531,6 +8436,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1147371474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147371468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0a648f1afee27f48bce8be6861d2fad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textNotifications: {fileID: 0}
+  opponentCardText: {fileID: 0}
+  playerCardText: {fileID: 0}
+  winscreen: {fileID: 0}
+  fateText: {fileID: 0}
+  cardDrawAudioSource: {fileID: 0}
+  cardPlayAudioSource: {fileID: 0}
+  playerDeck: []
+  playerCardSlots: []
+  playerBattlePosition: {fileID: 0}
+  playerAvailableCardSlots: 
+  opponentDeck: []
+  opponentCardSlots: []
+  opponentBattlePosition: {fileID: 0}
+  opponentAvailableCardSlots: 
+  opponentHand: []
+  startingPlayerDeck: []
+  startingOpponentDeck: []
+  playerWinsCount: 0
+  opponentWinsCount: 0
+  gamesToWin: 3
+  playerWins: 0
 --- !u!1 &1157479976
 GameObject:
   m_ObjectHideFlags: 0
@@ -8566,7 +8505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 249, y: 261.8}
+  m_AnchoredPosition: {x: -1195, y: 261.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1157479978
@@ -8703,7 +8642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178810380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 550.3574, y: 323.7005, z: 10.232239}
+  m_LocalPosition: {x: -3112.0898, y: 323.7005, z: 10.232239}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10083,7 +10022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 484.4845, y: -286.11163}
+  m_AnchoredPosition: {x: -959.5155, y: -286.11163}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1352450369
@@ -10281,7 +10220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &1434075263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10470,7 +10409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 194, y: -287}
+  m_AnchoredPosition: {x: -1250, y: -287}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1450212069
@@ -10579,7 +10518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450315645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 985.13934, y: 419.60907, z: 64.0379}
+  m_LocalPosition: {x: -2677.3079, y: 419.60907, z: 64.0379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10695,7 +10634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &1465859022
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11187,7 +11126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!212 &1596976443
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12051,7 +11990,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1147371471}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager2, Assembly-CSharp
         m_MethodName: ResetGame
         m_Mode: 1
@@ -12595,7 +12534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!212 &1726185190
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12927,7 +12866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &1754752466
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13232,7 +13171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &1763384423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13477,7 +13416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &1806622301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13845,7 +13784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864683423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1116, y: 71, z: 439}
+  m_LocalPosition: {x: -4778.4473, y: 71, z: 439}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13918,7 +13857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &1877586417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14194,7 +14133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a6d9ee7553d794ab486264368f04b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckBuilder: {fileID: 517273328}
+  deckBuilder: {fileID: 0}
 --- !u!61 &1915289090
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14342,7 +14281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 244, y: -86}
+  m_AnchoredPosition: {x: -1200, y: -86}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927154807
@@ -14708,7 +14647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -489.1855, y: 292.97833}
+  m_AnchoredPosition: {x: -1933.1855, y: 292.97833}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1971885473
