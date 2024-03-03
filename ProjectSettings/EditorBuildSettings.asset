@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: d61016f21e0e98645b6fc2340670a517
   - enabled: 1
-    path: Assets/Scenes/Deck Build.unity
-    guid: 096c5ccabe6340b4397d3df2022e14b6
+    path: Assets/Scenes/Deck Build 2.unity
+    guid: 23a105c68f28439499200cb7dd697e68
   - enabled: 1
     path: Assets/Scenes/MechanicsTesting2.unity
     guid: 9bf0ddd447ef0f34d86f737b42297371
