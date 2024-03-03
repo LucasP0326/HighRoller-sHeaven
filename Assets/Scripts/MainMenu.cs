@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public Button Play;
-    public Button Quit;
     public string LevelLoad;
   
     void Start()
@@ -16,11 +15,6 @@ public class MainMenu : MonoBehaviour
         if (Play != null)
         {
             Play.onClick.AddListener(TransitionToScene);
-        }
-
-        if (Quit != null)
-        {
-            Application.Quit();
         }
 
     }
@@ -37,5 +31,9 @@ public class MainMenu : MonoBehaviour
             Debug.LogWarning("Scene to load is not assigned.");
         }
 
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
