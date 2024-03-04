@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: d61016f21e0e98645b6fc2340670a517
   - enabled: 1
+    path: Assets/Scenes/Casino.unity
+    guid: 50931792313fda146abf5d6605e9f883
+  - enabled: 1
     path: Assets/Scenes/Deck Build 2.unity
     guid: 23a105c68f28439499200cb7dd697e68
   - enabled: 1
