@@ -90,43 +90,43 @@ public class GameManager2 : MonoBehaviour
         }
     }
 
-    //void LoadSavedDeck()
-    //{
-        //string deckData = PlayerPrefs.GetString("CurrentDeck", "");
-        //Debug.Log("Loaded deck data: " + deckData); // Debug log to see the loaded deck data
+    /*void LoadSavedDeck()
+    {
+        string deckData = PlayerPrefs.GetString("CurrentDeck", "");
+        Debug.Log("Loaded deck data: " + deckData); // Debug log to see the loaded deck data
 
-       // string[] cardNames = deckData.Split(',');
-        //startingPlayerDeck.Clear(); // Clear existing starter deck data
-        //foreach (string cardName in cardNames)
-      //  {
-         //   if (cardName != "Empty")
-        //    {
-                // Load the prefab directly from the "Assets/Prefabs/Cards" folder
-        //        GameObject cardPrefab = Resources.Load<GameObject>("Prefabs/Cards/" + cardName); // Assuming card prefabs are stored in "Assets/Prefabs/Cards" folder
-        //        if (cardPrefab != null)
-        //        {
-                    // Instantiate the prefab
-       //             GameObject cardInstance = Instantiate(cardPrefab);
-       //             Card2 cardComponent = cardInstance.GetComponent<Card2>(); // Assuming Card2 script is attached to card prefabs
-       //             if (cardComponent != null)
-        //            {
-       //                 startingPlayerDeck.Add(cardComponent);
-        //            }
-        //            else
-        //            {
-       //                 Debug.LogError("Card prefab does not have Card2 component: " + cardName);
-      //                  Destroy(cardInstance); // Destroy the instance if it doesn't have the Card2 component
-      //              }
-      //          }
-     //           else
-     //           {
-     //           }
-     //       }
-       // }
+        string[] cardNames = deckData.Split(',');
+        startingPlayerDeck.Clear(); // Clear existing starter deck data
+        foreach (string cardName in cardNames)
+        {
+            if (cardName != "Empty")
+            {
+                Load the prefab directly from the "Assets/Prefabs/Cards" folder
+                GameObject cardPrefab = Resources.Load<GameObject>("Prefabs/Cards/" + cardName); // Assuming card prefabs are stored in "Assets/Prefabs/Cards" folder
+                if (cardPrefab != null)
+                {
+                    Instantiate the prefab
+                    GameObject cardInstance = Instantiate(cardPrefab);
+                    Card2 cardComponent = cardInstance.GetComponent<Card2>(); // Assuming Card2 script is attached to card prefabs
+                    if (cardComponent != null)
+                    {
+                        startingPlayerDeck.Add(cardComponent);
+                    }
+                    else
+                    {
+                        Debug.LogError("Card prefab does not have Card2 component: " + cardName);
+                        Destroy(cardInstance); // Destroy the instance if it doesn't have the Card2 component
+                    }
+                }
+                else
+                {
+                }
+            }
+        }
 
-        // Debug log to see the number of cards loaded into the starting player deck
-      //  Debug.Log("Number of cards loaded into starting player deck: " + startingPlayerDeck.Count);
-   // }
+        Debug log to see the number of cards loaded into the starting player deck
+        Debug.Log("Number of cards loaded into starting player deck: " + startingPlayerDeck.Count);
+    }*/
     public void SavePlayerDeck()
     {
         // Save the player's current deck state
@@ -343,11 +343,13 @@ public class GameManager2 : MonoBehaviour
         opponentCard.transform.position = opponentBattlePosition.position;
         yield return new WaitForSeconds(1f);
 
-        // Determine card types
+        // Determine card types and values
         Debug.Log("Getting Component for player");
         CardType playerCardType = playerCard.GetComponent<Card2>().cardType;
+        int playerCardValue = playerCard.cardValue;
         Debug.Log("Getting Component for Ai");
         CardType opponentCardType = opponentCard.GetComponent<Card2>().cardType;
+        int opponentCardValue = opponentCard.cardValue;
 
         //display who played what
         if (playerCardType == CardType.Holy)
@@ -364,25 +366,41 @@ public class GameManager2 : MonoBehaviour
             opponentCardText.text = "Opponent played Terrestrial";
 
         // Determine the winner based on card types
-        if ((playerCardType == CardType.Holy && opponentCardType == CardType.Demonic) ||
-            (playerCardType == CardType.Demonic && opponentCardType == CardType.Terrestrial) ||
-            (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
+        if (playerCardType == opponentCardType)
         {
-            Debug.Log("Player Won");
-            textNotifications.text = "Player wins a point!";
-            playerWinsCount++;
-        }
-        else if (playerCardType == opponentCardType)
-        {
-            Debug.Log("Tie");
-
-            textNotifications.text = "It's a tie!";
+            if (playerCardValue > opponentCardValue)
+            {
+                Debug.Log("Player Won");
+                textNotifications.text = "Player wins a point!";
+                playerWinsCount++;
+            }
+            else if (playerCardValue < opponentCardValue)
+            {
+                Debug.Log("Player lose");
+                textNotifications.text = "Opponent wins a point!";
+                opponentWinsCount++;
+            }
+            else
+            {
+                textNotifications.text = "It's a tie!";
+            }
         }
         else
         {
-            Debug.Log("Player lose");
-            textNotifications.text = "Opponent wins a point!";
-            opponentWinsCount++;
+            if ((playerCardType == CardType.Holy && opponentCardType == CardType.Demonic) ||
+                (playerCardType == CardType.Demonic && opponentCardType == CardType.Terrestrial) ||
+                (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
+            {
+                Debug.Log("Player Won");
+                textNotifications.text = "Player wins a point!";
+                playerWinsCount++;
+            }
+            else
+            {
+                Debug.Log("Player lose");
+                textNotifications.text = "Opponent wins a point!";
+                opponentWinsCount++;
+            }
         }
 
         // Mark the cards as played

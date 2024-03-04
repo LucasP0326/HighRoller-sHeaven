@@ -254,7 +254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &88828311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -469,6 +469,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 0
+  cardValue: 0
 --- !u!1 &159776507
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +818,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 1
+  cardValue: 0
 --- !u!1 &236763011
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,6 +966,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 1
+  cardValue: 0
 --- !u!1 &241508419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1249,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 0
+  cardValue: 0
 --- !u!1 &351845484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,6 +2310,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 0
+  cardValue: 0
 --- !u!1 &676531823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,6 +2573,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 0
+  cardValue: 0
 --- !u!1 &812282005
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,6 +3190,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 2
+  cardValue: 0
 --- !u!1 &1046901436
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,6 +3658,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 1
+  cardValue: 0
 --- !u!1 &1147371468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4104,6 +4112,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 2
+  cardValue: 0
 --- !u!1 &1234706240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4251,6 +4260,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 2
+  cardValue: 0
 --- !u!1 &1246378130
 GameObject:
   m_ObjectHideFlags: 0
@@ -4486,7 +4496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1253549936
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4867,6 +4877,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 1
+  cardValue: 0
 --- !u!1 &1349121183
 GameObject:
   m_ObjectHideFlags: 0
@@ -5014,6 +5025,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 0
+  cardValue: 0
 --- !u!1 &1399347688
 GameObject:
   m_ObjectHideFlags: 0
@@ -5572,6 +5584,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 1
+  cardValue: 0
 --- !u!1 &1645807623
 GameObject:
   m_ObjectHideFlags: 0
@@ -5719,6 +5732,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 0
+  cardValue: 0
 --- !u!1 &1674289267
 GameObject:
   m_ObjectHideFlags: 0
@@ -6000,6 +6014,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 0
+  cardValue: 0
 --- !u!1 &1680492393
 GameObject:
   m_ObjectHideFlags: 0
@@ -6355,6 +6370,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 2
+  cardValue: 0
 --- !u!1 &1741202296
 GameObject:
   m_ObjectHideFlags: 0
@@ -6439,6 +6455,79 @@ Transform:
   m_Father: {fileID: 1493884691}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.259}
+--- !u!1001 &1773764565
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 492.40002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 34.900005
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 150.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000021761132
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000019737843
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
+      propertyPath: m_Name
+      value: CardTable_Export
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
 --- !u!1 &1796485332
 GameObject:
   m_ObjectHideFlags: 0
@@ -6754,6 +6843,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 2
+  cardValue: 0
 --- !u!1 &1908326102
 GameObject:
   m_ObjectHideFlags: 0
@@ -6985,6 +7075,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 2
+  cardValue: 0
 --- !u!1 &1971885473
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,6 +7223,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 1
+  cardValue: 0
 --- !u!1 &1982303192
 GameObject:
   m_ObjectHideFlags: 0
@@ -7540,3 +7632,4 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 2
+  cardValue: 0
