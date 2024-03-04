@@ -11,6 +11,8 @@ public class Card2 : MonoBehaviour
     public int handIndex;
     public GameManager2.CardType cardType; // Added variable for card type
 
+    public int cardValue; //Numerical value for the cards
+
     GameManager2 gm;
 
     // Start is called before the first frame update
