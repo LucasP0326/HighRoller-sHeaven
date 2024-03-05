@@ -298,7 +298,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e99b18faebb3c340bda8de675b709e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 0
-  cardValue: 0
+  cardValue: 2
 --- !u!1 &159776507
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +653,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e1d7a798001b2c2449e93ba80bc49ac1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 220eba5b8f0f985478c3f7cf0b01281b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -725,7 +725,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 1
-  cardValue: 0
+  cardValue: 3
 --- !u!1 &236763011
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +846,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e1d7a798001b2c2449e93ba80bc49ac1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 322122aa49fe3184b801ee5a50313197, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 1
-  cardValue: 0
+  cardValue: 5
 --- !u!1 &290351059
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,7 +994,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b1d8f379a3d429d489e6ac3439537cca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 0
-  cardValue: 0
+  cardValue: 5
 --- !u!1 &351845484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1648,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66c05ec854812794ebf4a6bcbcc4920e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1675,7 +1675,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 0
-  cardValue: 0
+  cardValue: 4
 --- !u!1 &676531823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,7 +2005,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 15705d63059391c4fb1a4b94ab078bda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2032,7 +2032,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 0
-  cardValue: 0
+  cardValue: 3
 --- !u!1 &812282005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2683,7 +2683,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e1d7a798001b2c2449e93ba80bc49ac1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93fe96af87ddc644d9d514b0f7bf7429, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2710,7 +2710,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 1
-  cardValue: 0
+  cardValue: 6
 --- !u!1 &1147371468
 GameObject:
   m_ObjectHideFlags: 0
@@ -3548,7 +3548,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e1d7a798001b2c2449e93ba80bc49ac1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4505c5159f818444989f8652690faa45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3575,7 +3575,7 @@ MonoBehaviour:
   playerCard: 0
   handIndex: 0
   cardType: 1
-  cardValue: 0
+  cardValue: 1
 --- !u!1 &1349121183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3696,7 +3696,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 66c05ec854812794ebf4a6bcbcc4920e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3723,7 +3723,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 0
-  cardValue: 0
+  cardValue: 4
 --- !u!1 &1399347688
 GameObject:
   m_ObjectHideFlags: 0
@@ -4255,7 +4255,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e1d7a798001b2c2449e93ba80bc49ac1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 322122aa49fe3184b801ee5a50313197, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4282,7 +4282,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 1
-  cardValue: 0
+  cardValue: 5
 --- !u!1 &1645807623
 GameObject:
   m_ObjectHideFlags: 0
@@ -4358,7 +4358,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34cfdea4bb396324b9eed9f1f106677b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4430,7 +4430,52 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 0
-  cardValue: 0
+  cardValue: 1
+--- !u!1 &1674226098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674226100}
+  - component: {fileID: 1674226099}
+  m_Layer: 0
+  m_Name: MainMenuLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1674226099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674226098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a376edef951d44e8daebe962938bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: MainMenu
+--- !u!4 &1674226100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674226098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.89055014, y: 4.704057, z: 28.16542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674289267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4685,7 +4730,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9cb3ff7207d7fb4892a14bc4db83861, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4712,7 +4757,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 0
-  cardValue: 0
+  cardValue: 7
 --- !u!1 &1680492393
 GameObject:
   m_ObjectHideFlags: 0
@@ -5849,7 +5894,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e1d7a798001b2c2449e93ba80bc49ac1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 220eba5b8f0f985478c3f7cf0b01281b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5921,7 +5966,7 @@ MonoBehaviour:
   playerCard: 1
   handIndex: 0
   cardType: 1
-  cardValue: 0
+  cardValue: 3
 --- !u!1 &1982303192
 GameObject:
   m_ObjectHideFlags: 0
