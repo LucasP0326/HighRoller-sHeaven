@@ -14,6 +14,7 @@ public class Card2 : MonoBehaviour
     public int cardValue; //Numerical value for the cards
 
     GameManager2 gm;
+    public DeckBuilder3 deckBuilder; // Reference to the DeckBuilder script
 
     // Start is called before the first frame update
     private void Start()
@@ -29,12 +30,50 @@ public class Card2 : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (!hasBeenPlayed && playerCard)
+        if (deckBuilder != null)
         {
-            Debug.Log("Player card selected");
-            hasBeenPlayed = true;
+            //Debug.Log("Deck Builder Found");
+            // Check if the card's parent is an available deck slot
+            if (deckBuilder.customPlayerDeck.Count < 10)
+            {
+                for (int i = 0; i < deckBuilder.availableDeckSlots.Length; i++)
+                {
+                    if (transform.parent == deckBuilder.availableDeckSlots[i])
+                    {
+                        // Add the card to the current deck
+                        deckBuilder.customPlayerDeck.Add(this);
+                        deckBuilder.AddToCurrentDeck(transform);
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                Debug.Log("Player Deck cannot exceed 10 cards!");
+            }
 
-            gm.PlayerPlayCard(this);
+            // Check if the card's parent is a current deck slot
+            for (int i = 0; i < deckBuilder.currentDeckSlots.Length; i++)
+            {
+                if (transform.parent == deckBuilder.currentDeckSlots[i])
+                {
+                    // Remove the card from the current deck
+                    deckBuilder.customPlayerDeck.Remove(this);
+                    deckBuilder.RemoveFromCurrentDeck(transform);
+                    return;
+                }
+            }
+        }
+        else if (deckBuilder == null)
+        {
+            //Debug.Log("Deck Builder Not Found");
+            if (!hasBeenPlayed && playerCard)
+            {
+                Debug.Log("Player card selected");
+                hasBeenPlayed = true;
+
+                gm.PlayerPlayCard(this);
+            }
         }
     }
 }
