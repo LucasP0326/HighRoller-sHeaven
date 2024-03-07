@@ -12,6 +12,7 @@ public class DeckBuilder3 : MonoBehaviour
     public GameObject[] specificAvailableCards; // Specific card game objects to assign to available deck slots
     public string SceneToLoad; // Name of the scene to load
     public List<Card2> customPlayerDeck;
+    public List<Card2> unchosenCards;
     public DeckData deckData; //Reference to Deck Data
 
     void Start()
@@ -36,7 +37,7 @@ public class DeckBuilder3 : MonoBehaviour
     void AssignSpecificAvailableCards()
     {
         // Check if the number of specific available cards matches the number of available deck slots
-        if (specificAvailableCards.Length != availableDeckSlots.Length)
+        if (unchosenCards.Count != availableDeckSlots.Length)
         {
             Debug.LogError("Number of specific available cards does not match the number of available deck slots.");
             return;
@@ -45,10 +46,10 @@ public class DeckBuilder3 : MonoBehaviour
         // Assign specific cards to available deck slots
         for (int i = 0; i < availableDeckSlots.Length; i++)
         {
-            if (specificAvailableCards[i] != null)
+            if (unchosenCards[i] != null)
             {
-                specificAvailableCards[i].transform.position = availableDeckSlots[i].position;
-                specificAvailableCards[i].transform.SetParent(availableDeckSlots[i]);
+                unchosenCards[i].transform.position = availableDeckSlots[i].position;
+                //specificAvailableCards[i].transform.SetParent(availableDeckSlots[i]);
             }
             else
             {
@@ -71,14 +72,12 @@ public class DeckBuilder3 : MonoBehaviour
         // Find an empty slot in the current deck
         for (int i = 0; i < currentDeckSlots.Length; i++)
         {
-            if (currentDeckSlots[i].childCount == 0)
+            if (currentDeckSlots[i].transform.position != customPlayerDeck[i].transform.position)
             {
                 // Move the card to the current deck slot
-                cardTransform.SetParent(currentDeckSlots[i]);
-                cardTransform.localPosition = Vector3.zero;
+                customPlayerDeck[i].transform.position = currentDeckSlots[i].transform.position;
                 // Disable the ClickHandler component to prevent further clicks
-                Destroy(cardTransform.GetComponent<ClickHandler>());
-                break;
+                //break;
             }
         }
     }
@@ -89,14 +88,13 @@ public class DeckBuilder3 : MonoBehaviour
         // Find an empty slot in the available deck
         for (int i = 0; i < availableDeckSlots.Length; i++)
         {
-            if (availableDeckSlots[i].childCount == 0)
+            if (availableDeckSlots[i].transform.position != unchosenCards[i].transform.position)
             {
                 // Move the card back to the available deck slot
-                cardTransform.SetParent(availableDeckSlots[i]);
-                cardTransform.localPosition = Vector3.zero;
+                //cardTransform.SetParent(availableDeckSlots[i]);
+                unchosenCards[i].transform.position = availableDeckSlots[i].transform.position;
                 // Re-enable the ClickHandler component
-                cardTransform.gameObject.AddComponent<ClickHandler>();
-                break;
+                //break;
             }
         }
     }

@@ -54,10 +54,10 @@ public class GameManager2 : MonoBehaviour
         // Set player deck to be whatever is marked as starting deck
         playerDeck.Clear();
         LoadSavedDeck();
-        /*foreach (Card2 card in DeckData.playerDeck)
+        foreach (Card2 card in DeckData.playerDeck)
         {
             Debug.Log(card.name); // Assuming card has a "name" field for identification
-        }*/
+        }
         foreach (Card2 card in startingPlayerDeck)
         {
             playerDeck.Add(card);
@@ -81,9 +81,6 @@ public class GameManager2 : MonoBehaviour
 
         StartCoroutine(DrawPlayerCards());
         StartCoroutine(DrawOpponentCards());
-
-        // Load the saved deck data when entering the scene
-        //LoadSavedDeck();
     }
 
     // Update is called once per frame
@@ -100,11 +97,19 @@ public class GameManager2 : MonoBehaviour
     {
         if (deckData != null)
         {
+            Debug.Log("Loading saved player deck from DeckData.");
+
             // Load the saved player deck from the DeckData instance
             startingPlayerDeck = new List<Card2>(DeckData.playerDeck);
 
             // Log the number of cards loaded for debugging
             Debug.Log("Loaded " + startingPlayerDeck.Count + " cards from DeckData.");
+    
+            // Optionally, log the details of each card loaded
+            foreach (Card2 card in startingPlayerDeck)
+            {
+                Debug.Log("Loaded card: " + card.name);
+            }
         }
         else
         {
