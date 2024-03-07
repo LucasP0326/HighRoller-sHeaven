@@ -386,6 +386,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 0
   cardValue: 2
+  deckBuilder: {fileID: 0}
 --- !u!1 &159776507
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +509,7 @@ RectTransform:
   - {fileID: 1696016798}
   - {fileID: 1445104016}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -726,6 +727,51 @@ MonoBehaviour:
   handIndex: 0
   cardType: 1
   cardValue: 3
+  deckBuilder: {fileID: 0}
+--- !u!1 &230685909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230685911}
+  - component: {fileID: 230685910}
+  m_Layer: 0
+  m_Name: DeckData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &230685910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230685909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86827f6237eff3e4786b1a7626df9806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &230685911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230685909}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 753.7549, y: 427.7373, z: 0.9978154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &236763011
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,6 +920,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 1
   cardValue: 5
+  deckBuilder: {fileID: 0}
 --- !u!1 &290351059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,6 +1069,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 0
   cardValue: 5
+  deckBuilder: {fileID: 0}
 --- !u!1 &351845484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1724,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 0
   cardValue: 4
+  deckBuilder: {fileID: 0}
 --- !u!1 &676531823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,6 +2082,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 0
   cardValue: 3
+  deckBuilder: {fileID: 0}
 --- !u!1 &812282005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,6 +2293,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 2
   cardValue: 5
+  deckBuilder: {fileID: 0}
 --- !u!1 &1046901436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,7 +2326,7 @@ Transform:
   - {fileID: 727345094}
   - {fileID: 1682414006}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1075523154
 GameObject:
@@ -2309,7 +2360,7 @@ Transform:
   - {fileID: 1982303193}
   - {fileID: 1680492394}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1093701367
 GameObject:
@@ -2561,7 +2612,7 @@ Transform:
   - {fileID: 1796485334}
   - {fileID: 676531825}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1136546491
 GameObject:
@@ -2711,6 +2762,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 1
   cardValue: 6
+  deckBuilder: {fileID: 0}
 --- !u!1 &1147371468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,7 +2795,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1147371471
 MonoBehaviour:
@@ -2825,6 +2877,7 @@ MonoBehaviour:
   opponentWinsCount: 0
   gamesToWin: 3
   playerWins: 0
+  deckData: {fileID: 230685910}
 --- !u!82 &1147371472
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3165,6 +3218,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 2
   cardValue: 2
+  deckBuilder: {fileID: 0}
 --- !u!1 &1234706240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3313,6 +3367,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 2
   cardValue: 4
+  deckBuilder: {fileID: 0}
 --- !u!1 &1246378130
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,6 +3631,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 1
   cardValue: 1
+  deckBuilder: {fileID: 0}
 --- !u!1 &1349121183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3724,6 +3780,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 0
   cardValue: 4
+  deckBuilder: {fileID: 0}
 --- !u!1 &1399347688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3756,7 +3813,7 @@ Transform:
   - {fileID: 989987283}
   - {fileID: 1280335961}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1445104015
 GameObject:
@@ -3830,7 +3887,7 @@ Transform:
   - {fileID: 13376844}
   - {fileID: 1246378132}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576423334
 GameObject:
@@ -4283,6 +4340,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 1
   cardValue: 5
+  deckBuilder: {fileID: 0}
 --- !u!1 &1645807623
 GameObject:
   m_ObjectHideFlags: 0
@@ -4431,6 +4489,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 0
   cardValue: 1
+  deckBuilder: {fileID: 0}
 --- !u!1 &1674226098
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,7 +4533,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674289267
 GameObject:
@@ -4758,6 +4817,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 0
   cardValue: 7
+  deckBuilder: {fileID: 0}
 --- !u!1 &1680492393
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,6 +5174,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 2
   cardValue: 6
+  deckBuilder: {fileID: 0}
 --- !u!1 &1741202296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5208,7 +5269,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fe3b44a0a1914a84abe0fa1494ad2f70, type: 3}
       propertyPath: m_LocalScale.x
@@ -5587,6 +5648,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 2
   cardValue: 3
+  deckBuilder: {fileID: 0}
 --- !u!1 &1908326102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5819,6 +5881,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 2
   cardValue: 4
+  deckBuilder: {fileID: 0}
 --- !u!1 &1971885473
 GameObject:
   m_ObjectHideFlags: 0
@@ -5967,6 +6030,7 @@ MonoBehaviour:
   handIndex: 0
   cardType: 1
   cardValue: 3
+  deckBuilder: {fileID: 0}
 --- !u!1 &1982303192
 GameObject:
   m_ObjectHideFlags: 0
@@ -6376,3 +6440,4 @@ MonoBehaviour:
   handIndex: 0
   cardType: 2
   cardValue: 4
+  deckBuilder: {fileID: 0}
