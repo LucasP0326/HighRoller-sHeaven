@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class GameManager2 : MonoBehaviour
 {
     // Reference to the TextMeshPro text objects for displaying messages
-    public TextMeshProUGUI textNotifications; 
+    public TextMeshProUGUI textNotifications;
     public TextMeshProUGUI opponentCardText;
     public TextMeshProUGUI playerCardText;
+    public TextMeshProUGUI playerLifeText;
+    public TextMeshProUGUI opponentLifeText;
 
     public GameObject winscreen;
     public TextMeshProUGUI fateText;
@@ -39,9 +41,8 @@ public class GameManager2 : MonoBehaviour
     public List<Card2> startingPlayerDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
     public List<Card2> startingOpponentDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
 
-    public int playerWinsCount = 0;
-    public int opponentWinsCount = 0;
-    public int gamesToWin = 3;
+    public int playerLives = 5;
+    public int opponentLives = 5;
 
     public int playerWins; //0 is nothing, 1 is win, 2 is lose
 
@@ -75,7 +76,7 @@ public class GameManager2 : MonoBehaviour
         playerCardText.text = "";
         winscreen.SetActive(false);
         fateText.text = "";
-
+        UpdateLifeUI();
 
         // Shuffle player and opponent's deck and play the top 3 cards
 
@@ -104,7 +105,7 @@ public class GameManager2 : MonoBehaviour
 
             // Log the number of cards loaded for debugging
             Debug.Log("Loaded " + startingPlayerDeck.Count + " cards from DeckData.");
-    
+
             // Optionally, log the details of each card loaded
             foreach (Card2 card in startingPlayerDeck)
             {
@@ -126,8 +127,8 @@ public class GameManager2 : MonoBehaviour
     public void ResetGame()
     {
         // Reset game state
-        playerWinsCount = 0;
-        opponentWinsCount = 0;
+        playerLives = 5;
+        opponentLives = 5;
         playerWins = 0;
 
         // Reset player card slots availability
@@ -176,7 +177,7 @@ public class GameManager2 : MonoBehaviour
 
         Start();
     }
-    
+
     public IEnumerator DrawPlayerCards()
     {
         List<int> availableSlots = new List<int>();
@@ -328,20 +329,18 @@ public class GameManager2 : MonoBehaviour
         opponentCardText.text = "";
         playerCardText.text = "";
 
-        //Move Cards to battle spot
+        // Move Cards to battle spot
         playerCard.transform.position = playerBattlePosition.position;
         opponentCard.transform.position = opponentBattlePosition.position;
         yield return new WaitForSeconds(1f);
 
         // Determine card types and values
-        Debug.Log("Getting Component for player");
         CardType playerCardType = playerCard.GetComponent<Card2>().cardType;
         int playerCardValue = playerCard.cardValue;
-        Debug.Log("Getting Component for Ai");
         CardType opponentCardType = opponentCard.GetComponent<Card2>().cardType;
         int opponentCardValue = opponentCard.cardValue;
 
-        //display who played what
+        // Display who played what
         if (playerCardType == CardType.Holy)
             playerCardText.text = "Player played Holy";
         if (playerCardType == CardType.Demonic)
@@ -362,13 +361,13 @@ public class GameManager2 : MonoBehaviour
             {
                 Debug.Log("Player Won");
                 textNotifications.text = "Player wins a point!";
-                playerWinsCount++;
+                // No changes to life count if player wins
             }
             else if (playerCardValue < opponentCardValue)
             {
                 Debug.Log("Player lose");
                 textNotifications.text = "Opponent wins a point!";
-                opponentWinsCount++;
+                playerLives--; // Decrease player's life count
             }
             else
             {
@@ -382,14 +381,14 @@ public class GameManager2 : MonoBehaviour
                 (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
             {
                 Debug.Log("Player Won");
-                textNotifications.text = "Player wins a point!";
-                playerWinsCount++;
+                textNotifications.text = "Opponent loses a life!";
+                opponentLives--; // Decrease opponent's life count
             }
             else
             {
                 Debug.Log("Player lose");
-                textNotifications.text = "Opponent wins a point!";
-                opponentWinsCount++;
+                textNotifications.text = "Player loses a life!";
+                playerLives--; // Decrease player's life count
             }
         }
 
@@ -397,7 +396,7 @@ public class GameManager2 : MonoBehaviour
         playerCard.hasBeenPlayed = true;
         opponentCard.hasBeenPlayed = true;
 
-        //Discard the cards
+        // Discard the cards
         PlayerDiscard(playerCard);
         OpponentDiscard(opponentCard);
 
@@ -415,27 +414,29 @@ public class GameManager2 : MonoBehaviour
 
     public void CheckGameEnd()
     {
-        if (playerWinsCount >= gamesToWin)
+        if (playerLives <= 0)
         {
-            playerWins = 1;
+            GameOver(false); // Opponent wins
         }
+        else if (opponentLives <= 0)
+        {
+            GameOver(true); // Player wins
+        }
+    }
 
-        if (opponentWinsCount >= gamesToWin)
-        {
-            playerWins = 2;
-        }
-        // Check game end conditions
-        // For example, set to true if player wins
-        if (playerWins == 1)
+    void GameOver(bool playerWins)
+    {
+        // Display appropriate win message based on the result
+        if (playerWins)
         {
             winscreen.SetActive(true);
-            Debug.Log("Player Won game end");
+            Debug.Log("Player Wins the game!");
             fateText.text = "Player wins the game!";
         }
-        else if (playerWins == 2)
+        else
         {
             winscreen.SetActive(true);
-            Debug.Log("Player Lose game end");
+            Debug.Log("Opponent Wins the game!");
             fateText.text = "Opponent wins the game!";
         }
     }
@@ -444,6 +445,13 @@ public class GameManager2 : MonoBehaviour
     {
         yield return new WaitForSeconds(delayInSeconds);
         Debug.Log("Time delay should be there");
+    }
+
+    void UpdateLifeUI()
+    {
+        // Update UI to display remaining life count for both players
+        playerLifeText.text = "Player Lives: " + playerLives.ToString();
+        opponentLifeText.text = "Opponent Lives: " + opponentLives.ToString();
     }
 }
 
