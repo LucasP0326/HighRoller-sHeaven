@@ -1046,7 +1046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3b11dc019fe8b46a28b048fa5d0af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene1: Deck Build
+  scene1: DeckBuild
 --- !u!4 &109424914 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
