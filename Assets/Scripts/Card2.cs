@@ -18,6 +18,8 @@ public class Card2 : MonoBehaviour
     public DeckBuilder3 deckBuilder; // Reference to the DeckBuilder script
     public bool inCustomDeck;
 
+    private bool updatingCardValue = false; // Flag to indicate if the card value is being updated
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -39,6 +41,11 @@ public class Card2 : MonoBehaviour
 
     public void OnMouseDown()
     {
+        if (updatingCardValue) // Check if the card value is being updated
+        {
+            return; // Exit the method early
+        }
+
         if (deckBuilder != null)
         {
             //Debug.Log("Deck Builder Found");
@@ -89,5 +96,24 @@ public class Card2 : MonoBehaviour
                 gm.PlayerPlayCard(this);
             }
         }
+    }
+
+    // Method to handle updating the card value when a card is clicked
+    public void UpdateCardValue()
+    {
+        cardValue++; // Increase the card value by 1
+        Debug.Log("Card value updated: " + cardValue);
+    }
+
+    // Method to indicate that the card value is being updated
+    public void StartUpdatingCardValue()
+    {
+        updatingCardValue = true;
+    }
+
+    // Method to indicate that the card value update process is complete
+    public void StopUpdatingCardValue()
+    {
+        updatingCardValue = false;
     }
 }

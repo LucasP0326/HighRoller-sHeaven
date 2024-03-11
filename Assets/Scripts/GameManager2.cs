@@ -55,6 +55,7 @@ public class GameManager2 : MonoBehaviour
     public Button reshuffleButton; // Reference to the reshuffle button
     public Button regainButton; // Reference to the regain button
     public Button reverseButton; // Reference to the Reverse button
+    public Button updateButton; // Reference to the Update button in the UI
 
     // Reverse card comparison state
     public bool reverseCardComparison = false;
@@ -114,6 +115,12 @@ public class GameManager2 : MonoBehaviour
         if (reverseButton != null)
         {
             reverseButton.onClick.AddListener(ReverseCardComparison);
+        }
+
+        // Add listener to reshuffle button
+        if (updateButton != null)
+        {
+            updateButton.onClick.AddListener(UpdateCards);
         }
     }
 
@@ -599,6 +606,42 @@ public class GameManager2 : MonoBehaviour
 
         reverseCardComparison = !reverseCardComparison;
         Debug.Log("Reverse Card Comparison: " + reverseCardComparison);
+    }
+
+    // Method to update the cards
+    void UpdateCards()
+    {
+        // Decrease player's life count
+        playerLives--;
+
+        // Check if the player's hand is not empty
+        if (playerHand.Count > 0)
+        {
+            // Assuming you have a UI where the player can click on cards, and each card has a corresponding index in the playerHand list
+            // You can set up your UI buttons to call a method with the index of the clicked card as a parameter
+
+            // Iterate over each index in the player's hand
+            for (int i = 0; i < playerHand.Count; i++)
+            {
+                Card2 selectedCard = playerHand[i];
+
+                // Update the selected card's value
+                UpdateCardValue(selectedCard);
+
+                Debug.Log("Card value updated: " + selectedCard.cardValue);
+            }
+        }
+        else
+        {
+            Debug.Log("Player's hand is empty!");
+        }
+    }
+
+    // Method to handle updating the card value when a card is clicked
+    public void UpdateCardValue(Card2 card)
+    {
+        card.cardValue++; // Increase the card value by 1
+        Debug.Log("Card value updated: " + card.cardValue);
     }
 }
 

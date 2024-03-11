@@ -3428,6 +3428,7 @@ MonoBehaviour:
   reshuffleButton: {fileID: 688227480}
   regainButton: {fileID: 1367848838}
   reverseButton: {fileID: 1564474946}
+  updateButton: {fileID: 1339233519}
   reverseCardComparison: 0
 --- !u!82 &1147371472
 AudioSource:
