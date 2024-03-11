@@ -53,6 +53,11 @@ public class GameManager2 : MonoBehaviour
     public DeckData deckData; //Reference to Deck Data
 
     public Button reshuffleButton; // Reference to the reshuffle button
+    public Button regainButton; // Reference to the regain button
+    public Button reverseButton; // Reference to the Reverse button
+
+    // Reverse card comparison state
+    public bool reverseCardComparison = false;
 
     // Start is called before the first frame update
     void Start()
@@ -97,6 +102,18 @@ public class GameManager2 : MonoBehaviour
         if (reshuffleButton != null)
         {
             reshuffleButton.onClick.AddListener(ReshuffleHand);
+        }
+
+        // Add listener to reshuffle button
+        if (regainButton != null)
+        {
+            regainButton.onClick.AddListener(Regain);
+        }
+
+        // Add listener to reshuffle button
+        if (reverseButton != null)
+        {
+            reverseButton.onClick.AddListener(ReverseCardComparison);
         }
     }
 
@@ -192,6 +209,9 @@ public class GameManager2 : MonoBehaviour
         {
             card.gameObject.SetActive(false);
         }
+
+        // Set ReverseCardComparison back to false
+        reverseCardComparison = false;
 
         Start();
     }
@@ -417,6 +437,45 @@ public class GameManager2 : MonoBehaviour
             }
         }
 
+        // Determine the winner based on card types, considering reverseCardComparison
+        if ((!reverseCardComparison && playerCardType == opponentCardType) ||
+            (reverseCardComparison && playerCardType != opponentCardType))
+        {
+            if (playerCardValue > opponentCardValue)
+            {
+                Debug.Log("Player Won");
+                textNotifications.text = "Opponent loses a life!";
+                opponentLives--; // Decrease opponent's life count
+            }
+            else if (playerCardValue < opponentCardValue)
+            {
+                Debug.Log("Player lose");
+                textNotifications.text = "Player loses a life!";
+                playerLives--; // Decrease player's life count
+            }
+            else
+            {
+                textNotifications.text = "It's a tie!";
+            }
+        }
+        else
+        {
+            if ((playerCardType == CardType.Holy && opponentCardType == CardType.Demonic) ||
+                (playerCardType == CardType.Demonic && opponentCardType == CardType.Terrestrial) ||
+                (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
+            {
+                Debug.Log("Player Won");
+                textNotifications.text = "Opponent loses a life!";
+                opponentLives--; // Decrease opponent's life count
+            }
+            else
+            {
+                Debug.Log("Player lose");
+                textNotifications.text = "Player loses a life!";
+                playerLives--; // Decrease player's life count
+            }
+        }
+
         // Mark the cards as played
         playerCard.hasBeenPlayed = true;
         opponentCard.hasBeenPlayed = true;
@@ -495,6 +554,42 @@ public class GameManager2 : MonoBehaviour
 
         // Draw 3 new cards to fill the player's hand
         StartCoroutine(DrawPlayerCards());
+    }
+
+    public void Regain()
+    {
+        // Increase player's life count
+        playerLives++;
+
+        // Discard all cards in the player's hand without putting them back into the deck
+        foreach (Card2 card in playerDeck)
+        {
+            if (card.gameObject.activeSelf)
+            {
+                // Deactivate the card
+                card.gameObject.SetActive(false);
+
+                // Make the card slot available again
+                playerAvailableCardSlots[card.handIndex] = true;
+
+                // Remove the card from play permanently
+                playerDeck.Remove(card);
+                Destroy(card.gameObject);
+            }
+        }
+        playerHand.Clear(); // Clear the player's hand
+
+        // Draw 3 new cards to fill the player's hand
+        StartCoroutine(DrawPlayerCards());
+    }
+
+    public void ReverseCardComparison()
+    {
+        // Decrease player's life count
+        playerLives--;
+
+        reverseCardComparison = !reverseCardComparison;
+        Debug.Log("Reverse Card Comparison: " + reverseCardComparison);
     }
 }
 
