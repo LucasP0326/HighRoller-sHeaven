@@ -104,6 +104,7 @@ MonoBehaviour:
   cardType: 2
   cardValue: 3
   deckBuilder: {fileID: 0}
+  inCustomDeck: 0
 --- !u!61 &-4823754343109203212
 BoxCollider2D:
   m_ObjectHideFlags: 0
