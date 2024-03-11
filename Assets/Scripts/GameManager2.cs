@@ -54,7 +54,10 @@ public class GameManager2 : MonoBehaviour
     {
         // Set player deck to be whatever is marked as starting deck
         playerDeck.Clear();
-        LoadSavedDeck();
+        if (deckData != null && DeckData.playerDeck.Count > 0)
+        {
+            LoadSavedDeck();
+        }
         foreach (Card2 card in DeckData.playerDeck)
         {
             Debug.Log(card.name); // Assuming card has a "name" field for identification
@@ -76,7 +79,7 @@ public class GameManager2 : MonoBehaviour
         playerCardText.text = "";
         winscreen.SetActive(false);
         fateText.text = "";
-        UpdateLifeUI();
+        //UpdateLifeUI();
 
         // Shuffle player and opponent's deck and play the top 3 cards
 
@@ -92,6 +95,8 @@ public class GameManager2 : MonoBehaviour
         {
             ResetGame();
         }
+        playerLifeText.text = "Player Lives: " + playerLives.ToString();
+        opponentLifeText.text = "Opponent Lives: " + opponentLives.ToString();
     }
 
     void LoadSavedDeck()
@@ -447,11 +452,11 @@ public class GameManager2 : MonoBehaviour
         Debug.Log("Time delay should be there");
     }
 
-    void UpdateLifeUI()
+    /*void UpdateLifeUI()
     {
         // Update UI to display remaining life count for both players
         playerLifeText.text = "Player Lives: " + playerLives.ToString();
         opponentLifeText.text = "Opponent Lives: " + opponentLives.ToString();
-    }
+    }*/
 }
 

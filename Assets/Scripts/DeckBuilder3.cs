@@ -14,6 +14,7 @@ public class DeckBuilder3 : MonoBehaviour
     public List<Card2> customPlayerDeck;
     public List<Card2> unchosenCards;
     public DeckData deckData; //Reference to Deck Data
+    public AudioSource cardChoose;
 
     void Start()
     {
@@ -60,15 +61,27 @@ public class DeckBuilder3 : MonoBehaviour
 
     public void ResetScene()
     {
+        //Disable Redundancies
+        foreach (Card2 card in customPlayerDeck)
+        {
+            card.gameObject.SetActive(false);
+        }
+        foreach (Card2 card in unchosenCards)
+        {
+            card.gameObject.SetActive(false);
+        }
+        
         // Reload the current scene
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
         // Clear the player's deck in DeckData
         DeckData.playerDeck.Clear();
+        customPlayerDeck.Clear();
     }
 
     public void AddToCurrentDeck(Transform cardTransform)
     {
+        cardChoose.Play();
         // Find an empty slot in the current deck
         for (int i = 0; i < currentDeckSlots.Length; i++)
         {
@@ -85,6 +98,7 @@ public class DeckBuilder3 : MonoBehaviour
     // Method to remove a card from the current deck slots
     public void RemoveFromCurrentDeck(Transform cardTransform)
     {
+        cardChoose.Play();
         // Find an empty slot in the available deck
         for (int i = 0; i < availableDeckSlots.Length; i++)
         {
