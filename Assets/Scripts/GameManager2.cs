@@ -399,7 +399,7 @@ public class GameManager2 : MonoBehaviour
         if (opponentCardType == CardType.Terrestrial)
             opponentCardText.text = "Opponent played Terrestrial";
 
-        // Determine the winner based on card types
+        /*// Determine the winner based on card types
         if (playerCardType == opponentCardType)
         {
             if (playerCardValue > opponentCardValue)
@@ -407,12 +407,14 @@ public class GameManager2 : MonoBehaviour
                 Debug.Log("Player Won");
                 textNotifications.text = "Opponent loses a life!";
                 opponentLives--; // Decrease opponent's life count
+                Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
             }
             else if (playerCardValue < opponentCardValue)
             {
                 Debug.Log("Player lose");
                 textNotifications.text = "Player loses a life!";
                 playerLives--; // Decrease player's life count
+                Debug.Log("Player Lives Remaining: " + playerLives); // Debug
             }
             else
             {
@@ -428,34 +430,36 @@ public class GameManager2 : MonoBehaviour
                 Debug.Log("Player Won");
                 textNotifications.text = "Opponent loses a life!";
                 opponentLives--; // Decrease opponent's life count
+                Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
             }
             else
             {
                 Debug.Log("Player lose");
                 textNotifications.text = "Player loses a life!";
                 playerLives--; // Decrease player's life count
+                Debug.Log("Player Lives Remaining: " + playerLives); // Debug
             }
-        }
+        }*/
 
-        // Determine the winner based on card types, considering reverseCardComparison
+        // Debug log to check the value of reverseCardComparison
+        Debug.Log("Reverse Card Comparison: " + reverseCardComparison);
+        // Reverse card comparison
         if ((!reverseCardComparison && playerCardType == opponentCardType) ||
             (reverseCardComparison && playerCardType != opponentCardType))
         {
-            if (playerCardValue > opponentCardValue)
+            if (playerCardValue >= opponentCardValue)
             {
                 Debug.Log("Player Won");
                 textNotifications.text = "Opponent loses a life!";
                 opponentLives--; // Decrease opponent's life count
+                Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
             }
-            else if (playerCardValue < opponentCardValue)
+            else
             {
                 Debug.Log("Player lose");
                 textNotifications.text = "Player loses a life!";
                 playerLives--; // Decrease player's life count
-            }
-            else
-            {
-                textNotifications.text = "It's a tie!";
+                Debug.Log("Player Lives Remaining: " + playerLives); // Debug
             }
         }
         else
@@ -467,12 +471,14 @@ public class GameManager2 : MonoBehaviour
                 Debug.Log("Player Won");
                 textNotifications.text = "Opponent loses a life!";
                 opponentLives--; // Decrease opponent's life count
+                Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
             }
             else
             {
                 Debug.Log("Player lose");
                 textNotifications.text = "Player loses a life!";
                 playerLives--; // Decrease player's life count
+                Debug.Log("Player Lives Remaining: " + playerLives); // Debug
             }
         }
 
@@ -585,8 +591,11 @@ public class GameManager2 : MonoBehaviour
 
     public void ReverseCardComparison()
     {
-        // Decrease player's life count
-        playerLives--;
+        // Decrease player's life count if it's not already decreased in another method
+        if (!reverseCardComparison)
+        {
+            playerLives--;
+        }
 
         reverseCardComparison = !reverseCardComparison;
         Debug.Log("Reverse Card Comparison: " + reverseCardComparison);
