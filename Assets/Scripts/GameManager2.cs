@@ -37,6 +37,9 @@ public class GameManager2 : MonoBehaviour
     // Opponent's hand
     public List<Card2> opponentHand = new List<Card2>(); // New list to store opponent's hand
 
+    // Player's hand
+    public List<Card2> playerHand = new List<Card2>(); // New list to store player's hand
+
     // Original decks to replenish at game reset
     public List<Card2> startingPlayerDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
     public List<Card2> startingOpponentDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
@@ -48,6 +51,8 @@ public class GameManager2 : MonoBehaviour
 
     Card2 card;
     public DeckData deckData; //Reference to Deck Data
+
+    public Button reshuffleButton; // Reference to the reshuffle button
 
     // Start is called before the first frame update
     void Start()
@@ -66,7 +71,9 @@ public class GameManager2 : MonoBehaviour
         {
             playerDeck.Add(card);
         }
-
+        
+        // Initialize player's hand
+        playerHand.Clear();
         // Set opponent deck to be whatever is marked as starting deck
         opponentDeck.Clear();
         foreach (Card2 card in startingOpponentDeck)
@@ -85,6 +92,12 @@ public class GameManager2 : MonoBehaviour
 
         StartCoroutine(DrawPlayerCards());
         StartCoroutine(DrawOpponentCards());
+
+        // Add listener to reshuffle button
+        if (reshuffleButton != null)
+        {
+            reshuffleButton.onClick.AddListener(ReshuffleHand);
+        }
     }
 
     // Update is called once per frame
@@ -218,6 +231,10 @@ public class GameManager2 : MonoBehaviour
                     playerDeck.Remove(randomCard);
                     playerAvailableCardSlots[slotIndex] = false;
                     cardDrawAudioSource.Play();
+
+                    // Add the drawn card to the player's hand
+                    playerHand.Add(randomCard);
+
                     yield return new WaitForSeconds(0.5f);
                 }
                 else
@@ -286,6 +303,9 @@ public class GameManager2 : MonoBehaviour
 
         // Make the card slot available again
         playerAvailableCardSlots[card.handIndex] = true;
+
+        // Remove the card from the player's hand
+        playerHand.Remove(card);
     }
 
     public void OpponentDiscard(Card2 card)
@@ -365,13 +385,13 @@ public class GameManager2 : MonoBehaviour
             if (playerCardValue > opponentCardValue)
             {
                 Debug.Log("Player Won");
-                textNotifications.text = "Player wins a point!";
-                // No changes to life count if player wins
+                textNotifications.text = "Opponent loses a life!";
+                opponentLives--; // Decrease opponent's life count
             }
             else if (playerCardValue < opponentCardValue)
             {
                 Debug.Log("Player lose");
-                textNotifications.text = "Opponent wins a point!";
+                textNotifications.text = "Player loses a life!";
                 playerLives--; // Decrease player's life count
             }
             else
@@ -452,11 +472,29 @@ public class GameManager2 : MonoBehaviour
         Debug.Log("Time delay should be there");
     }
 
-    /*void UpdateLifeUI()
+    void UpdateLifeUI()
     {
         // Update UI to display remaining life count for both players
         playerLifeText.text = "Player Lives: " + playerLives.ToString();
         opponentLifeText.text = "Opponent Lives: " + opponentLives.ToString();
-    }*/
+    }
+
+    public void ReshuffleHand()
+    {
+        // Decrease player's life count
+        playerLives--;
+
+        // Put all cards in the player's hand back into the player's deck
+        foreach (Card2 card in playerHand)
+        {
+            playerDeck.Add(card);
+            card.gameObject.SetActive(false); // Deactivate the card
+            playerAvailableCardSlots[card.handIndex] = true; // Make the card slot available again
+        }
+        playerHand.Clear(); // Clear the player's hand
+
+        // Draw 3 new cards to fill the player's hand
+        StartCoroutine(DrawPlayerCards());
+    }
 }
 
