@@ -3421,6 +3421,7 @@ MonoBehaviour:
   - {fileID: 236763016}
   - {fileID: 1968758758}
   - {fileID: 1727082448}
+  discardPile: []
   playerLives: 5
   opponentLives: 5
   playerWins: 0

@@ -44,6 +44,8 @@ public class GameManager2 : MonoBehaviour
     public List<Card2> startingPlayerDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
     public List<Card2> startingOpponentDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
 
+    public List<Card2> discardPile = new List<Card2>(); // Create a list to represent the discard pile
+
     public int playerLives = 5;
     public int opponentLives = 5;
 
@@ -574,26 +576,18 @@ public class GameManager2 : MonoBehaviour
         // Increase player's life count
         playerLives++;
 
-        // Discard all cards in the player's hand without putting them back into the deck
-        foreach (Card2 card in playerDeck)
+        // Move all cards in the player's hand to the discard pile
+        foreach (Card2 card in playerHand)
         {
-            if (card.gameObject.activeSelf)
-            {
-                // Deactivate the card
-                card.gameObject.SetActive(false);
-
-                // Make the card slot available again
-                playerAvailableCardSlots[card.handIndex] = true;
-
-                // Remove the card from play permanently
-                playerDeck.Remove(card);
-                Destroy(card.gameObject);
-            }
+            // Add the card to the discard pile
+            discardPile.Add(card);
+            card.gameObject.SetActive(false); // Deactivate the card
+            playerAvailableCardSlots[card.handIndex] = true; // Make the card slot available again
         }
         playerHand.Clear(); // Clear the player's hand
 
         // Draw 3 new cards to fill the player's hand
-        StartCoroutine(DrawPlayerCards());
+        StartCoroutine(DrawPlayerCards()); 
     }
 
     public void ReverseCardComparison()
