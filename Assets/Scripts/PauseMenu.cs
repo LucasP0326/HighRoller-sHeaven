@@ -7,16 +7,18 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public bool gameIsPaused = false;
+    public string LobbyScene;
 
 
     public GameObject pauseMenuUI;
+
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (!gameIsPaused)
+            if (gameIsPaused)
             {
                 Debug.Log("Resume");
                 Resume();
@@ -40,4 +42,14 @@ public class PauseMenu : MonoBehaviour
         gameIsPaused = true;
     }
     
+    public void LoadLobby()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(LobbyScene);
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Exit Game");
+        Application.Quit();
+    }
 }
