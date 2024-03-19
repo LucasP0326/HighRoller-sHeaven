@@ -56,6 +56,7 @@ public class DialogueController : MonoBehaviour
         if (inConversation == false)
         {
             BeginConversation();
+            GoNext();
         }
         else
         {

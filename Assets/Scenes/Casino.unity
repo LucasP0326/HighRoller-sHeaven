@@ -23370,9 +23370,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueUI: {fileID: 823514576}
-  dialogueText: {fileID: 0}
-  nameText: {fileID: 0}
-  portrait: {fileID: 0}
+  dialogueText: {fileID: 979267191}
+  nameText: {fileID: 1121779135}
+  portrait: {fileID: 1081126803}
   onFinishedChatting:
     m_PersistentCalls:
       m_Calls: []
@@ -23387,6 +23387,20 @@ MonoBehaviour:
   - name: Player
     portrait: {fileID: 0}
     message: HEYYYYY
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Envy
+    portrait: {fileID: 0}
+    message: So aren't you excited for dialogueeeee?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Yaaaas, Queen.  Slay!
     writeWaitTime: 0
     onWriteEvent:
       m_PersistentCalls:
