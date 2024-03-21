@@ -46,7 +46,7 @@ public class DialogueController : MonoBehaviour
         {
             dialogueIndex = 0;
             nameText.text = "";
-        dialogueText.text = "";
+            dialogueText.text = "";
 
         }
     }
