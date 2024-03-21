@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Card2 : MonoBehaviour
 {
+    [TextArea(3, 10)] // This will create a text area with 3 to 10 lines
+    public string cardDescription;
     public bool hasBeenPlayed;
     public bool playerCard;
     public int handIndex;
@@ -61,6 +64,7 @@ public class Card2 : MonoBehaviour
                         deckBuilder.unchosenCards.Remove(this);
                         inCustomDeck = true;
                         playerCard = true;
+                        deckBuilder.cardDescription.text = cardDescription;
                         deckBuilder.AddToCurrentDeck(transform);
                         return;
                     }
@@ -81,6 +85,7 @@ public class Card2 : MonoBehaviour
                     inCustomDeck = false;
                     playerCard = false;
                     deckBuilder.RemoveFromCurrentDeck(transform);
+                    deckBuilder.cardDescription.text = "";
                     return;
                 }
             }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class DeckBuilder3 : MonoBehaviour
@@ -10,6 +11,7 @@ public class DeckBuilder3 : MonoBehaviour
     public Transform[] availableDeckSlots; // Array of available deck slots transformation points
     public Transform[] currentDeckSlots;   // Array of current deck slots transformation points
     public GameObject[] specificAvailableCards; // Specific card game objects to assign to available deck slots
+    public TextMeshProUGUI cardDescription; //Add space for card description;
     public string SceneToLoad; // Name of the scene to load
     public List<Card2> customPlayerDeck;
     public List<Card2> unchosenCards;
@@ -19,6 +21,7 @@ public class DeckBuilder3 : MonoBehaviour
     void Start()
     {
         AssignSpecificAvailableCards();
+        cardDescription.text = "";
     }
 
     public void TransitionToScene()
