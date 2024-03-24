@@ -59,6 +59,8 @@ public class GameManager2 : MonoBehaviour
     public Button reverseButton; // Reference to the Reverse button
     public Button updateButton; // Reference to the Update button in the UI
 
+    private int regainCount = 0; // Counter to track how many times the Regain button has been used
+
     // Reverse card comparison state
     public bool reverseCardComparison = false;
 
@@ -558,6 +560,13 @@ public class GameManager2 : MonoBehaviour
         // Decrease player's life count
         playerLives--;
 
+        // Check if player has lost the game
+        if (playerLives <= 0)
+        {
+            GameOver(false);
+            return; // Exit the method to prevent further execution
+        }
+
         // Put all cards in the player's hand back into the player's deck
         foreach (Card2 card in playerHand)
         {
@@ -573,21 +582,31 @@ public class GameManager2 : MonoBehaviour
 
     public void Regain()
     {
-        // Increase player's life count
-        playerLives++;
-
-        // Move all cards in the player's hand to the discard pile
-        foreach (Card2 card in playerHand)
+        if (regainCount < 2) // Check if the regainCount is less than 2 (meaning the button can still be used)
         {
-            // Add the card to the discard pile
-            discardPile.Add(card);
-            card.gameObject.SetActive(false); // Deactivate the card
-            playerAvailableCardSlots[card.handIndex] = true; // Make the card slot available again
-        }
-        playerHand.Clear(); // Clear the player's hand
+            // Increase player's life count
+            playerLives++;
 
-        // Draw 3 new cards to fill the player's hand
-        StartCoroutine(DrawPlayerCards()); 
+            // Move all cards in the player's hand to the discard pile
+            foreach (Card2 card in playerHand)
+            {
+                // Add the card to the discard pile
+                discardPile.Add(card);
+                card.gameObject.SetActive(false); // Deactivate the card
+                playerAvailableCardSlots[card.handIndex] = true; // Make the card slot available again
+            }
+            playerHand.Clear(); // Clear the player's hand
+
+            // Draw 3 new cards to fill the player's hand
+            StartCoroutine(DrawPlayerCards());
+
+            // Increment the regainCount
+            regainCount++;
+        }
+        else
+        {
+            Debug.Log("Regain button can only be used twice.");
+        }
     }
 
     public void ReverseCardComparison()
@@ -596,6 +615,13 @@ public class GameManager2 : MonoBehaviour
         if (!reverseCardComparison)
         {
             playerLives--;
+        }
+
+        // Check if player has lost the game
+        if (playerLives <= 0)
+        {
+            GameOver(false);
+            return; // Exit the method to prevent further execution
         }
 
         reverseCardComparison = !reverseCardComparison;
@@ -607,6 +633,13 @@ public class GameManager2 : MonoBehaviour
     {
         // Decrease player's life count
         playerLives--;
+
+        // Check if player has lost the game
+        if (playerLives <= 0)
+        {
+            GameOver(false);
+            return; // Exit the method to prevent further execution
+        }
 
         // Check if the player's hand is not empty
         if (playerHand.Count > 0)
