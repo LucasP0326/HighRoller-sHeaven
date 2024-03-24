@@ -6,6 +6,7 @@ public class Door : MonoBehaviour
 {
     public CasinoNavigator casinoNavigator;
     public int targetCameraIndex = 0; // Index of the camera to switch to
+    public AudioSource source;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Door : MonoBehaviour
         // Check if the camera switcher script is assigned
         if (casinoNavigator != null)
         {
+            source.Play(); // This just adds the sound effect.
             // Call the camera switch function with the specified target camera index
             casinoNavigator.SwitchToCamera(targetCameraIndex);
         }

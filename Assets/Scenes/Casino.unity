@@ -11920,6 +11920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   casinoNavigator: {fileID: 1892930715}
   targetCameraIndex: 3
+  source: {fileID: 816606332}
 --- !u!65 &791324632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12422,7 +12423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &816606331
 Transform:
   m_ObjectHideFlags: 0
@@ -12447,9 +12448,9 @@ AudioSource:
   m_GameObject: {fileID: 816606330}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 8886997520946113244, guid: fb8985a42a8be674282ad5a4f460ed70, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 7667e10dec8653b49a65fb03df3bca8c, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -17005,6 +17006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   casinoNavigator: {fileID: 1892930715}
   targetCameraIndex: 2
+  source: {fileID: 816606332}
 --- !u!65 &1166727748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27871,6 +27873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   casinoNavigator: {fileID: 1892930715}
   targetCameraIndex: 1
+  source: {fileID: 816606332}
 --- !u!1001 &1958012353
 PrefabInstance:
   m_ObjectHideFlags: 0
