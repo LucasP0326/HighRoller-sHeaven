@@ -9,6 +9,7 @@ public class CasinoNavigator : MonoBehaviour
     public Camera[] cameras; // Array to hold all your cameras
     private int currentCameraIndex = 0;
     public GameObject lobbyButton;
+    public bool inConversation;
 
     // Start is called before the first frame update
     void Start()
@@ -28,14 +29,17 @@ public class CasinoNavigator : MonoBehaviour
 
     public void ReturnToLobby()
     {
-        // Disable the current camera
-        cameras[currentCameraIndex].gameObject.SetActive(false);
+        if(inConversation == false)
+        {
+            // Disable the current camera
+            cameras[currentCameraIndex].gameObject.SetActive(false);
 
-        // Set the current camera index to 0
-        currentCameraIndex = 0;
+            // Set the current camera index to 0
+            currentCameraIndex = 0;
 
-        // Enable camera 0
-        cameras[currentCameraIndex].gameObject.SetActive(true);
+            // Enable camera 0
+            cameras[currentCameraIndex].gameObject.SetActive(true);
+        }
     }
 
     public void SwitchToCamera(int index)

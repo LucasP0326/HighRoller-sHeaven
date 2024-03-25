@@ -32,6 +32,8 @@ public class DialogueController : MonoBehaviour
 
     public bool inConversation = false;
     private bool writing = false;
+    
+    public CasinoNavigator casinoNavigator;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,8 @@ public class DialogueController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        casinoNavigator.inConversation = inConversation;
+
         if (inConversation == false)
         {
             dialogueIndex = 0;
