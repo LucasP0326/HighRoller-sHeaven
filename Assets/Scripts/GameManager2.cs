@@ -109,30 +109,6 @@ public class GameManager2 : MonoBehaviour
         StartCoroutine(DrawPlayerCards());
         StartCoroutine(DrawOpponentCards());
 
-        // Add listener to reshuffle button
-        if (reshuffleButton != null)
-        {
-            reshuffleButton.onClick.AddListener(ReshuffleHand);
-        }
-
-        // Add listener to reshuffle button
-        if (regainButton != null)
-        {
-            regainButton.onClick.AddListener(Regain);
-        }
-
-        // Add listener to reshuffle button
-        if (reverseButton != null)
-        {
-            reverseButton.onClick.AddListener(ReverseCardComparison);
-        }
-
-        // Add listener to reshuffle button
-        if (updateButton != null)
-        {
-            updateButton.onClick.AddListener(UpdateCards);
-        }
-
         // Initialize cardUpgraded and cardChanged arrays
         cardUpgraded = new bool[cardButtons.Length];
         cardChanged = new bool[cardButtons.Length];
@@ -140,11 +116,46 @@ public class GameManager2 : MonoBehaviour
         for (int i = 0; i < cardUpgraded.Length; i++)
         {
             cardUpgraded[i] = false; // Initially, no cards are upgraded
+        }              
+
+        // Deactivate the three buttons initially
+        DeactivateUpgradeButtons();
+    }
+
+    void Awake()
+    {
+        // Add listener to reshuffle button
+        if (reshuffleButton != null)
+        {
+            reshuffleButton.onClick.RemoveAllListeners(); // Remove existing listeners
+            reshuffleButton.onClick.AddListener(ReshuffleHand);
+        }
+
+        // Add listener to regain button
+        if (regainButton != null)
+        {
+            regainButton.onClick.RemoveAllListeners(); // Remove existing listeners
+            regainButton.onClick.AddListener(Regain);
+        }
+
+        // Add listener to reverse button
+        if (reverseButton != null)
+        {
+            reverseButton.onClick.RemoveAllListeners(); // Remove existing listeners
+            reverseButton.onClick.AddListener(ReverseCardComparison);
+        }
+
+        // Add listener to update button
+        if (updateButton != null)
+        {
+            updateButton.onClick.RemoveAllListeners(); // Remove existing listeners
+            updateButton.onClick.AddListener(UpdateCards);
         }
 
         // Add listener to change button
         if (changeButton != null)
         {
+            changeButton.onClick.RemoveAllListeners(); // Remove existing listeners
             changeButton.onClick.AddListener(() => ActivateChangeButton());
         }
 
@@ -154,9 +165,6 @@ public class GameManager2 : MonoBehaviour
             int index = i; // Capture the current value of i for the lambda expression
             cardButtons[i].onClick.AddListener(() => SelectCard(index));
         }
-
-        // Deactivate the three buttons initially
-        DeactivateUpgradeButtons();
     }
 
     // Update is called once per frame
