@@ -64,8 +64,9 @@ public class GameManager2 : MonoBehaviour
 
     private int regainCount = 0; // Counter to track how many times the Regain button has been used
 
-    // Reverse card comparison state
-    public bool reverseCardComparison = false;
+    public bool reverseCardComparison = false;  // Reverse card comparison state
+
+    bool reverseUsed = false; // Flag to track if Reverse has been used
 
     // Start is called before the first frame update
     void Start()
@@ -143,6 +144,9 @@ public class GameManager2 : MonoBehaviour
             int index = i; // Capture the current value of i for the lambda expression
             cardButtons[i].onClick.AddListener(() => SelectCard(index));
         }
+
+        // Deactivate the three buttons initially
+        DeactivateUpgradeButtons();
     }
 
     // Update is called once per frame
@@ -589,6 +593,13 @@ public class GameManager2 : MonoBehaviour
 
     public void ReverseCardComparison()
     {
+        // Check if Reverse has already been used
+        if (reverseUsed)
+        {
+            Debug.Log("Reverse can only be used once.");
+            return; // Exit the method if Reverse has already been used
+        }
+
         // Decrease player's life count if it's not already decreased in another method
         if (!reverseCardComparison)
         {
@@ -602,8 +613,9 @@ public class GameManager2 : MonoBehaviour
             return; // Exit the method to prevent further execution
         }
 
-        reverseCardComparison = !reverseCardComparison;
-        Debug.Log("Reverse Card Comparison: " + reverseCardComparison);
+        reverseCardComparison = true; // Set reverseCardComparison to true
+        reverseUsed = true; // Set the flag to true to indicate Reverse has been used
+        Debug.Log("Reverse Card Comparison activated.");
     }
 
     // Method to update the cards
@@ -619,7 +631,7 @@ public class GameManager2 : MonoBehaviour
             return; // Exit the method to prevent further execution
         }
 
-        // Reactivate the upgrade buttons
+        // Activate the upgrade buttons
         for (int i = 0; i < cardButtons.Length; i++)
         {
             cardButtons[i].interactable = true;
@@ -644,8 +656,8 @@ public class GameManager2 : MonoBehaviour
                 // Mark the card as upgraded
                 cardUpgraded[index] = true;
 
-                // Deactivate the button
-                cardButtons[index].interactable = false;
+                // Deactivate all three buttons after one of them is clicked
+                DeactivateUpgradeButtons();
             }
             else
             {
@@ -655,6 +667,15 @@ public class GameManager2 : MonoBehaviour
         else
         {
             Debug.Log("Invalid card index or button index!");
+        }
+    }
+
+    // Method to deactivate all three upgrade buttons
+    void DeactivateUpgradeButtons()
+    {
+        for (int i = 0; i < cardButtons.Length; i++)
+        {
+            cardButtons[i].interactable = false;
         }
     }
 
