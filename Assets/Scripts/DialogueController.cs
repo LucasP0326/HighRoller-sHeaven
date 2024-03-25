@@ -44,8 +44,6 @@ public class DialogueController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        casinoNavigator.inConversation = inConversation;
-
         if (inConversation == false)
         {
             dialogueIndex = 0;

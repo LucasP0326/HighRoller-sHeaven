@@ -959,7 +959,6 @@ RectTransform:
   - {fileID: 1620504347}
   - {fileID: 1100262526}
   - {fileID: 1696016798}
-  - {fileID: 1445104016}
   - {fileID: 306857605}
   - {fileID: 2076331321}
   - {fileID: 1339233518}
@@ -971,6 +970,7 @@ RectTransform:
   - {fileID: 1033286549}
   - {fileID: 1956979440}
   - {fileID: 1277178701}
+  - {fileID: 1445104016}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -10,6 +10,7 @@ public class CasinoNavigator : MonoBehaviour
     private int currentCameraIndex = 0;
     public GameObject lobbyButton;
     public bool inConversation;
+    public DialogueController[] characters;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,22 @@ public class CasinoNavigator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        bool allCharactersNotInConversation = true;
+
+        for (int i = 0; i < characters.Length; i++)
+        {
+            if(characters[i].inConversation == true)
+            {
+                inConversation = true;
+                allCharactersNotInConversation = false;
+                break;
+            }
+        }
+
+        if (allCharactersNotInConversation)
+        {
+            inConversation = false;
+        }
     }
 
     public void ReturnToLobby()
