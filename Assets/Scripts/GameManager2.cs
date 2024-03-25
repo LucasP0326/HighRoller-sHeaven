@@ -410,53 +410,14 @@ public class GameManager2 : MonoBehaviour
         if (opponentCardType == CardType.Terrestrial)
             opponentCardText.text = "Opponent played Terrestrial";
 
-        /*// Determine the winner based on card types
-        if (playerCardType == opponentCardType)
-        {
-            if (playerCardValue > opponentCardValue)
-            {
-                Debug.Log("Player Won");
-                textNotifications.text = "Opponent loses a life!";
-                opponentLives--; // Decrease opponent's life count
-                Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
-            }
-            else if (playerCardValue < opponentCardValue)
-            {
-                Debug.Log("Player lose");
-                textNotifications.text = "Player loses a life!";
-                playerLives--; // Decrease player's life count
-                Debug.Log("Player Lives Remaining: " + playerLives); // Debug
-            }
-            else
-            {
-                textNotifications.text = "It's a tie!";
-            }
-        }
-        else
-        {
-            if ((playerCardType == CardType.Holy && opponentCardType == CardType.Demonic) ||
-                (playerCardType == CardType.Demonic && opponentCardType == CardType.Terrestrial) ||
-                (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
-            {
-                Debug.Log("Player Won");
-                textNotifications.text = "Opponent loses a life!";
-                opponentLives--; // Decrease opponent's life count
-                Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
-            }
-            else
-            {
-                Debug.Log("Player lose");
-                textNotifications.text = "Player loses a life!";
-                playerLives--; // Decrease player's life count
-                Debug.Log("Player Lives Remaining: " + playerLives); // Debug
-            }
-        }*/
+        // Reverse card comparison for types
+        bool reverseTypeComparison = reverseCardComparison;
 
-        // Debug log to check the value of reverseCardComparison
-        Debug.Log("Reverse Card Comparison: " + reverseCardComparison);
-        // Reverse card comparison
-        if ((!reverseCardComparison && playerCardType == opponentCardType) ||
-            (reverseCardComparison && playerCardType != opponentCardType))
+        // Determine the winner based on card types and values
+        if ((!reverseTypeComparison && playerCardType == opponentCardType) ||
+            (reverseTypeComparison && ((playerCardType == CardType.Holy && opponentCardType == CardType.Terrestrial) ||
+                                       (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Demonic) ||
+                                       (playerCardType == CardType.Demonic && opponentCardType == CardType.Holy))))
         {
             if (playerCardValue >= opponentCardValue)
             {
