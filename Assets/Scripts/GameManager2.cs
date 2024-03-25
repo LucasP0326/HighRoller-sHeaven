@@ -58,9 +58,11 @@ public class GameManager2 : MonoBehaviour
     public Button regainButton; // Reference to the regain button
     public Button reverseButton; // Reference to the Reverse button
     public Button updateButton; // Reference to the Update button in the UI
+    public Button changeButton; // Reference to the Change button
 
     public Button[] cardButtons; // Array to hold the buttons representing cards in the hand
     private bool[] cardUpgraded; // Array to track whether each card has been upgraded
+    private bool[] cardChanged; // Array to track whether each card type has been changed
 
     private int regainCount = 0; // Counter to track how many times the Regain button has been used
 
@@ -131,11 +133,19 @@ public class GameManager2 : MonoBehaviour
             updateButton.onClick.AddListener(UpdateCards);
         }
 
-        // Initialize cardUpgraded array
+        // Initialize cardUpgraded and cardChanged arrays
         cardUpgraded = new bool[cardButtons.Length];
+        cardChanged = new bool[cardButtons.Length];
+
         for (int i = 0; i < cardUpgraded.Length; i++)
         {
             cardUpgraded[i] = false; // Initially, no cards are upgraded
+        }
+
+        // Add listener to change button
+        if (changeButton != null)
+        {
+            changeButton.onClick.AddListener(() => ActivateChangeButton());
         }
 
         // Add listeners to each card button
@@ -636,6 +646,35 @@ public class GameManager2 : MonoBehaviour
         {
             cardButtons[i].interactable = true;
         }
+
+        // Deactivate the Change button
+        changeButton.interactable = false;
+    }
+
+    // Method to activate the Change button
+    void ActivateChangeButton()
+    {
+        // Decrease player's life count
+        playerLives--;
+
+        // Check if player has lost the game
+        if (playerLives <= 0)
+        {
+            GameOver(false);
+            return; // Exit the method to prevent further execution
+        }
+
+        // Deactivate the Update button
+        updateButton.interactable = false;
+
+        // Activate the Change button
+        changeButton.interactable = true;
+
+        // Activate the card buttons
+        for (int i = 0; i < cardButtons.Length; i++)
+        {
+            cardButtons[i].interactable = true;
+        }
     }
 
     // Method to select a card from the hand based on the button clicked
@@ -646,28 +685,68 @@ public class GameManager2 : MonoBehaviour
         {
             Card2 selectedCard = playerHand[index];
 
-            // Check if the card has not been upgraded
-            if (!cardUpgraded[index])
+            // Check if the card has not been upgraded or changed
+            if (!cardUpgraded[index] && !cardChanged[index])
             {
-                // Update the selected card's value
-                UpdateCardValue(selectedCard);
-                Debug.Log("Card value updated: " + selectedCard.cardValue);
+                // Check which button is clicked
+                if (updateButton.interactable)
+                {
+                    // Update the selected card's value
+                    UpdateCardValue(selectedCard);
+                    Debug.Log("Card value updated: " + selectedCard.cardValue);
+                }
+                else if (changeButton.interactable)
+                {
+                    // Change the selected card's type
+                    ChangeCardType(selectedCard);
+                    Debug.Log("Card type changed: " + selectedCard.cardType);
+                }
 
-                // Mark the card as upgraded
-                cardUpgraded[index] = true;
-
-                // Deactivate all three buttons after one of them is clicked
+                // Deactivate all three buttons
                 DeactivateUpgradeButtons();
+
+                // Reactivate the change button if it was originally active
+                if (changeButton.interactable)
+                {
+                    updateButton.interactable = true;
+                    Debug.Log("Change button reactivated.");
+                }
+
+                // Reactivate the update button if it was originally active
+                if (updateButton.interactable)
+                {
+                    changeButton.interactable = true;
+                    Debug.Log("Update button reactivated.");
+                }
             }
             else
             {
-                Debug.Log("Card already upgraded!");
+                Debug.Log("Card already upgraded or changed!");
             }
         }
         else
         {
             Debug.Log("Invalid card index or button index!");
         }
+    }
+
+    // Method to handle changing the card type when a card is clicked
+    public void ChangeCardType(Card2 card)
+    {
+        // Change the card type to the next type in the enum
+        switch (card.cardType)
+        {
+            case CardType.Holy:
+                card.cardType = CardType.Terrestrial;
+                break;
+            case CardType.Terrestrial:
+                card.cardType = CardType.Demonic;
+                break;
+            case CardType.Demonic:
+                card.cardType = CardType.Holy;
+                break;
+        }
+        Debug.Log("Card type changed: " + card.cardType);
     }
 
     // Method to deactivate all three upgrade buttons
