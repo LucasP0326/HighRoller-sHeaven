@@ -59,6 +59,9 @@ public class GameManager2 : MonoBehaviour
     public Button reverseButton; // Reference to the Reverse button
     public Button updateButton; // Reference to the Update button in the UI
 
+    public Button[] cardButtons; // Array to hold the buttons representing cards in the hand
+    private bool[] cardUpgraded; // Array to track whether each card has been upgraded
+
     private int regainCount = 0; // Counter to track how many times the Regain button has been used
 
     // Reverse card comparison state
@@ -125,6 +128,20 @@ public class GameManager2 : MonoBehaviour
         if (updateButton != null)
         {
             updateButton.onClick.AddListener(UpdateCards);
+        }
+
+        // Initialize cardUpgraded array
+        cardUpgraded = new bool[cardButtons.Length];
+        for (int i = 0; i < cardUpgraded.Length; i++)
+        {
+            cardUpgraded[i] = false; // Initially, no cards are upgraded
+        }
+
+        // Add listeners to each card button
+        for (int i = 0; i < cardButtons.Length; i++)
+        {
+            int index = i; // Capture the current value of i for the lambda expression
+            cardButtons[i].onClick.AddListener(() => SelectCard(index));
         }
     }
 
@@ -602,26 +619,56 @@ public class GameManager2 : MonoBehaviour
             return; // Exit the method to prevent further execution
         }
 
-        // Check if the player's hand is not empty
-        if (playerHand.Count > 0)
+        // Reactivate the upgrade buttons
+        for (int i = 0; i < cardButtons.Length; i++)
         {
-            // Assuming you have a UI where the player can click on cards, and each card has a corresponding index in the playerHand list
-            // You can set up your UI buttons to call a method with the index of the clicked card as a parameter
+            cardButtons[i].interactable = true;
+        }
+    }
 
-            // Iterate over each index in the player's hand
-            for (int i = 0; i < playerHand.Count; i++)
+    // Method to select a card from the hand based on the button clicked
+    void SelectCard(int index)
+    {
+        // Check if the index is within the valid range of playerHand and cardButtons
+        if (index >= 0 && index < playerHand.Count && index < cardButtons.Length)
+        {
+            Card2 selectedCard = playerHand[index];
+
+            // Check if the card has not been upgraded
+            if (!cardUpgraded[index])
             {
-                Card2 selectedCard = playerHand[i];
-
                 // Update the selected card's value
                 UpdateCardValue(selectedCard);
-
                 Debug.Log("Card value updated: " + selectedCard.cardValue);
+
+                // Mark the card as upgraded
+                cardUpgraded[index] = true;
+
+                // Deactivate the button
+                cardButtons[index].interactable = false;
+            }
+            else
+            {
+                Debug.Log("Card already upgraded!");
             }
         }
         else
         {
-            Debug.Log("Player's hand is empty!");
+            Debug.Log("Invalid card index or button index!");
+        }
+    }
+
+    // Method to reactivate all buttons (used after drawing new cards or game reset)
+    void ReactivateButtons()
+    {
+        for (int i = 0; i < cardButtons.Length; i++)
+        {
+            cardButtons[i].interactable = true; // Activate all buttons
+        }
+        // Reset cardUpgraded array
+        for (int i = 0; i < cardUpgraded.Length; i++)
+        {
+            cardUpgraded[i] = false; // Reset all cards as not upgraded
         }
     }
 

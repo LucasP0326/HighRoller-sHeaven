@@ -4233,7 +4233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1033286549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5199,6 +5199,10 @@ MonoBehaviour:
   regainButton: {fileID: 1367848838}
   reverseButton: {fileID: 1564474946}
   updateButton: {fileID: 1339233519}
+  cardButtons:
+  - {fileID: 1033286550}
+  - {fileID: 1956979441}
+  - {fileID: 1277178702}
   reverseCardComparison: 0
 --- !u!82 &1147371472
 AudioSource:
@@ -5812,7 +5816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1277178701
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9368,7 +9372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1956979440
 RectTransform:
   m_ObjectHideFlags: 0
