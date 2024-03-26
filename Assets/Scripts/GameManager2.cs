@@ -450,46 +450,73 @@ public class GameManager2 : MonoBehaviour
             opponentCardText.text = "Opponent played Terrestrial";
 
         // Reverse card comparison for types
-        bool reverseTypeComparison = reverseCardComparison;
+        //bool reverseTypeComparison = reverseCardComparison;
 
         // Determine the winner based on card types and values
-        if ((!reverseTypeComparison && playerCardType == opponentCardType) ||
-            (reverseTypeComparison && ((playerCardType == CardType.Holy && opponentCardType == CardType.Terrestrial) ||
+        if ((!reverseCardComparison && playerCardType == opponentCardType) ||
+            (reverseCardComparison && ((playerCardType == CardType.Holy && opponentCardType == CardType.Terrestrial) ||
                                        (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Demonic) ||
                                        (playerCardType == CardType.Demonic && opponentCardType == CardType.Holy))))
         {
-            if (playerCardValue >= opponentCardValue)
+            if (playerCardValue > opponentCardValue)
             {
                 Debug.Log("Player Won");
                 textNotifications.text = "Opponent loses a life!";
                 opponentLives--; // Decrease opponent's life count
                 Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
             }
-            else
+            else if (playerCardValue < opponentCardValue)
             {
                 Debug.Log("Player lose");
                 textNotifications.text = "Player loses a life!";
                 playerLives--; // Decrease player's life count
                 Debug.Log("Player Lives Remaining: " + playerLives); // Debug
+            }
+            else
+            {
+                Debug.Log("It's a tie");
+                textNotifications.text = "It's a tie!";
             }
         }
         else
         {
-            if ((playerCardType == CardType.Holy && opponentCardType == CardType.Demonic) ||
-                (playerCardType == CardType.Demonic && opponentCardType == CardType.Terrestrial) ||
-                (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
+            if (reverseCardComparison == false)
             {
-                Debug.Log("Player Won");
-                textNotifications.text = "Opponent loses a life!";
-                opponentLives--; // Decrease opponent's life count
-                Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
+                if ((playerCardType == CardType.Holy && opponentCardType == CardType.Demonic) ||
+                    (playerCardType == CardType.Demonic && opponentCardType == CardType.Terrestrial) ||
+                    (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Holy))
+                {
+                    Debug.Log("Player Won");
+                    textNotifications.text = "Opponent loses a life!";
+                    opponentLives--; // Decrease opponent's life count
+                    Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
+                }
+                else
+                {
+                    Debug.Log("Player lose");
+                    textNotifications.text = "Player loses a life!";
+                    playerLives--; // Decrease player's life count
+                    Debug.Log("Player Lives Remaining: " + playerLives); // Debug
+                }
             }
-            else
+            else if (reverseCardComparison == true)
             {
-                Debug.Log("Player lose");
-                textNotifications.text = "Player loses a life!";
-                playerLives--; // Decrease player's life count
-                Debug.Log("Player Lives Remaining: " + playerLives); // Debug
+               if ((playerCardType == CardType.Demonic && opponentCardType == CardType.Holy) ||
+                    (playerCardType == CardType.Terrestrial && opponentCardType == CardType.Demonic) ||
+                    (playerCardType == CardType.Holy && opponentCardType == CardType.Terrestrial))
+                {
+                    Debug.Log("Player Won");
+                    textNotifications.text = "Opponent loses a life!";
+                    opponentLives--; // Decrease opponent's life count
+                    Debug.Log("Opponent Lives Remaining: " + opponentLives); // Debug
+                }
+                else
+                {
+                    Debug.Log("Player lose");
+                    textNotifications.text = "Player loses a life!";
+                    playerLives--; // Decrease player's life count
+                    Debug.Log("Player Lives Remaining: " + playerLives); // Debug
+                } 
             }
         }
 
