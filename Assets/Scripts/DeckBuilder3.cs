@@ -29,6 +29,14 @@ public class DeckBuilder3 : MonoBehaviour
         // Check if the sceneToLoad reference is not null
         if (!string.IsNullOrEmpty(SceneToLoad))
         {
+            foreach (Card2 card in customPlayerDeck)
+            {
+                card.gameObject.SetActive(false);
+            }
+            foreach (Card2 card in unchosenCards)
+            {
+                card.gameObject.SetActive(false);
+            }
             // Load the scene by its name
             UnityEngine.SceneManagement.SceneManager.LoadScene(SceneToLoad);
         }
