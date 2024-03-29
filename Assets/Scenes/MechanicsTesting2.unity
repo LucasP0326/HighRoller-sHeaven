@@ -1905,7 +1905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &275055089
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6398,9 +6398,9 @@ MonoBehaviour:
   - {fileID: 1956979441}
   - {fileID: 1277178702}
   reverseCardComparison: 0
-  introScreen: {fileID: 0}
-  opponentDeclare: {fileID: 0}
-  opponent: {fileID: 0}
+  introScreen: {fileID: 275055088}
+  opponentDeclare: {fileID: 2091251102}
+  opponent: {fileID: 158709915}
 --- !u!82 &1147371472
 AudioSource:
   m_ObjectHideFlags: 0
