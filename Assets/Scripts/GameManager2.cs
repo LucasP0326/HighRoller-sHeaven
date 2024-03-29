@@ -42,8 +42,15 @@ public class GameManager2 : MonoBehaviour
 
     // Original decks to replenish at game reset
     public List<Card2> startingPlayerDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
-    public List<Card2> startingOpponentDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
 
+    [Header("Opponent Decks")]
+    public int deckToUse; //which deck will be used
+    public List<Card2> startingOpponentDeck = new List<Card2>(); //original starting decks that can be changed in deck editor
+    public List<Card2> envyDeck = new List<Card2>(); //Envy Deck
+    public List<Card2> greedDeck = new List<Card2>(); //Greed Deck
+    public List<Card2> lustDeck = new List<Card2>(); //Lust Deck
+
+    [Header("Other Settings")]
     public List<Card2> discardPile = new List<Card2>(); // Create a list to represent the discard pile
 
     public int playerLives = 5;
@@ -70,8 +77,19 @@ public class GameManager2 : MonoBehaviour
 
     bool reverseUsed = false; // Flag to track if Reverse has been used
 
+    [Header("Game Intro")]
+    public GameObject introScreen;
+    public TextMeshProUGUI opponentDeclare;
+    public TextMeshProUGUI opponent;
+
     // Start is called before the first frame update
     void Start()
+    {
+        deckToUse  = Random.Range(0, 3);
+        StartCoroutine(GameIntro());
+    }
+
+    void Start2()
     {
         // Set player deck to be whatever is marked as starting deck
         playerDeck.Clear();
@@ -92,9 +110,33 @@ public class GameManager2 : MonoBehaviour
         playerHand.Clear();
         // Set opponent deck to be whatever is marked as starting deck
         opponentDeck.Clear();
-        foreach (Card2 card in startingOpponentDeck)
+        if(deckToUse == 0)
         {
-            opponentDeck.Add(card);
+            foreach (Card2 card in startingOpponentDeck)
+            {
+                opponentDeck.Add(card);
+            }
+        }
+        if(deckToUse == 1)
+        {
+            foreach (Card2 card in envyDeck)
+            {
+                opponentDeck.Add(card);
+            }
+        }
+        if(deckToUse == 2)
+        {
+            foreach (Card2 card in greedDeck)
+            {
+                opponentDeck.Add(card);
+            }
+        }
+        if(deckToUse == 3)
+        {
+            foreach (Card2 card in lustDeck)
+            {
+                opponentDeck.Add(card);
+            }
         }
 
         textNotifications.text = "";
@@ -246,6 +288,10 @@ public class GameManager2 : MonoBehaviour
         }
 
         // Clear opponent's hand
+        foreach (Card2 card in opponentHand)
+        {
+            card.gameObject.SetActive(false);
+        }
         opponentHand.Clear();
 
         // Disable all cards in player deck
@@ -259,6 +305,7 @@ public class GameManager2 : MonoBehaviour
         {
             card.gameObject.SetActive(false);
         }
+        opponentDeck.Clear();
 
         // Set ReverseCardComparison back to false
         reverseCardComparison = false;
@@ -812,6 +859,36 @@ public class GameManager2 : MonoBehaviour
     {
         card.cardValue++; // Increase the card value by 1
         Debug.Log("Card value updated: " + card.cardValue);
+    }
+
+    public IEnumerator GameIntro()
+    {
+        introScreen.SetActive(true);
+        opponentDeclare.text = "";
+        opponent.text = "";
+        yield return new WaitForSeconds(0.5f);
+        opponentDeclare.text = "Your Opponent Is";
+        yield return new WaitForSeconds(1.5f);
+        if(deckToUse == 0)
+        {
+            opponent.text = "Generic Enemy";
+        }
+        if(deckToUse == 1)
+        {
+            opponent.text = "Envy";
+        }
+        if(deckToUse == 2)
+        {
+            opponent.text = "Greed";
+        }
+        if(deckToUse == 3)
+        {
+            opponent.text = "Lust";
+        }
+        yield return new WaitForSeconds(1.5f);
+        introScreen.SetActive(false);
+        Start2();
+        yield return null;
     }
 }
 
