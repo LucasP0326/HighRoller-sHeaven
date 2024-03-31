@@ -1419,7 +1419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -538.75, y: -98.25}
+  m_AnchoredPosition: {x: -538.75, y: -71}
   m_SizeDelta: {x: 500, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &480943895
@@ -2854,7 +2854,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: 33}
+  m_AnchoredPosition: {x: 90, y: 34.54}
   m_SizeDelta: {x: 40, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992487994
@@ -3409,6 +3409,7 @@ MonoBehaviour:
   - {fileID: 224813708}
   deckData: {fileID: 1603395687}
   cardChoose: {fileID: 1228880686}
+  source: {fileID: 1693577381}
 --- !u!4 &1228880685
 Transform:
   m_ObjectHideFlags: 0
@@ -4644,7 +4645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1693577380
 Transform:
   m_ObjectHideFlags: 0
@@ -4669,9 +4670,9 @@ AudioSource:
   m_GameObject: {fileID: 1693577379}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 8886997520946113244, guid: fb8985a42a8be674282ad5a4f460ed70, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 1cc656cb3ceb28142973243b379ad853, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4791,7 +4792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 87.74997, y: -34.5}
+  m_AnchoredPosition: {x: 87.74997, y: -32.5}
   m_SizeDelta: {x: 40, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704987394
@@ -5448,7 +5449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -538.75, y: 266}
+  m_AnchoredPosition: {x: -538.75, y: 273}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880754243
@@ -6409,7 +6410,7 @@ PrefabInstance:
       propertyPath: cardDescription
       value: 'Type: Demonic
 
-        Value: 1
+        Value: I
 
         Information: A simple imp,
         these demons are not particularly powerful.  More mischevous and troublesome
@@ -7443,7 +7444,7 @@ PrefabInstance:
       propertyPath: cardDescription
       value: 'Type: Holy
 
-        Value: 1
+        Value: I
 
         Information: An angelic putto,
         this angelic child is one that has oft been seen in human art presented as
@@ -7780,7 +7781,7 @@ PrefabInstance:
       propertyPath: cardDescription
       value: 'Type: Terrestrial
 
-        Value: 1
+        Value: I
 
         Information: A stone age
         warrior, mankind in this day and age found themselves struggling for even

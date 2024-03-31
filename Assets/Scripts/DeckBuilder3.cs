@@ -17,7 +17,8 @@ public class DeckBuilder3 : MonoBehaviour
     public List<Card2> unchosenCards;
     public DeckData deckData; //Reference to Deck Data
     public AudioSource cardChoose;
-
+    public AudioSource source;
+    
     void Start()
     {
         AssignSpecificAvailableCards();
@@ -88,6 +89,7 @@ public class DeckBuilder3 : MonoBehaviour
         // Clear the player's deck in DeckData
         DeckData.playerDeck.Clear();
         customPlayerDeck.Clear();
+        source.Play(); // This just adds the sound effect.
     }
 
     public void AddToCurrentDeck(Transform cardTransform)
@@ -135,6 +137,8 @@ public class DeckBuilder3 : MonoBehaviour
 
         // Save the current deck to DeckData
         DeckData.playerDeck = new List<Card2>(customPlayerDeck);
+        source.Play(); // This just adds the sound effect.
+
 
         // Log the contents of playerDeck after saving
         Debug.Log("After saving: Player Deck Count: " + DeckData.playerDeck.Count);
