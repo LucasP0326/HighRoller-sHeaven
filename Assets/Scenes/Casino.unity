@@ -2204,7 +2204,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &149347165
 PrefabInstance:
@@ -3747,6 +3747,201 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3241444196432654499, guid: cb2e86b9dfb7ed64893d3d6345e3180d, type: 3}
   m_PrefabInstance: {fileID: 243586844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &251003642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 251003643}
+  - component: {fileID: 251003646}
+  - component: {fileID: 251003645}
+  - component: {fileID: 251003644}
+  m_Layer: 0
+  m_Name: Envy01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &251003643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251003642}
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1249.0258, y: -465.8414, z: -352.95898}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1736978817}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &251003644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251003642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 823514576}
+  dialogueText: {fileID: 979267191}
+  nameText: {fileID: 1121779135}
+  portrait: {fileID: 1081126803}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Envy
+    portrait: {fileID: 0}
+    message: Heard you're starting to win some games 'round here.  Hope that doesn't
+      mean you already think you're tough stuff.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Just trying to get on by.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Envy
+    portrait: {fileID: 0}
+    message: Well, you ought to know then that it's looking like I'll be your next
+      opponent.  Fair warning, I've met you angelic types before, and I know how
+      to play your game.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: We'll just have to see about that now, won't we?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &251003645
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251003642}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: -0.000015258789, y: 0.0000019073486, z: 0}
+--- !u!212 &251003646
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251003642}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e301a965707674548bdc0d6148018b64, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &251812681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 251812682}
+  m_Layer: 0
+  m_Name: Stage 0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &251812682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251812681}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1249.0107, y: 465.4904, z: 353.085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 585897737}
+  - {fileID: 1192650163}
+  - {fileID: 1403214931}
+  m_Father: {fileID: 1592853271}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &255310072
 GameObject:
   m_ObjectHideFlags: 0
@@ -3915,7 +4110,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &266654107
 GameObject:
@@ -5236,7 +5431,7 @@ Transform:
   - {fileID: 1035905529}
   - {fileID: 1891857806}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &335793069
 GameObject:
@@ -6200,6 +6395,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6970274725327458248, guid: ee2635db75bc940418f56e97399caf59, type: 3}
   m_PrefabInstance: {fileID: 393593865}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &400391000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400391001}
+  m_Layer: 0
+  m_Name: Stage 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400391001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400391000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1249.0107, y: 465.4904, z: 353.085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1511419237}
+  - {fileID: 798935837}
+  - {fileID: 1950479463}
+  m_Father: {fileID: 1592853271}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &401099493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7076,6 +7305,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475229342}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &478685635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 478685636}
+  - component: {fileID: 478685637}
+  m_Layer: 0
+  m_Name: Stage Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &478685636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478685635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1265.6036, y: 466.75656, z: 346.83896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478685637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478685635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a0d653af54eee4d980a7dc138690b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressData: {fileID: 977693858}
+  stage: 0
+  stages:
+  - {fileID: 251812681}
+  - {fileID: 1736978816}
+  - {fileID: 548682262}
+  - {fileID: 400391000}
 --- !u!1001 &481477312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8355,6 +8635,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4895021042762376, guid: ecf1c889fcf7a4545b14984e066fca3f, type: 3}
   m_PrefabInstance: {fileID: 547854712}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &548682262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 548682263}
+  m_Layer: 0
+  m_Name: Stage 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &548682263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548682262}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1249.0107, y: 465.4904, z: 353.085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1557110125}
+  - {fileID: 1312982165}
+  - {fileID: 903592959}
+  m_Father: {fileID: 1592853271}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &549099660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8677,7 +8991,7 @@ RectTransform:
   - {fileID: 450586027}
   - {fileID: 2029641107}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9183,7 +9497,7 @@ GameObject:
   - component: {fileID: 585897739}
   - component: {fileID: 585897738}
   m_Layer: 0
-  m_Name: Envy01
+  m_Name: Envy00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9197,11 +9511,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585897736}
   m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
-  m_LocalPosition: {x: -0.015, y: -0.351, z: 0.126}
+  m_LocalPosition: {x: -1249.0258, y: -465.8414, z: -352.95898}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1592853271}
+  m_Father: {fileID: 251812682}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
 --- !u!114 &585897738
@@ -11684,7 +11998,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &791057141
 PrefabInstance:
@@ -12103,6 +12417,172 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5023cd28884cb154c8d8e8221b39aab1, type: 3}
   m_PrefabInstance: {fileID: 794395086}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &798935836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798935837}
+  - component: {fileID: 798935840}
+  - component: {fileID: 798935839}
+  - component: {fileID: 798935838}
+  m_Layer: 0
+  m_Name: Greed03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798935837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798935836}
+  m_LocalRotation: {x: -0, y: 0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1268.5835, y: -465.6992, z: -329.7114}
+  m_LocalScale: {x: 0.050000004, y: 0.05, z: 0.050000004}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400391001}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &798935838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798935836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 450586026}
+  dialogueText: {fileID: 563105498}
+  nameText: {fileID: 806005181}
+  portrait: {fileID: 842891606}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Huh, it seems I was right to face you when i did.  Should've wagered
+      more than I did though, I guess.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: There.  It's done.  You learn what you wanted to know?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Ooh, yes I did.  That, and so much more.  Be seeing you around, angel.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: I get the bad feeling I will.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Heh.  My favorite words.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &798935839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798935836}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: 0.000030517578, y: 0.0000019073486, z: -0.000030517578}
+--- !u!212 &798935840
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798935836}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ea0315fc9d72e7144a9caf4a9060b91e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &806005179
 GameObject:
   m_ObjectHideFlags: 0
@@ -13327,6 +13807,184 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 45dfd151fbb71a14bbb191a3e96e489b, type: 3}
   m_PrefabInstance: {fileID: 890898465}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &903592958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903592959}
+  - component: {fileID: 903592962}
+  - component: {fileID: 903592961}
+  - component: {fileID: 903592960}
+  m_Layer: 0
+  m_Name: Lust02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &903592959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903592958}
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1266.6722, y: -465.6424, z: -352.56735}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 548682263}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &903592960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903592958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 2029641106}
+  dialogueText: {fileID: 1681868699}
+  nameText: {fileID: 1407373838}
+  portrait: {fileID: 1118003573}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Lust
+    portrait: {fileID: 0}
+    message: So you really beat Envy then, huh?  And here I thought SHE was going
+      to be the one to blow this casino away.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Well it's nice to know I haven't been the only one you've been creepily
+      watching.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Lust
+    portrait: {fileID: 0}
+    message: Nothing creepy about it.  Simply...admiration.  Your next opponent on
+      the other hand, Greed, he has the resources at his disposal to make your life
+      difficult.  Be ready for some high performing cards.  Tread lighty.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Wow, was that actually an entire sentence out of you without creeiply
+      flirting with-
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Lust
+    portrait: {fileID: 0}
+    message: And when you ARE done defeating Greed, you're welcome to stop by my
+      room so we can celebrate privately together.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Yep, there it is.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &903592961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903592958}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.2}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0}
+--- !u!212 &903592962
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903592958}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a2dc39fba80ce5145baf3ae63ee17a7d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &907123237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13868,6 +14526,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976375016}
   m_CullTransparentMesh: 1
+--- !u!1 &977693857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977693859}
+  - component: {fileID: 977693858}
+  m_Layer: 0
+  m_Name: ProgressData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &977693858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977693857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69eaf9068e64b25438bb201f84b69a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &977693859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977693857}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1265.6036, y: 466.75656, z: 346.83896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &979267189
 GameObject:
   m_ObjectHideFlags: 0
@@ -14913,7 +15615,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1058491061
 PrefabInstance:
@@ -15258,6 +15960,175 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9200530208371740296, guid: 08ab363f2f3717245acfc2e5fe47e409, type: 3}
   m_PrefabInstance: {fileID: 1066746378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1070351686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1070351687}
+  - component: {fileID: 1070351690}
+  - component: {fileID: 1070351689}
+  - component: {fileID: 1070351688}
+  m_Layer: 0
+  m_Name: Greed01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1070351687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070351686}
+  m_LocalRotation: {x: -0, y: 0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1268.5835, y: -465.6992, z: -329.7114}
+  m_LocalScale: {x: 0.050000004, y: 0.05, z: 0.050000004}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1736978817}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &1070351688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070351686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 450586026}
+  dialogueText: {fileID: 563105498}
+  nameText: {fileID: 806005181}
+  portrait: {fileID: 842891606}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Heh.  So I see you've started taking a liking to my table.  I'm glad
+      to know that it's been...accomodating you well.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Long as it helps me get back to where I belong, I guess I don't mind
+      it.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Well, be warned.  Everybody's luck runs out eventually.  Watch out for
+      Envy, though.  I hear she longs for the abilities that you angels possess. 
+      If anybody knows how to prepare to face one, it's her.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: I appreciate the warning.  Thanks.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Heh.  Don't mention it.  See you on the other side.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &1070351689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070351686}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: 0.000030517578, y: 0.0000019073486, z: -0.000030517578}
+--- !u!212 &1070351690
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070351686}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ea0315fc9d72e7144a9caf4a9060b91e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1070815137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17487,7 +18358,7 @@ GameObject:
   - component: {fileID: 1192650166}
   - component: {fileID: 1192650165}
   m_Layer: 0
-  m_Name: Greed01
+  m_Name: Greed00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17501,11 +18372,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192650162}
   m_LocalRotation: {x: -0, y: 0.2588186, z: -0, w: 0.965926}
-  m_LocalPosition: {x: -19.57281, y: -0.20880938, z: 23.373608}
+  m_LocalPosition: {x: -1268.5835, y: -465.6992, z: -329.7114}
   m_LocalScale: {x: 0.050000004, y: 0.05, z: 0.050000004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1592853271}
+  m_Father: {fileID: 251812682}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
 --- !u!212 &1192650164
@@ -18409,7 +19280,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1251525620
 PrefabInstance:
@@ -19084,6 +19955,182 @@ Transform:
   m_Father: {fileID: 870999584}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: -7.029, z: 0}
+--- !u!1 &1312982164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1312982165}
+  - component: {fileID: 1312982168}
+  - component: {fileID: 1312982167}
+  - component: {fileID: 1312982166}
+  m_Layer: 0
+  m_Name: Greed02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1312982165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312982164}
+  m_LocalRotation: {x: -0, y: 0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1268.5835, y: -465.6992, z: -329.7114}
+  m_LocalScale: {x: 0.050000004, y: 0.05, z: 0.050000004}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 548682263}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &1312982166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312982164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 450586026}
+  dialogueText: {fileID: 563105498}
+  nameText: {fileID: 806005181}
+  portrait: {fileID: 842891606}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Huh; I see you really gave Envy a run for her money.  Not bad, may I
+      just say; not bad.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: You can save the flattery.  I know you want me to fail.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Oh on the contrary, I simply want to get a better sense of your abilities. 
+      That's why it'll be me you're facing next.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: I thought you preferred not to gamble.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Well, this should be interesting then.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Greed
+    portrait: {fileID: 0}
+    message: I don't, but there are some powerful people here who want to see what
+      you're capable of, and it's my job to report to them, so I'll be paying close
+      attention to our match.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &1312982167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312982164}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: 0.000030517578, y: 0.0000019073486, z: -0.000030517578}
+--- !u!212 &1312982168
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312982164}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ea0315fc9d72e7144a9caf4a9060b91e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1314617540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20029,7 +21076,7 @@ GameObject:
   - component: {fileID: 1403214932}
   - component: {fileID: 1403214934}
   m_Layer: 0
-  m_Name: Lust01
+  m_Name: Lust00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20043,11 +21090,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403214930}
   m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
-  m_LocalPosition: {x: -17.661505, y: -0.152, z: 0.5176339}
+  m_LocalPosition: {x: -1266.6722, y: -465.6424, z: -352.56735}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1592853271}
+  m_Father: {fileID: 251812682}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
 --- !u!65 &1403214932
@@ -21561,6 +22608,174 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9027060762515830505, guid: 62fb627048a415f4a8ae87282f8bd836, type: 3}
   m_PrefabInstance: {fileID: 1499363744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1511419236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1511419237}
+  - component: {fileID: 1511419240}
+  - component: {fileID: 1511419239}
+  - component: {fileID: 1511419238}
+  m_Layer: 0
+  m_Name: Envy03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1511419237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511419236}
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1249.0258, y: -465.8414, z: -352.95898}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400391001}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &1511419238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511419236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 823514576}
+  dialogueText: {fileID: 979267191}
+  nameText: {fileID: 1121779135}
+  portrait: {fileID: 1081126803}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Envy
+    portrait: {fileID: 0}
+    message: Brought down Greed too, huh?  It's one thing to bring me down, but Greed,
+      he's what you might call a 'top guy' around here.  You should watch your back,
+      and I say that for your own sake.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: I appreciate the warning.  Know anything about who I'm up against next?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Envy
+    portrait: {fileID: 0}
+    message: I hear it's that creepy guy.  One who hangs out in the lobby?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Envy
+    portrait: {fileID: 0}
+    message: 'Yeah, that''s him.  Cares more about playing cards that look good rather
+      than if they''re strong or not.  '
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: That sounds like him.  I'll be ready.  Thanks.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &1511419239
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511419236}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: -0.000015258789, y: 0.0000019073486, z: 0}
+--- !u!212 &1511419240
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511419236}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e301a965707674548bdc0d6148018b64, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1513499368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21963,6 +23178,166 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2587123632955916508, guid: 9bb513224d08f61429103180bcd844c3, type: 3}
   m_PrefabInstance: {fileID: 1554650805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1557110124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1557110125}
+  - component: {fileID: 1557110128}
+  - component: {fileID: 1557110127}
+  - component: {fileID: 1557110126}
+  m_Layer: 0
+  m_Name: Envy02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1557110125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557110124}
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1249.0258, y: -465.8414, z: -352.95898}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 548682263}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &1557110126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557110124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 823514576}
+  dialogueText: {fileID: 979267191}
+  nameText: {fileID: 1121779135}
+  portrait: {fileID: 1081126803}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Envy
+    portrait: {fileID: 0}
+    message: I gotta say, I'm impressed.  You got the better of me.  How'd you pull
+      it off?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Call it beginner's luck, I guess
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Envy
+    portrait: {fileID: 0}
+    message: Hey, beginner's luck or otherwise, not bad.  Next drink is on me if
+      you accept.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: I'll consder it.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &1557110127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557110124}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: -0.000015258789, y: 0.0000019073486, z: 0}
+--- !u!212 &1557110128
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557110124}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e301a965707674548bdc0d6148018b64, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1562736724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22748,11 +24123,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 585897737}
-  - {fileID: 1403214931}
-  - {fileID: 1192650163}
+  - {fileID: 251812682}
+  - {fileID: 1736978817}
+  - {fileID: 548682263}
+  - {fileID: 400391001}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1602353349
 PrefabInstance:
@@ -22978,7 +24354,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1624795027
 GameObject:
@@ -23043,7 +24419,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1637337641
 PrefabInstance:
@@ -24705,6 +26081,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6970274725327458248, guid: ee2635db75bc940418f56e97399caf59, type: 3}
   m_PrefabInstance: {fileID: 1733100210}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1736978816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736978817}
+  m_Layer: 0
+  m_Name: Stage 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1736978817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736978816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1249.0107, y: 465.4904, z: 353.085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 251003643}
+  - {fileID: 1070351687}
+  - {fileID: 1956164033}
+  m_Father: {fileID: 1592853271}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1737939553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25199,7 +26609,7 @@ Transform:
   - {fileID: 1830600003}
   - {fileID: 816606331}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1770441843
 PrefabInstance:
@@ -26203,7 +27613,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1869458251
 PrefabInstance:
@@ -27036,7 +28446,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1917354595
 PrefabInstance:
@@ -27358,6 +28768,167 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 45dfd151fbb71a14bbb191a3e96e489b, type: 3}
   m_PrefabInstance: {fileID: 1940697988}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1950479462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1950479463}
+  - component: {fileID: 1950479466}
+  - component: {fileID: 1950479465}
+  - component: {fileID: 1950479464}
+  m_Layer: 0
+  m_Name: Lust03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1950479463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950479462}
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1266.6722, y: -465.6424, z: -352.56735}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400391001}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &1950479464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950479462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 2029641106}
+  dialogueText: {fileID: 1681868699}
+  nameText: {fileID: 1407373838}
+  portrait: {fileID: 1118003573}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Lust
+    portrait: {fileID: 0}
+    message: Well well well.  Greed took quite a tumble, didn't he?  Don't expect
+      your next match to go so well, however.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: And why shouldn't I?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Lust
+    portrait: {fileID: 0}
+    message: Because it's me you'll be facing next, honey, and some people still
+      understand the strength of beauty in this world.  And pretty though you might
+      be, you don't stand a chance.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Wow.  I cannot wait to wipe that smug smile off your face.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &1950479465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950479462}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.2}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0}
+--- !u!212 &1950479466
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950479462}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a2dc39fba80ce5145baf3ae63ee17a7d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1952247619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27561,6 +29132,179 @@ MonoBehaviour:
   casinoNavigator: {fileID: 1892930715}
   targetCameraIndex: 1
   source: {fileID: 816606332}
+--- !u!1 &1956164032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1956164033}
+  - component: {fileID: 1956164036}
+  - component: {fileID: 1956164035}
+  - component: {fileID: 1956164034}
+  m_Layer: 0
+  m_Name: Lust01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1956164033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956164032}
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1266.6722, y: -465.6424, z: -352.56735}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1736978817}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &1956164034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956164032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 2029641106}
+  dialogueText: {fileID: 1681868699}
+  nameText: {fileID: 1407373838}
+  portrait: {fileID: 1118003573}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Lust
+    portrait: {fileID: 0}
+    message: Well, not bad.  Every new win makes you look all the more beautiful,
+      sweetheart.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Please don't call me that.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Lust
+    portrait: {fileID: 0}
+    message: Growing bold with your newest victory I see.  The confidence suits you.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: Please, just, don't talk to me.  Ever.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Lust
+    portrait: {fileID: 0}
+    message: Oh you'll come around eventually.  I'll be right here when you do.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Player
+    portrait: {fileID: 0}
+    message: I can't wait to get out of this place.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &1956164035
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956164032}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.2}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0}
+--- !u!212 &1956164036
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956164032}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a2dc39fba80ce5145baf3ae63ee17a7d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1958012353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29885,7 +31629,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2147044511
 GameObject:

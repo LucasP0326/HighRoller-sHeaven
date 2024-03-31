@@ -60,6 +60,7 @@ public class GameManager2 : MonoBehaviour
 
     Card2 card;
     public DeckData deckData; //Reference to Deck Data
+    public ProgressData progressData; //Reference to Progress Data
 
     public Button reshuffleButton; // Reference to the reshuffle button
     public Button regainButton; // Reference to the regain button
@@ -85,7 +86,7 @@ public class GameManager2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        deckToUse  = Random.Range(0, 3);
+        deckToUse = ProgressData.opponentNumber;
         StartCoroutine(GameIntro());
     }
 
@@ -315,6 +316,10 @@ public class GameManager2 : MonoBehaviour
 
     public IEnumerator DrawPlayerCards()
     {
+        //textNotifications.text = "";
+        //playerCardText.text = "";
+        //opponentCardText.text = "";
+        //yield return new WaitForSeconds(1f);
         List<int> availableSlots = new List<int>();
 
         // Find all available card slots
@@ -607,6 +612,15 @@ public class GameManager2 : MonoBehaviour
             winscreen.SetActive(true);
             Debug.Log("Player Wins the game!");
             fateText.text = "Player wins the game!";
+            if (ProgressData.opponentNumber < 3)
+            {
+                ProgressData.opponentNumber++;
+            }
+            else if (ProgressData.opponentNumber >= 3)
+            {
+                fateText.text = "Player has beaten the house!";
+                ProgressData.opponentNumber = 0;
+            }
         }
         else
         {
@@ -871,7 +885,7 @@ public class GameManager2 : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         if(deckToUse == 0)
         {
-            opponent.text = "Generic Enemy";
+            opponent.text = "Tutorial Enemy";
         }
         if(deckToUse == 1)
         {
