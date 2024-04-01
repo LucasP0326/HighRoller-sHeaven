@@ -843,6 +843,9 @@ public class GameManager2 : MonoBehaviour
                 break;
         }
         Debug.Log("Card type changed: " + card.cardType);
+
+        // Change the card's sprite
+        card.ChangeCardTypeAndSprite(0);
     }
 
     // Method to deactivate all three upgrade buttons
@@ -873,6 +876,9 @@ public class GameManager2 : MonoBehaviour
     {
         card.cardValue++; // Increase the card value by 1
         Debug.Log("Card value updated: " + card.cardValue);
+
+        // Upgrade the card's type and sprite
+        card.UpgradeCardTypeAndSprite(0);
     }
 
     public IEnumerator GameIntro()

@@ -7,36 +7,35 @@ using TMPro;
 
 public class Card2 : MonoBehaviour
 {
-    [TextArea(3, 10)] // This will create a text area with 3 to 10 lines
+    [TextArea(3, 10)]
     public string cardDescription;
     public bool hasBeenPlayed;
     public bool playerCard;
     public int handIndex;
-    public GameManager2.CardType cardType; // Added variable for card type
-
-    public int cardValue; //Numerical value for the cards
+    public GameManager2.CardType cardType;
+    public int cardValue;
 
     GameManager2 gm;
-    
-    public DeckBuilder3 deckBuilder; // Reference to the DeckBuilder script
+    public DeckBuilder3 deckBuilder;
     public bool inCustomDeck;
 
-    private bool updatingCardValue = false; // Flag to indicate if the card value is being updated
+    private bool updatingCardValue = false;
 
-    // Start is called before the first frame update
+    public enum CardType { Holy, Terrestrial, Demonic }
+
+    public SpriteRenderer spriteRenderer;
+
+    public Sprite[] upgradedSprites;
+    public Sprite[] changedSprites;
+
     private void Start()
     {
         gm = FindObjectOfType<GameManager2>();
-        DontDestroyOnLoad(this); // Make the card object persistent between scenes
+        DontDestroyOnLoad(this);
         Debug.Log("Card Created: " + name);
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void OnDestroy()
-    {
-        Debug.Log("Card Destroyed: " + name);
-    }
-
-    // Update is called once per frame
     void Update()
     {
         gm = FindObjectOfType<GameManager2>();
@@ -44,22 +43,19 @@ public class Card2 : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (updatingCardValue) // Check if the card value is being updated
+        if (updatingCardValue)
         {
-            return; // Exit the method early
+            return;
         }
 
         if (deckBuilder != null)
         {
-            //Debug.Log("Deck Builder Found");
-            // Check if the card's parent is an available deck slot
             if (inCustomDeck == false)
             {
                 if (deckBuilder.customPlayerDeck.Count < 10)
                 {
                     for (int i = 0; i < deckBuilder.availableDeckSlots.Length; i++)
                     {
-                        // Add the card to the current deck
                         deckBuilder.customPlayerDeck.Add(this);
                         deckBuilder.unchosenCards.Remove(this);
                         inCustomDeck = true;
@@ -76,10 +72,8 @@ public class Card2 : MonoBehaviour
             }
             else
             {
-                // Check if the card's parent is a current deck slot
                 for (int i = 0; i < deckBuilder.currentDeckSlots.Length; i++)
                 {
-                    // Remove the card from the current deck
                     deckBuilder.customPlayerDeck.Remove(this);
                     deckBuilder.unchosenCards.Add(this);
                     inCustomDeck = false;
@@ -92,33 +86,54 @@ public class Card2 : MonoBehaviour
         }
         else if (deckBuilder == null)
         {
-            //Debug.Log("Deck Builder Not Found");
             if (!hasBeenPlayed && playerCard)
             {
                 Debug.Log("Player card selected");
                 hasBeenPlayed = true;
-
                 gm.PlayerPlayCard(this);
             }
         }
     }
 
-    // Method to handle updating the card value when a card is clicked
     public void UpdateCardValue()
     {
-        cardValue++; // Increase the card value by 1
+        cardValue++;
         Debug.Log("Card value updated: " + cardValue);
     }
 
-    // Method to indicate that the card value is being updated
     public void StartUpdatingCardValue()
     {
         updatingCardValue = true;
     }
 
-    // Method to indicate that the card value update process is complete
     public void StopUpdatingCardValue()
     {
         updatingCardValue = false;
+    }
+
+    public void UpgradeCardSprite(int index)
+    {
+        if (index >= 0 && index < upgradedSprites.Length)
+        {
+            spriteRenderer.sprite = upgradedSprites[index];
+        }
+    }
+
+    public void ChangeCardSprite(int index)
+    {
+        if (index >= 0 && index < changedSprites.Length)
+        {
+            spriteRenderer.sprite = changedSprites[index];
+        }
+    }
+
+    public void UpgradeCardTypeAndSprite(int index)
+    {
+        UpgradeCardSprite(index);
+    }
+
+    public void ChangeCardTypeAndSprite(int index)
+    {
+        ChangeCardSprite(index);
     }
 }

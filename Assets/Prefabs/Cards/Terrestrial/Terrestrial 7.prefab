@@ -106,6 +106,10 @@ MonoBehaviour:
   cardValue: 7
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
+  spriteRenderer: {fileID: 0}
+  upgradedSprites: []
+  changedSprites:
+  - {fileID: 21300000, guid: 122cd8b6ab7367642a7df8c569e8b4d0, type: 3}
 --- !u!61 &7833633935825099191
 BoxCollider2D:
   m_ObjectHideFlags: 0
