@@ -1260,7 +1260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 300.2}
+  m_AnchoredPosition: {x: 0, y: 317}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &176086582
@@ -4875,7 +4875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 183.2}
+  m_AnchoredPosition: {x: 28, y: 227.79999}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &748175293
@@ -5019,7 +5019,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: 46}
+  m_AnchoredPosition: {x: 28, y: 96.79999}
   m_SizeDelta: {x: 600, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &749054874
@@ -5042,13 +5042,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\t\tSpecial Actions\n|Upgrade Card|\n-Spend 1 life to increase the numerial
-    value of a card by 1.\n|Change Type|\n-Spend 1 life to change a Card's Type.\n|Reverse
+  m_text: "\t\t\tSpecial Actions\n|Upgrade Card or Change Type|\n-Spend 1 life to
+    either increase the numerical value of a card by 1 or change a card's type.\n|Reverse
     Rules|\n-Spend 1 life to make the rules of the game the opposite of the standard
     for the duration of the match.\n|Reshuffle Hand|\n-Spend 1 life to reshuffle
     your current hand and draw 3 new cards.\n|Regain Life|\n-Discard the current
-    cards in your hand to gain 1 life and draw 3 new cards (These cards are removed
-    for the duration of the match and this can only be done twice.)"
+    cards in your hand to gain 1 life and draw 3 new cards. These cards are removed
+    for the duration of the match, and this can only be done twice."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b77303e148fc1048b60af91fe1c23a2, type: 2}
   m_sharedMaterial: {fileID: -6393424504887518969, guid: 0b77303e148fc1048b60af91fe1c23a2, type: 2}
@@ -5075,8 +5075,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
