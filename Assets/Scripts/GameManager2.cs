@@ -829,6 +829,14 @@ public class GameManager2 : MonoBehaviour
     // Method to handle changing the card type when a card is clicked
     public void ChangeCardType(Card2 card)
     {
+        if (card.IsLocked())
+        {
+            Debug.Log("Card is locked and cannot be changed further.");
+            // Increase player's life by 1
+            playerLives++;
+            return;
+        }
+
         // Change the card type to the next type in the enum
         switch (card.cardType)
         {
@@ -846,6 +854,8 @@ public class GameManager2 : MonoBehaviour
 
         // Change the card's sprite
         card.ChangeCardTypeAndSprite(0);
+
+        card.LockCard(); // Lock the card after it has been changed
     }
 
     // Method to deactivate all three upgrade buttons
@@ -874,11 +884,29 @@ public class GameManager2 : MonoBehaviour
     // Method to handle updating the card value when a card is clicked
     public void UpdateCardValue(Card2 card)
     {
-        card.cardValue++; // Increase the card value by 1
-        Debug.Log("Card value updated: " + card.cardValue);
+        if (card.IsLocked())
+        {
+            Debug.Log("Card is locked and cannot be updated further.");
+            // Increase player's life by 1
+            playerLives++;
+            return;
+        }
 
-        // Upgrade the card's type and sprite
-        card.UpgradeCardTypeAndSprite(0);
+        if (card.cardValue < 7) // Check if the card value is less than 7
+        {
+            card.cardValue++; // Increase the card value by 1
+            Debug.Log("Card value updated: " + card.cardValue);
+
+            // Upgrade the card's type and sprite
+            card.UpgradeCardTypeAndSprite(0);
+        }
+        else
+        {
+            Debug.Log("Card value cannot be updated further as it is already 7 or higher.");
+            card.LockCard(); // Lock the card
+                             // Increase player's life by 1
+            playerLives++;
+        }
     }
 
     public IEnumerator GameIntro()

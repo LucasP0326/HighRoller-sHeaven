@@ -21,6 +21,8 @@ public class Card2 : MonoBehaviour
 
     private bool updatingCardValue = false;
 
+    private bool isLocked = false;
+
     public enum CardType { Holy, Terrestrial, Demonic }
 
     public SpriteRenderer spriteRenderer;
@@ -95,22 +97,6 @@ public class Card2 : MonoBehaviour
         }
     }
 
-    public void UpdateCardValue()
-    {
-        cardValue++;
-        Debug.Log("Card value updated: " + cardValue);
-    }
-
-    public void StartUpdatingCardValue()
-    {
-        updatingCardValue = true;
-    }
-
-    public void StopUpdatingCardValue()
-    {
-        updatingCardValue = false;
-    }
-
     public void UpgradeCardSprite(int index)
     {
         if (index >= 0 && index < upgradedSprites.Length)
@@ -135,5 +121,16 @@ public class Card2 : MonoBehaviour
     public void ChangeCardTypeAndSprite(int index)
     {
         ChangeCardSprite(index);
+    }
+
+    public void LockCard()
+    {
+        isLocked = true;
+        Debug.Log("Card is now locked and cannot be updated or changed further.");
+    }
+
+    public bool IsLocked()
+    {
+        return isLocked;
     }
 }
