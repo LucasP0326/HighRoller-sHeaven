@@ -45,7 +45,7 @@ public class CasinoNavigator : MonoBehaviour
 
     public void ReturnToLobby()
     {
-        if(inConversation == false)
+        if(inConversation == false && Time.timeScale != 0)
         {
             // Disable the current camera
             cameras[currentCameraIndex].gameObject.SetActive(false);

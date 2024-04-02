@@ -55,7 +55,7 @@ public class DialogueController : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (inConversation == false)
+        if (inConversation == false && Time.timeScale != 0)
         {
             BeginConversation();
             GoNext();

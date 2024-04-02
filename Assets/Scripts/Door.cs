@@ -23,7 +23,7 @@ public class Door : MonoBehaviour
     void OnMouseDown()
     {
         // Check if the camera switcher script is assigned
-        if (casinoNavigator != null && casinoNavigator.inConversation == false)
+        if (casinoNavigator != null && casinoNavigator.inConversation == false && Time.timeScale != 0)
         {
             source.Play(); // This just adds the sound effect.
             // Call the camera switch function with the specified target camera index
