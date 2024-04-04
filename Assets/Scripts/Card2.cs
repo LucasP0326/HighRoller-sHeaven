@@ -10,6 +10,7 @@ public class Card2 : MonoBehaviour
     [TextArea(3, 10)]
     public string cardDescription;
     public bool hasBeenPlayed;
+    public bool revealed = true;
     public bool playerCard;
     public int handIndex;
     public GameManager2.CardType cardType;
@@ -34,7 +35,7 @@ public class Card2 : MonoBehaviour
     {
         gm = FindObjectOfType<GameManager2>();
         DontDestroyOnLoad(this);
-        Debug.Log("Card Created: " + name);
+        //Debug.Log("Card Created: " + name);
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
