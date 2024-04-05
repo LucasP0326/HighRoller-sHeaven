@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class CasinoNavigator : MonoBehaviour
 {
     public Camera[] cameras; // Array to hold all your cameras
-    private int currentCameraIndex = 0;
+    public GameObject[] buttons; //Array for lobby buttons
+    public int currentCameraIndex = 0;
     public GameObject lobbyButton;
     public bool inConversation;
     public DialogueController[] characters;
@@ -40,6 +41,31 @@ public class CasinoNavigator : MonoBehaviour
         if (allCharactersNotInConversation)
         {
             inConversation = false;
+        }
+
+        if (currentCameraIndex == 0)
+        {
+            buttons[0].SetActive(false);
+            buttons[1].SetActive(false);
+            buttons[2].SetActive(false);
+        }
+        if (currentCameraIndex == 1)
+        {
+            buttons[0].SetActive(false);
+            buttons[1].SetActive(true);
+            buttons[2].SetActive(false);
+        }
+        if (currentCameraIndex == 2)
+        {
+            buttons[0].SetActive(false);
+            buttons[1].SetActive(false);
+            buttons[2].SetActive(true);
+        }
+        if (currentCameraIndex == 3)
+        {
+            buttons[0].SetActive(true);
+            buttons[1].SetActive(false);
+            buttons[2].SetActive(false);
         }
     }
 
