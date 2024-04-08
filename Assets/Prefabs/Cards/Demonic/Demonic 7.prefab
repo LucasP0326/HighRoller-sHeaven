@@ -110,7 +110,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites:
-  - {fileID: 21300000, guid: f9cb3ff7207d7fb4892a14bc4db83861, type: 3}
+  - {fileID: 21300000, guid: f18e8435c21088b498dc90034619ed00, type: 3}
 --- !u!61 &-1551852121459263449
 BoxCollider2D:
   m_ObjectHideFlags: 0

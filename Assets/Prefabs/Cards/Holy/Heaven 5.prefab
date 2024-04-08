@@ -111,7 +111,7 @@ MonoBehaviour:
   upgradedSprites:
   - {fileID: 21300000, guid: 7eedfa00807266140aa21d6145b24e8a, type: 3}
   changedSprites:
-  - {fileID: 21300000, guid: 322122aa49fe3184b801ee5a50313197, type: 3}
+  - {fileID: 21300000, guid: 35029a0ff2c6d6b41b5791b82090cf96, type: 3}
 --- !u!61 &6202377757416609126
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardDescription: 
   hasBeenPlayed: 0
+  revealed: 1
   playerCard: 0
   handIndex: 0
   cardType: 1
@@ -108,7 +109,7 @@ MonoBehaviour:
   inCustomDeck: 0
   spriteRenderer: {fileID: 0}
   upgradedSprites:
-  - {fileID: 21300000, guid: 6cced6490ff20a2479a17f911dd3c371, type: 3}
+  - {fileID: 21300000, guid: e281592a80b32a74ea419c1634891343, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 9d3151cebb60df447888098aebf326b7, type: 3}
 --- !u!61 &-5129809072424906584
