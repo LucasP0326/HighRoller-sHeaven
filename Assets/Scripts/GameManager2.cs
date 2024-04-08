@@ -311,6 +311,12 @@ public class GameManager2 : MonoBehaviour
         // Set ReverseCardComparison back to false
         reverseCardComparison = false;
 
+        // Reset regain count
+        regainCount = 0;
+
+        // Reset reverseUsed flag
+        reverseUsed = false;
+
         Start();
     }
 
