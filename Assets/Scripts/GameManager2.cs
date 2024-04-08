@@ -389,8 +389,8 @@ public class GameManager2 : MonoBehaviour
         // Debug log to check available slots
         Debug.Log("Available Opponent card slots: " + availableSlots.Count);
 
-        // Draw a random card for each available slot
-        foreach (int slotIndex in availableSlots)
+        // Draw cards for each available slot until all slots are filled or deck runs out
+        for (int i = 0; i < availableSlots.Count; i++)
         {
             if (opponentDeck.Count > 0)
             {
@@ -402,11 +402,11 @@ public class GameManager2 : MonoBehaviour
                 if (!randomCard.gameObject.activeSelf)
                 {
                     randomCard.gameObject.SetActive(true);
-                    randomCard.handIndex = slotIndex;
-                    randomCard.transform.position = opponentCardSlots[slotIndex].position;
+                    randomCard.handIndex = availableSlots[i]; // Use the available slot index
+                    randomCard.transform.position = opponentCardSlots[availableSlots[i]].position;
                     randomCard.hasBeenPlayed = false;
                     opponentDeck.Remove(randomCard);
-                    opponentAvailableCardSlots[slotIndex] = false;
+                    opponentAvailableCardSlots[availableSlots[i]] = false;
 
                     // Add the drawn card to the opponent's hand
                     opponentHand.Add(randomCard);
