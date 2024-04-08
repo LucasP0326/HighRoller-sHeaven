@@ -7402,6 +7402,18 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 9150485238316572659, guid: 280bb8e2e2645404eabb530230a93251, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Terrestrial
+
+        Value: VII
+
+        The early conquistador
+        marked a turning point in mankind''s history during a westward push to bring
+        ''civilization'' to what were believed to be savage lands.  The power of
+        such individuals to conquer, enslave, and turn the tide of history still
+        sees its echoes in history today.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7500,6 +7512,17 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 7227590241163902004, guid: ea87d258c32dbfc449c7d1d5148f4cdc, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Demonic
+
+        Value: V
+
+        A High Ranking Demon, yet
+        still obedient to Lucifer, Paimon still yet is a King of Hell.  While understood
+        to still be vulnerably to the might of God, this Hellish King''s power amongst
+        the legions of Hell should not be underestimated.'
+      objectReference: {fileID: 0}
     - target: {fileID: 7227615783789752663, guid: ea87d258c32dbfc449c7d1d5148f4cdc, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -7577,6 +7600,17 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 1631398835264974210, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Holy
+
+        Value: VII
+
+        Simply deemed ''Dominions,''
+        the power of such angels should not be confused with their simple title,
+        as they are the movers of all things in the universe, governing the movements
+        of starts, planets, and other celestial bodies.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -7650,6 +7684,19 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 1163828898327953864, guid: 4468d8213b15c4f4c99990fdafda2c1e, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Terrestrial
+
+        Value: V
+
+        Many mistake the medieval
+        jester as a common laughing stock, a simple court''s fool, but the influence
+        of such people cannot be denied.  Oftentimes the only individuals in a king''s
+        court allowed to mock their regent''s decision to their face, jesters often
+        were kept as close advisors known to influence their Lord''s thinking, for
+        better or for worse.'
+      objectReference: {fileID: 0}
     - target: {fileID: 7511101878405307607, guid: 4468d8213b15c4f4c99990fdafda2c1e, type: 3}
       propertyPath: m_Name
       value: Terrestrial 5
@@ -8261,6 +8308,20 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 7146969736596821310, guid: b83d84072cc226649a2eb05215788923, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Holy
+
+        Value: V
+
+        Also known as Ophanin, this angel
+        known as a throne is deemed an angel of significant power and authority. 
+        Said to have been the natural evolution of the angels who distinguished themselves
+        as heroes doing the War of Heaven and Hell, the significance of such angels
+        remains undisputed.
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8355,6 +8416,18 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 754108579353585362, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Demonic
+
+        Value: VII
+
+        A Grand Marquis of Hell
+        who governs 40 infernal legions, Amon is the demon of life and reproduction. 
+        Let this not mistake them for a positive influence, as the horror they''ve
+        brought unto the armies of Heaven still is talked about in the history of
+        the War of Heaven and Hell.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
       propertyPath: m_Name
       value: Demonic 7

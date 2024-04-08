@@ -21,6 +21,7 @@ public class CasinoNavigator : MonoBehaviour
         {
             cameras[i].gameObject.SetActive(false);
         }
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame

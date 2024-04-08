@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Old Scenes/MechanicsTesting 3.unity
     guid: 7f35d74c4d1721f439559f209acf3698
+  - enabled: 1
+    path: Assets/Scenes/BlackJack.unity
+    guid: b6546fea5ee957546b40d3cdb1c37303
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 2672b4697f4dd0343a090e109e23d843, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 4aa6c1498e2c57944902e898cc9595d7, type: 2}
