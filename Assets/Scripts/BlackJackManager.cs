@@ -350,95 +350,89 @@ public class BlackJackManager : MonoBehaviour
 
     public IEnumerator StartBattle()
     {
-        if (gameEnded == true)
+        if (playerDone == true && opponentDone == true && gameEnded == true)
         {
-            if (playerDone == true && opponentDone == true)
-            {
-                gameEnded = true;
-                CheckGameEnd();
-                yield return null;
-            }
+            gameEnded = true;
+            CheckGameEnd();
+            yield return null;
         }
-        else if (gameEnded == false)
+        textNotifications.text = "";
+        opponentCardText.text = "";
+        playerCardText.text = "";
+
+        playerTotal = 0;
+        opponentTotal = 0;
+
+        // Sum up the card values in the player's hand
+        foreach (Card2 card in playerHand)
         {
-            textNotifications.text = "";
-            opponentCardText.text = "";
-            playerCardText.text = "";
+            playerTotal += card.cardValue;
+        }
+        playerCardText.text = playerTotal.ToString();
 
-            playerTotal = 0;
-            opponentTotal = 0;
+        // Sum up the card values in the opponent's hand
+        foreach (Card2 card in opponentHand)
+        {
+            opponentTotal += card.cardValue;
+        }
+        opponentCardText.text = opponentTotal.ToString();
 
-            // Sum up the card values in the player's hand
-            foreach (Card2 card in playerHand)
-            {
-                playerTotal += card.cardValue;
-            }
-            playerCardText.text = playerTotal.ToString();
+        if (playerTurn == false && playerDone == true && opponentDone == true && gameEnded == false)
+            CheckGameEnd();
 
-            // Sum up the card values in the opponent's hand
-            foreach (Card2 card in opponentHand)
-            {
-                opponentTotal += card.cardValue;
-            }
-            opponentCardText.text = opponentTotal.ToString();
+        yield return new WaitForSeconds(1f);
 
-            if (playerTurn == false && playerDone == true && opponentDone == true && gameEnded == false)
-                CheckGameEnd();
-
-            yield return new WaitForSeconds(1f);
-
-            //Opponent Turn
-            opponentTurn = true;
-            if (opponentTurn = true)
-            {
-                int randomNumber = Random.Range(1, 10);
-                //Enemy Logic for Hitting or Staying
-                if (opponentDone == false)
-                    {
-                    if (opponentTotal <= 10 && randomNumber < 9)
-                        DrawSingleCardForOpponent();
-                    else if (opponentTotal <= 14 && randomNumber < 7)
-                        DrawSingleCardForOpponent();
-                    else if (opponentTotal <= 15 && randomNumber < 6)
-                        DrawSingleCardForOpponent();
-                    else if (opponentTotal <= 16 && randomNumber < 5)
-                        DrawSingleCardForOpponent();
-                    else if (opponentTotal <= 17 && randomNumber < 4)
-                        DrawSingleCardForOpponent();
-                    else if (opponentTotal <= 18 && randomNumber < 3)
-                        DrawSingleCardForOpponent();
-                    else if (opponentTotal <= 19 && randomNumber < 2)
-                        DrawSingleCardForOpponent();
-                    else
-                    {
-                        Debug.Log("Do I get triggered?");
-                        opponentDone = true;
-                    }
-                }
-                if (playerDone == true && opponentDone == true)
-                    StartCoroutine(StartBattle());
-            }
-            
-            yield return new WaitForSeconds(1f);
-            
-            if (playerDone == false)
-            {
-                //Player Turn
-                playerTurn = true;
-                if (playerTurn == true)
+        //Opponent Turn
+        opponentTurn = true;
+        if (opponentTurn = true)
+        {
+            int randomNumber = Random.Range(1, 10);
+            //Enemy Logic for Hitting or Staying
+            if (opponentDone == false)
                 {
-                    hitOrStay.SetActive(true);
-                }
+                if (opponentTotal <= 10 && randomNumber < 9)
+                    DrawSingleCardForOpponent();
+                else if (opponentTotal <= 14 && randomNumber < 7)
+                    DrawSingleCardForOpponent();
+                else if (opponentTotal <= 15 && randomNumber < 6)
+                    DrawSingleCardForOpponent();
+                else if (opponentTotal <= 16 && randomNumber < 5)
+                    DrawSingleCardForOpponent();
+                else if (opponentTotal <= 17 && randomNumber < 4)
+                    DrawSingleCardForOpponent();
+                else if (opponentTotal <= 18 && randomNumber < 3)
+                    DrawSingleCardForOpponent();
+                else if (opponentTotal <= 19 && randomNumber < 2)
+                    DrawSingleCardForOpponent();
                 else
                 {
-                    hitOrStay.SetActive(false);
+                    Debug.Log("Do I get triggered?");
+                    opponentDone = true;
                 }
             }
-            else if (playerDone == true)
+            if (playerDone == true && opponentDone == true)
                 StartCoroutine(StartBattle());
+        }
+        
+        yield return new WaitForSeconds(1f);
+        
+        if (playerDone == false)
+        {
+            //Player Turn
+            playerTurn = true;
+            if (playerTurn == true)
+            {
+                hitOrStay.SetActive(true);
+            }
+            else
+            {
+                hitOrStay.SetActive(false);
+            }
+        }
+        else if (playerDone == true)
+            StartCoroutine(StartBattle());
 
-            yield return null;
-        }   
+        yield return null;   
     }
 
     public void CheckGameEnd()
@@ -489,15 +483,6 @@ public class BlackJackManager : MonoBehaviour
                 winscreen.SetActive(true);
                 Debug.Log("Player Wins the game!");
                 fateText.text = "Player wins the game!";
-                if (ProgressData.opponentNumber < 3)
-                {
-                    ProgressData.opponentNumber++;
-                }
-                else if (ProgressData.opponentNumber >= 3)
-                {
-                    fateText.text = "Player has beaten the house!";
-                    ProgressData.opponentNumber = 0;
-                }
             }
             else
             {
