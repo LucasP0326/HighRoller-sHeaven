@@ -137,6 +137,15 @@ public class BlackJackManager : MonoBehaviour
         playerHand.Clear();
         opponentHand.Clear();
 
+        for (int i = 0; i < playerAvailableCardSlots.Length; i++)
+        {
+            playerAvailableCardSlots[i] = true;
+        }
+        for (int i = 0; i < opponentAvailableCardSlots.Length; i++)
+        {
+            opponentAvailableCardSlots[i] = true;
+        }
+
         Start();
     }
 
@@ -473,6 +482,40 @@ public class BlackJackManager : MonoBehaviour
         {
             GameOver(true); // Player wins
         }
+        
+        // Clear opponent's hand
+        foreach (Card2 card in opponentHand)
+        {
+            card.gameObject.SetActive(false);
+        }
+        opponentHand.Clear();
+
+        // Disable all cards in player deck
+        foreach (Card2 card in playerHand)
+        {
+            card.gameObject.SetActive(false);
+        }
+
+        playerHand.Clear();
+        opponentHand.Clear();
+
+        playerTurn = false;
+        opponentTurn = false;
+        playerDone = false;
+        opponentDone = false;
+
+        for (int i = 0; i < playerAvailableCardSlots.Length; i++)
+        {
+            playerAvailableCardSlots[i] = true;
+        }
+        for (int i = 0; i < opponentAvailableCardSlots.Length; i++)
+        {
+            opponentAvailableCardSlots[i] = true;
+        }
+
+        Start();
+        //StartCoroutine(DrawPlayerCards());
+        //StartCoroutine(DrawOpponentCards());
     }
 
         void GameOver(bool playerWins)
