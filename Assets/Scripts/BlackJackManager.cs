@@ -44,11 +44,13 @@ public class BlackJackManager : MonoBehaviour
     public int playerLives = 5;
     public int opponentLives = 5;
     public int playerWins; //0 is nothing, 1 is win, 2 is lose
+    private bool gameEnded = false;
 
     Card2 card;
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         //Clear Text Notifications
         textNotifications.text = "";
         opponentCardText.text = "";
@@ -90,8 +92,11 @@ public class BlackJackManager : MonoBehaviour
         }
     }
 
-    void ResetGame()
+    public void ResetGame()
     {
+        gameEnded = false;
+        gameHasBegun = false;
+        Debug.Log("Resetting");
         // Reset game state
         playerLives = 5;
         opponentLives = 5;
@@ -105,6 +110,34 @@ public class BlackJackManager : MonoBehaviour
         {
             playerAvailableCardSlots[i] = true;
         }
+
+        // Reset opponent card slots availability
+        for (int i = 0; i < opponentAvailableCardSlots.Length; i++)
+        {
+            opponentAvailableCardSlots[i] = true;
+        }
+
+        // Clear any existing notifications
+        textNotifications.text = "";
+
+
+        // Clear opponent's hand
+        foreach (Card2 card in opponentHand)
+        {
+            card.gameObject.SetActive(false);
+        }
+        opponentHand.Clear();
+
+        // Disable all cards in player deck
+        foreach (Card2 card in playerHand)
+        {
+            card.gameObject.SetActive(false);
+        }
+
+        playerHand.Clear();
+        opponentHand.Clear();
+
+        Start();
     }
 
     public IEnumerator DrawPlayerCards()
@@ -317,90 +350,105 @@ public class BlackJackManager : MonoBehaviour
 
     public IEnumerator StartBattle()
     {
-        textNotifications.text = "";
-        opponentCardText.text = "";
-        playerCardText.text = "";
-
-        playerTotal = 0;
-        opponentTotal = 0;
-
-        // Sum up the card values in the player's hand
-        foreach (Card2 card in playerHand)
+        if (gameEnded == true)
         {
-            playerTotal += card.cardValue;
+            if (playerDone == true && opponentDone == true)
+            {
+                gameEnded = true;
+                CheckGameEnd();
+                yield return null;
+            }
         }
-        playerCardText.text = playerTotal.ToString();
-
-        // Sum up the card values in the opponent's hand
-        foreach (Card2 card in opponentHand)
+        else if (gameEnded == false)
         {
-            opponentTotal += card.cardValue;
-        }
-        opponentCardText.text = opponentTotal.ToString();
+            textNotifications.text = "";
+            opponentCardText.text = "";
+            playerCardText.text = "";
 
-        if (playerTurn == false && playerDone == true && opponentDone == true)
-            CheckGameEnd();
+            playerTotal = 0;
+            opponentTotal = 0;
 
-        yield return new WaitForSeconds(1f);
+            // Sum up the card values in the player's hand
+            foreach (Card2 card in playerHand)
+            {
+                playerTotal += card.cardValue;
+            }
+            playerCardText.text = playerTotal.ToString();
 
-        //Opponent Turn
-        opponentTurn = true;
-        if (opponentTurn = true)
-        {
-            int randomNumber = Random.Range(1, 10);
-            //Enemy Logic for Hitting or Staying
-            if (opponentDone == false)
+            // Sum up the card values in the opponent's hand
+            foreach (Card2 card in opponentHand)
+            {
+                opponentTotal += card.cardValue;
+            }
+            opponentCardText.text = opponentTotal.ToString();
+
+            if (playerTurn == false && playerDone == true && opponentDone == true && gameEnded == false)
+                CheckGameEnd();
+
+            yield return new WaitForSeconds(1f);
+
+            //Opponent Turn
+            opponentTurn = true;
+            if (opponentTurn = true)
+            {
+                int randomNumber = Random.Range(1, 10);
+                //Enemy Logic for Hitting or Staying
+                if (opponentDone == false)
+                    {
+                    if (opponentTotal <= 10 && randomNumber < 9)
+                        DrawSingleCardForOpponent();
+                    else if (opponentTotal <= 14 && randomNumber < 7)
+                        DrawSingleCardForOpponent();
+                    else if (opponentTotal <= 15 && randomNumber < 6)
+                        DrawSingleCardForOpponent();
+                    else if (opponentTotal <= 16 && randomNumber < 5)
+                        DrawSingleCardForOpponent();
+                    else if (opponentTotal <= 17 && randomNumber < 4)
+                        DrawSingleCardForOpponent();
+                    else if (opponentTotal <= 18 && randomNumber < 3)
+                        DrawSingleCardForOpponent();
+                    else if (opponentTotal <= 19 && randomNumber < 2)
+                        DrawSingleCardForOpponent();
+                    else
+                    {
+                        Debug.Log("Do I get triggered?");
+                        opponentDone = true;
+                    }
+                }
+                if (playerDone == true && opponentDone == true)
+                    StartCoroutine(StartBattle());
+            }
+            
+            yield return new WaitForSeconds(1f);
+            
+            if (playerDone == false)
+            {
+                //Player Turn
+                playerTurn = true;
+                if (playerTurn == true)
                 {
-                if (opponentTotal <= 10 && randomNumber < 9)
-                    DrawSingleCardForOpponent();
-                else if (opponentTotal <= 14 && randomNumber < 7)
-                    DrawSingleCardForOpponent();
-                else if (opponentTotal <= 15 && randomNumber < 6)
-                    DrawSingleCardForOpponent();
-                else if (opponentTotal <= 16 && randomNumber < 5)
-                    DrawSingleCardForOpponent();
-                else if (opponentTotal <= 17 && randomNumber < 4)
-                    DrawSingleCardForOpponent();
-                else if (opponentTotal <= 18 && randomNumber < 3)
-                    DrawSingleCardForOpponent();
-                else if (opponentTotal <= 19 && randomNumber < 2)
-                    DrawSingleCardForOpponent();
+                    hitOrStay.SetActive(true);
+                }
                 else
                 {
-                    Debug.Log("Do I get triggered?");
-                    opponentDone = true;
+                    hitOrStay.SetActive(false);
                 }
             }
+            else if (playerDone == true)
+                StartCoroutine(StartBattle());
 
-        }
-        
-        yield return new WaitForSeconds(1f);
-        
-        if (playerDone == false)
-        {
-            //Player Turn
-            playerTurn = true;
-            if (playerTurn == true)
-            {
-                hitOrStay.SetActive(true);
-            }
-            else
-            {
-                hitOrStay.SetActive(false);
-            }
-        }
-
-        yield return null;
+            yield return null;
+        }   
     }
 
     public void CheckGameEnd()
     {
-        if (playerTotal < opponentTotal)
+        if (playerTotal < opponentTotal && opponentTotal < 21)
         {
             textNotifications.text = "Player loses a life!";
             playerLives--;
         }
-        else if (opponentTotal < playerTotal)
+        else if (opponentTotal < playerTotal && playerTotal < 21)
         {
             textNotifications.text = "Opponent loses a life!";
             opponentLives--;
@@ -409,7 +457,55 @@ public class BlackJackManager : MonoBehaviour
         {
             textNotifications.text = "Tie!";
         }
+        else if (playerTotal > 21 && opponentTotal < 21)
+        {
+            textNotifications.text = "Player loses a life!";
+            playerLives--;
+        }
+        else if (opponentTotal > 21 && playerTotal < 21)
+        {
+            textNotifications.text = "Opponent loses a life!";
+            opponentLives--;
+        }
+        else if (playerTotal > 21 && opponentTotal > 21)
+        {
+            textNotifications.text = "Tie!";
+        }
+        if (playerLives <= 0)
+        {
+            GameOver(false); // Opponent wins
+        }
+        else if (opponentLives <= 0)
+        {
+            GameOver(true); // Player wins
+        }
     }
+
+        void GameOver(bool playerWins)
+        {
+            // Display appropriate win message based on the result
+            if (playerWins)
+            {
+                winscreen.SetActive(true);
+                Debug.Log("Player Wins the game!");
+                fateText.text = "Player wins the game!";
+                if (ProgressData.opponentNumber < 3)
+                {
+                    ProgressData.opponentNumber++;
+                }
+                else if (ProgressData.opponentNumber >= 3)
+                {
+                    fateText.text = "Player has beaten the house!";
+                    ProgressData.opponentNumber = 0;
+                }
+            }
+            else
+            {
+                winscreen.SetActive(true);
+                Debug.Log("Opponent Wins the game!");
+                fateText.text = "Opponent wins the game!";
+            }
+        }
 
     public void Hit()
     {

@@ -6661,8 +6661,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager2, Assembly-CSharp
+      - m_Target: {fileID: 1144149115}
+        m_TargetAssemblyTypeName: BlackJackManager, Assembly-CSharp
         m_MethodName: ResetGame
         m_Mode: 1
         m_Arguments:

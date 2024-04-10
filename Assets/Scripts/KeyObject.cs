@@ -44,6 +44,7 @@ public class KeyObject : MonoBehaviour
         if (inConversation == false && Time.timeScale != 0 && cardTable == true)
         {
             cardGameSelect.SetActive(true);
+            Time.timeScale = 0;
         }
         if (inConversation == false && Time.timeScale != 0 && cardTable == false)
         {
@@ -53,16 +54,18 @@ public class KeyObject : MonoBehaviour
 
     public void LoadNormal()
     {
-        if (inConversation == false && Time.timeScale != 0)
+        if (inConversation == false)
         {
+            Time.timeScale = 1;
             UnityEngine.SceneManagement.SceneManager.LoadScene(scene1);
         }
     }
 
     public void LoadBlackJack()
     {
-        if (inConversation == false && Time.timeScale != 0)
+        if (inConversation == false)
         {
+            Time.timeScale = 1;
             UnityEngine.SceneManagement.SceneManager.LoadScene(scene2);
         }
     }
