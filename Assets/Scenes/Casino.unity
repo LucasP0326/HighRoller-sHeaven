@@ -1810,7 +1810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &88913436
 GameObject:
@@ -4263,7 +4263,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &222515392
 PrefabInstance:
@@ -4708,8 +4708,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251003642}
   m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
-  m_LocalPosition: {x: -1249.0258, y: -465.8414, z: -352.95898}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalPosition: {x: -1248.361, y: -465.62, z: -353.67}
+  m_LocalScale: {x: 0.018254783, y: 0.018254783, z: 0.018254783}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1736978817}
@@ -4743,8 +4743,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Just trying to get on by.
     writeWaitTime: 0
     onWriteEvent:
@@ -4759,8 +4759,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: We'll just have to see about that now, won't we?
     writeWaitTime: 0
     onWriteEvent:
@@ -5006,6 +5006,7 @@ Transform:
   - {fileID: 585897737}
   - {fileID: 1192650163}
   - {fileID: 1403214931}
+  - {fileID: 1317630592}
   m_Father: {fileID: 1592853271}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5114,6 +5115,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255310072}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &257981957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257981958}
+  m_Layer: 5
+  m_Name: Dialogue UI Gluttony
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &257981958
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257981957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1325853766}
+  - {fileID: 1716902370}
+  - {fileID: 443860831}
+  - {fileID: 369808798}
+  - {fileID: 807611182}
+  m_Father: {fileID: 550791887}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &263672789
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,6 +6254,181 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2587123632955916508, guid: 9bb513224d08f61429103180bcd844c3, type: 3}
   m_PrefabInstance: {fileID: 318348240}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &325802624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325802625}
+  - component: {fileID: 325802628}
+  - component: {fileID: 325802627}
+  - component: {fileID: 325802626}
+  m_Layer: 0
+  m_Name: Lust04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &325802625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325802624}
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1266, y: -465.525, z: -354.852}
+  m_LocalScale: {x: 0.023612984, y: 0.023612984, z: 0.023612984}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 911132130}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &325802626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325802624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 2029641106}
+  dialogueText: {fileID: 1681868699}
+  nameText: {fileID: 1407373838}
+  portrait: {fileID: 1118003573}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Lust
+    portrait: {fileID: 0}
+    message: You...you beat me.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: What?  Gonna say that victory suits me?  Makes me look more beautiful
+      than ever?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Lust
+    portrait: {fileID: 0}
+    message: I...I don't know.  This hasn't happened in a long time, I...I really
+      treated you pretty poorly, haven't I?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: That's putting it lightly.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Lust
+    portrait: {fileID: 0}
+    message: I see.  Well, I know it doesn't count for much, but...I am sorry.  I...I
+      think I'll leave you alone now.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: About damned time.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &325802627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325802624}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.2}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0}
+--- !u!212 &325802628
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325802624}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: a2dc39fba80ce5145baf3ae63ee17a7d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &330839859
 GameObject:
   m_ObjectHideFlags: 0
@@ -6893,6 +7110,159 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2587123632955916508, guid: 9bb513224d08f61429103180bcd844c3, type: 3}
   m_PrefabInstance: {fileID: 361108445}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &366129057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366129058}
+  - component: {fileID: 366129059}
+  - component: {fileID: 366129061}
+  - component: {fileID: 366129060}
+  m_Layer: 0
+  m_Name: Gluttony02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &366129058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366129057}
+  m_LocalRotation: {x: -0, y: -0.19663532, z: -0, w: 0.9804767}
+  m_LocalPosition: {x: -1248.8386, y: -465.59055, z: -353.90497}
+  m_LocalScale: {x: 0.014629999, y: 0.014629999, z: 0.014629999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 548682263}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -22.681, z: 0}
+--- !u!212 &366129059
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366129057}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 12870a0f976e6d24b8fec702fd83fe94, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &366129060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366129057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 257981957}
+  dialogueText: {fileID: 1716902371}
+  nameText: {fileID: 369808799}
+  portrait: {fileID: 807611183}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Guttony
+    portrait: {fileID: 0}
+    message: 'You beat Envy.  That...that''s a new feeling.  But it''s not enough
+      to fulfill you, is it?  '
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: Think we've been over this before.  I'll be happy once I'm out of here.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: Hmm.  You say that, but I know the feeling.  You'll always, always want
+      more.  Just you wait.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 0}
+--- !u!65 &366129061
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366129057}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000072}
+  m_Center: {x: 0.0012207031, y: 0.0015411377, z: 0.0020751953}
 --- !u!1 &368584258
 GameObject:
   m_ObjectHideFlags: 0
@@ -6976,6 +7346,141 @@ Transform:
   m_Father: {fileID: 330839860}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 20, y: -93.537, z: 1.681}
+--- !u!1 &369808797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 369808798}
+  - component: {fileID: 369808800}
+  - component: {fileID: 369808799}
+  m_Layer: 5
+  m_Name: Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &369808798
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369808797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 257981958}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -524.125, y: -36.25}
+  m_SizeDelta: {x: 244.25, y: 70.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &369808799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369808797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &369808800
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369808797}
+  m_CullTransparentMesh: 1
 --- !u!1001 &370484127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7432,6 +7937,7 @@ Transform:
   - {fileID: 1511419237}
   - {fileID: 798935837}
   - {fileID: 1950479463}
+  - {fileID: 1854387121}
   m_Father: {fileID: 1592853271}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7896,6 +8402,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4307640417859606744, guid: 4bb2a81fa1ac56b4a9a5c0aee917bd48, type: 3}
   m_PrefabInstance: {fileID: 430711383}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &443860830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 443860831}
+  - component: {fileID: 443860834}
+  - component: {fileID: 443860833}
+  - component: {fileID: 443860832}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &443860831
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443860830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 257981958}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -524, y: -36.75}
+  m_SizeDelta: {x: 250, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &443860832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443860830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &443860833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443860830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &443860834
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443860830}
+  m_CullTransparentMesh: 1
 --- !u!1 &450586026
 GameObject:
   m_ObjectHideFlags: 0
@@ -8438,6 +9036,7 @@ MonoBehaviour:
   - {fileID: 1736978816}
   - {fileID: 548682262}
   - {fileID: 400391000}
+  - {fileID: 911132129}
 --- !u!1 &479352396
 GameObject:
   m_ObjectHideFlags: 0
@@ -10228,6 +10827,7 @@ Transform:
   - {fileID: 1557110125}
   - {fileID: 1312982165}
   - {fileID: 903592959}
+  - {fileID: 366129058}
   m_Father: {fileID: 1592853271}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10555,6 +11155,7 @@ RectTransform:
   - {fileID: 823514577}
   - {fileID: 450586027}
   - {fileID: 2029641107}
+  - {fileID: 257981958}
   - {fileID: 251738066}
   - {fileID: 758562171}
   - {fileID: 1724871591}
@@ -10566,6 +11167,175 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &551347091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 551347092}
+  - component: {fileID: 551347095}
+  - component: {fileID: 551347094}
+  - component: {fileID: 551347093}
+  m_Layer: 0
+  m_Name: Greed04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &551347092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551347091}
+  m_LocalRotation: {x: -0, y: 0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1268.5835, y: -465.6992, z: -329.7114}
+  m_LocalScale: {x: 0.050000004, y: 0.05, z: 0.050000004}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 911132130}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &551347093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551347091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 450586026}
+  dialogueText: {fileID: 563105498}
+  nameText: {fileID: 806005181}
+  portrait: {fileID: 842891606}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Ahhh, so Lust has finally been put in his place.  Good.  He was scaring
+      away some of my best customers.  Not you though, glad to see you held your
+      ground.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: I know how to deal with the likes of him.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Heh, you sure do.  Let me warn you in advance, however.  Your next opponent
+      is Gluttony, and word is, he has a taste for those from Earth.  Let that tidbit
+      of advice help you.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: I get the feeling it will.  Thanks.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Greed
+    portrait: {fileID: 0}
+    message: Heh.  Always a pleasure to be of assistance.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &551347094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551347091}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: 0.000030517578, y: 0.0000019073486, z: -0.000030517578}
+--- !u!212 &551347095
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551347091}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ea0315fc9d72e7144a9caf4a9060b91e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &562084108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11079,8 +11849,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585897736}
   m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
-  m_LocalPosition: {x: -1249.0258, y: -465.8414, z: -352.95898}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalPosition: {x: -1248.361, y: -465.62, z: -353.67}
+  m_LocalScale: {x: 0.018254783, y: 0.018254783, z: 0.018254783}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 251812682}
@@ -11113,8 +11883,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: I am, but don't worry; I don't plan on overstaying my welcome?
     writeWaitTime: 0
     onWriteEvent:
@@ -11127,8 +11897,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Well, I have places to be that aren't here, so I best get to it.
     writeWaitTime: 0
     onWriteEvent:
@@ -14926,8 +15696,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: There.  It's done.  You learn what you wanted to know?
     writeWaitTime: 0
     onWriteEvent:
@@ -14940,8 +15710,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: I get the bad feeling I will.
     writeWaitTime: 0
     onWriteEvent:
@@ -15164,6 +15934,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806005179}
+  m_CullTransparentMesh: 1
+--- !u!1 &807611181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807611182}
+  - component: {fileID: 807611184}
+  - component: {fileID: 807611183}
+  m_Layer: 5
+  m_Name: Portrait
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &807611182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807611181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 257981958}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -515.5, y: -239.75}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &807611183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807611181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &807611184
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807611181}
   m_CullTransparentMesh: 1
 --- !u!1001 &810291866
 PrefabInstance:
@@ -15517,7 +16363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 23.082, z: 0}
 --- !u!1 &821530504
 GameObject:
@@ -16097,7 +16943,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16532,7 +17378,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16787,8 +17633,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Well it's nice to know I haven't been the only one you've been creepily
       watching.
     writeWaitTime: 0
@@ -16804,8 +17650,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Wow, was that actually an entire sentence out of you without creeiply
       flirting with-
     writeWaitTime: 0
@@ -16820,8 +17666,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Yep, there it is.
     writeWaitTime: 0
     onWriteEvent:
@@ -16981,6 +17827,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8499217605246230856, guid: 4d21a4697e44cd24bad1bef46f1b6bd3, type: 3}
   m_PrefabInstance: {fileID: 907123237}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &911132129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911132130}
+  m_Layer: 0
+  m_Name: Stage 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &911132130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911132129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1249.0107, y: 465.4904, z: 353.085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1483541388}
+  - {fileID: 551347092}
+  - {fileID: 325802625}
+  - {fileID: 1674615798}
+  m_Father: {fileID: 1592853271}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &916652692
 GameObject:
   m_ObjectHideFlags: 0
@@ -17158,7 +18039,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19693,8 +20574,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Long as it helps me get back to where I belong, I guess I don't mind
       it.
     writeWaitTime: 0
@@ -19710,8 +20591,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: I appreciate the warning.  Thanks.
     writeWaitTime: 0
     onWriteEvent:
@@ -22582,8 +23463,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Well I don't exactly have much of a choice, do I?
     writeWaitTime: 0
     onWriteEvent:
@@ -22597,8 +23478,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Something like that.  Let's quit wasting time.  I'm here to play.
     writeWaitTime: 0
     onWriteEvent:
@@ -24732,8 +25613,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: You can save the flattery.  I know you want me to fail.
     writeWaitTime: 0
     onWriteEvent:
@@ -24747,16 +25628,9 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: I thought you preferred not to gamble.
-    writeWaitTime: 0
-    onWriteEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
-    message: Well, this should be interesting then.
     writeWaitTime: 0
     onWriteEvent:
       m_PersistentCalls:
@@ -24766,6 +25640,13 @@ MonoBehaviour:
     message: I don't, but there are some powerful people here who want to see what
       you're capable of, and it's my job to report to them, so I'll be paying close
       attention to our match.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: Well, this should be interesting then.
     writeWaitTime: 0
     onWriteEvent:
       m_PersistentCalls:
@@ -24920,6 +25801,164 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5138843631379216579, guid: ebf1bcc9d3a3080448905202886c6801, type: 3}
   m_PrefabInstance: {fileID: 1314617540}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1317630591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317630592}
+  - component: {fileID: 1317630593}
+  - component: {fileID: 1317630595}
+  - component: {fileID: 1317630594}
+  m_Layer: 0
+  m_Name: Gluttony00
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1317630592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317630591}
+  m_LocalRotation: {x: -0, y: -0.19663532, z: -0, w: 0.9804767}
+  m_LocalPosition: {x: -1248.8386, y: -465.59055, z: -353.90497}
+  m_LocalScale: {x: 0.014629999, y: 0.014629999, z: 0.014629999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 251812682}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -22.681, z: 0}
+--- !u!212 &1317630593
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317630591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 12870a0f976e6d24b8fec702fd83fe94, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1317630594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317630591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 257981957}
+  dialogueText: {fileID: 1716902371}
+  nameText: {fileID: 369808799}
+  portrait: {fileID: 807611183}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: Hungry...so hungry
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: Are you...alright?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: You...you look like a mighty fine meal.  May I...may I take a bite?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: I'd...prefer you don't, no.  Sorry, champ.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 0}
+--- !u!65 &1317630595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317630591}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000072}
+  m_Center: {x: 0.0012207031, y: 0.0015411377, z: 0.0020751953}
 --- !u!1 &1318121840
 GameObject:
   m_ObjectHideFlags: 0
@@ -25050,6 +26089,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7645576771511566035, guid: edcf60ca3d9d06b4da15591269f36c32, type: 3}
   m_PrefabInstance: {fileID: 1319475243}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1325853765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1325853766}
+  - component: {fileID: 1325853768}
+  - component: {fileID: 1325853767}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1325853766
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325853765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 257981958}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -250}
+  m_SizeDelta: {x: 1300, y: 350}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1325853767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325853765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1325853768
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325853765}
+  m_CullTransparentMesh: 1
 --- !u!1 &1338690851
 GameObject:
   m_ObjectHideFlags: 0
@@ -25790,7 +26905,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26289,8 +27404,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Thanks, but no thanks.  I'll pass.
     writeWaitTime: 0
     onWriteEvent:
@@ -26303,8 +27418,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: I don't plan on sticking around any longer than I have to; trust me.
     writeWaitTime: 0
     onWriteEvent:
@@ -26318,8 +27433,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Don't count on it.
     writeWaitTime: 0
     onWriteEvent:
@@ -27184,6 +28299,165 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4307640417859606744, guid: 4bb2a81fa1ac56b4a9a5c0aee917bd48, type: 3}
   m_PrefabInstance: {fileID: 1432196007}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1433179538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433179540}
+  - component: {fileID: 1433179539}
+  - component: {fileID: 1433179542}
+  - component: {fileID: 1433179541}
+  m_Layer: 0
+  m_Name: Gluttony01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1433179539
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433179538}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 12870a0f976e6d24b8fec702fd83fe94, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1433179540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433179538}
+  m_LocalRotation: {x: -0, y: -0.19663532, z: -0, w: 0.9804767}
+  m_LocalPosition: {x: -1248.8386, y: -465.59055, z: -353.90497}
+  m_LocalScale: {x: 0.014629276, y: 0.014629276, z: 0.014629276}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1736978817}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -22.681, z: 0}
+--- !u!114 &1433179541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433179538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 257981957}
+  dialogueText: {fileID: 1716902371}
+  nameText: {fileID: 369808799}
+  portrait: {fileID: 807611183}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: You...you won your first game.  Did it...did it fulfill you?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: Not quite, no.  I'll feel fulfilled once I'm out of this place.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: Then you...you have a hunger.  Just like me.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: No, not quite the same.  I don't have a black hole in my stomach.  Be
+      seeing ya.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 0}
+--- !u!65 &1433179542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433179538}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: -0.0072021484, y: -0.00075531006, z: 0.0032958984}
 --- !u!1001 &1433789752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27836,6 +29110,168 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4895021042762376, guid: ecf1c889fcf7a4545b14984e066fca3f, type: 3}
   m_PrefabInstance: {fileID: 1478904337}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1483541387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483541388}
+  - component: {fileID: 1483541391}
+  - component: {fileID: 1483541390}
+  - component: {fileID: 1483541389}
+  m_Layer: 0
+  m_Name: Envy04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1483541388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483541387}
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: -1248.361, y: -465.62, z: -353.67}
+  m_LocalScale: {x: 0.018254783, y: 0.018254783, z: 0.018254783}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 911132130}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!114 &1483541389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483541387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 823514576}
+  dialogueText: {fileID: 979267191}
+  nameText: {fileID: 1121779135}
+  portrait: {fileID: 1081126803}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Envy
+    portrait: {fileID: 0}
+    message: If I weren't still pissed at him for everything, I'd say thank God for
+      you finally bringing Lust down.  Man's been trying to hit on me for the last
+      thousand years.  'Bout time he got put in his place.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: Felt good doing it too.  Been waiting for that since I got here.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Envy
+    portrait: {fileID: 0}
+    message: Heh, I bet.  Enjoy your winning streak, angel, but be careful, taht
+      creep to my right is your next opponent.  Make sure he doesn't take a bite
+      out of you in the middle of the match.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: I'll be on the lookout.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 1892930715}
+--- !u!65 &1483541390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483541387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000036}
+  m_Center: {x: -0.000015258789, y: 0.0000019073486, z: 0}
+--- !u!212 &1483541391
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483541387}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e301a965707674548bdc0d6148018b64, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1490500974
 GameObject:
   m_ObjectHideFlags: 0
@@ -27978,8 +29414,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511419236}
   m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
-  m_LocalPosition: {x: -1249.0258, y: -465.8414, z: -352.95898}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalPosition: {x: -1248.361, y: -465.62, z: -353.67}
+  m_LocalScale: {x: 0.018254783, y: 0.018254783, z: 0.018254783}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 400391001}
@@ -28014,8 +29450,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: I appreciate the warning.  Know anything about who I'm up against next?
     writeWaitTime: 0
     onWriteEvent:
@@ -28023,21 +29459,28 @@ MonoBehaviour:
         m_Calls: []
   - name: Envy
     portrait: {fileID: 0}
-    message: I hear it's that creepy guy.  One who hangs out in the lobby?
+    message: 'I hear it''s that creepy guy.  '
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: One who hangs out in the lobby?
     writeWaitTime: 0
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
   - name: Envy
     portrait: {fileID: 0}
-    message: 'Yeah, that''s him.  Cares more about playing cards that look good rather
-      than if they''re strong or not.  '
+    message: Yeah, him.  Cares more about playing cards based on their looks rather
+      than their actual strength.  Weird guy like that.
     writeWaitTime: 0
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: That sounds like him.  I'll be ready.  Thanks.
     writeWaitTime: 0
     onWriteEvent:
@@ -28585,8 +30028,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557110124}
   m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
-  m_LocalPosition: {x: -1249.0258, y: -465.8414, z: -352.95898}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalPosition: {x: -1248.361, y: -465.62, z: -353.67}
+  m_LocalScale: {x: 0.018254783, y: 0.018254783, z: 0.018254783}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 548682263}
@@ -28620,8 +30063,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Call it beginner's luck, I guess
     writeWaitTime: 0
     onWriteEvent:
@@ -28635,8 +30078,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: I'll consder it.
     writeWaitTime: 0
     onWriteEvent:
@@ -29544,6 +30987,7 @@ Transform:
   - {fileID: 1736978817}
   - {fileID: 548682263}
   - {fileID: 400391001}
+  - {fileID: 911132130}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30534,7 +31978,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31210,6 +32654,160 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4307640417859606744, guid: 4bb2a81fa1ac56b4a9a5c0aee917bd48, type: 3}
   m_PrefabInstance: {fileID: 1671365124}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1674615797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674615798}
+  - component: {fileID: 1674615799}
+  - component: {fileID: 1674615801}
+  - component: {fileID: 1674615800}
+  m_Layer: 0
+  m_Name: Gluttony04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1674615798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674615797}
+  m_LocalRotation: {x: -0, y: -0.19663532, z: -0, w: 0.9804767}
+  m_LocalPosition: {x: -1248.8386, y: -465.59055, z: -353.90497}
+  m_LocalScale: {x: 0.014629999, y: 0.014629999, z: 0.014629999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 911132130}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -22.681, z: 0}
+--- !u!212 &1674615799
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674615797}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 12870a0f976e6d24b8fec702fd83fe94, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1674615800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674615797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 257981957}
+  dialogueText: {fileID: 1716902371}
+  nameText: {fileID: 369808799}
+  portrait: {fileID: 807611183}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: Boss tells me it's you and me next.  Boss tells me if I win...I get
+      a piece of you all to myself.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: Great; and right when I finish with Lust, I get somebody far creepier. 
+      My luck never runs out does it.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: Hmmm.  I wonder if you taste as good as the ones from Earth.  I'll find
+      out soon, won't I?  Finally something new for this hunger.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 0}
+--- !u!65 &1674615801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674615797}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000072}
+  m_Center: {x: 0.0012207031, y: 0.0015411377, z: 0.0020751953}
 --- !u!1 &1681868696
 GameObject:
   m_ObjectHideFlags: 0
@@ -31431,7 +33029,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31849,6 +33447,141 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2587123632955916508, guid: 9bb513224d08f61429103180bcd844c3, type: 3}
   m_PrefabInstance: {fileID: 1705834469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1716902369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716902370}
+  - component: {fileID: 1716902372}
+  - component: {fileID: 1716902371}
+  m_Layer: 5
+  m_Name: Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1716902370
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716902369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 257981958}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 124.25, y: -250}
+  m_SizeDelta: {x: 951.5, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1716902371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716902369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1716902372
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716902369}
+  m_CullTransparentMesh: 1
 --- !u!1 &1718621220
 GameObject:
   m_ObjectHideFlags: 0
@@ -32530,6 +34263,7 @@ Transform:
   - {fileID: 251003643}
   - {fileID: 1070351687}
   - {fileID: 1956164033}
+  - {fileID: 1433179540}
   m_Father: {fileID: 1592853271}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34291,6 +36025,158 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1854387120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854387121}
+  - component: {fileID: 1854387122}
+  - component: {fileID: 1854387124}
+  - component: {fileID: 1854387123}
+  m_Layer: 0
+  m_Name: Gluttony03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1854387121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854387120}
+  m_LocalRotation: {x: -0, y: -0.19663532, z: -0, w: 0.9804767}
+  m_LocalPosition: {x: -1248.8386, y: -465.59055, z: -353.90497}
+  m_LocalScale: {x: 0.014629999, y: 0.014629999, z: 0.014629999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400391001}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: -22.681, z: 0}
+--- !u!212 &1854387122
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854387120}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 12870a0f976e6d24b8fec702fd83fe94, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12, y: 20}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1854387123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854387120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f98db2f4798c964f89f38b40a195ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 257981957}
+  dialogueText: {fileID: 1716902371}
+  nameText: {fileID: 369808799}
+  portrait: {fileID: 807611183}
+  onFinishedChatting:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: Greed...he would buy me meals, nice humans from the surface for me. 
+      They always tasted so, so good.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
+    message: You really do have issues, don't you?
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Gluttony
+    portrait: {fileID: 0}
+    message: Heh.  Only the same as you.  I hope I see you again soon, angel.
+    writeWaitTime: 0
+    onWriteEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueIndex: 0
+  inConversation: 0
+  casinoNavigator: {fileID: 0}
+--- !u!65 &1854387124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854387120}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12, y: 20, z: 0.20000072}
+  m_Center: {x: 0.0012207031, y: 0.0015411377, z: 0.0020751953}
 --- !u!1 &1868581802
 GameObject:
   m_ObjectHideFlags: 0
@@ -34716,7 +36602,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34991,6 +36877,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4895021042762376, guid: ecf1c889fcf7a4545b14984e066fca3f, type: 3}
   m_PrefabInstance: {fileID: 1883566422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1884482021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884482023}
+  - component: {fileID: 1884482022}
+  m_Layer: 0
+  m_Name: Bar Room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1884482022
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884482021}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 01bb225ee6a3e0047922a417d2537c48, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1884482023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884482021}
+  m_LocalRotation: {x: 0, y: -0.24779405, z: 0, w: 0.9688128}
+  m_LocalPosition: {x: 17.02, y: 1.163, z: -6.765}
+  m_LocalScale: {x: 0.08422454, y: 0.08422454, z: 0.08422454}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: -6.918, z: 0}
 --- !u!1 &1887656372
 GameObject:
   m_ObjectHideFlags: 0
@@ -35397,7 +37367,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3459340941225924136, guid: 8f8fea5e475f90d4db3b1254626cf329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35984,8 +37954,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: And why shouldn't I?
     writeWaitTime: 0
     onWriteEvent:
@@ -36000,8 +37970,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Wow.  I cannot wait to wipe that smug smile off your face.
     writeWaitTime: 0
     onWriteEvent:
@@ -36348,8 +38318,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Please don't call me that.
     writeWaitTime: 0
     onWriteEvent:
@@ -36362,8 +38332,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: Please, just, don't talk to me.  Ever.
     writeWaitTime: 0
     onWriteEvent:
@@ -36376,8 +38346,8 @@ MonoBehaviour:
     onWriteEvent:
       m_PersistentCalls:
         m_Calls: []
-  - name: Player
-    portrait: {fileID: 0}
+  - name: Alea
+    portrait: {fileID: 21300000, guid: 30a11bb403650b14e846621ac706e6d9, type: 3}
     message: I can't wait to get out of this place.
     writeWaitTime: 0
     onWriteEvent:

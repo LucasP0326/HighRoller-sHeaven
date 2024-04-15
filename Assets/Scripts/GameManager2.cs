@@ -49,6 +49,7 @@ public class GameManager2 : MonoBehaviour
     public List<Card2> envyDeck = new List<Card2>(); //Envy Deck
     public List<Card2> greedDeck = new List<Card2>(); //Greed Deck
     public List<Card2> lustDeck = new List<Card2>(); //Lust Deck
+    public List<Card2> gluttonyDeck = new List<Card2>(); //Gluttony Deck
 
     [Header("Other Settings")]
     public List<Card2> discardPile = new List<Card2>(); // Create a list to represent the discard pile
@@ -135,6 +136,13 @@ public class GameManager2 : MonoBehaviour
         if(deckToUse == 3)
         {
             foreach (Card2 card in lustDeck)
+            {
+                opponentDeck.Add(card);
+            }
+        }
+        if(deckToUse == 4)
+        {
+            foreach (Card2 card in gluttonyDeck)
             {
                 opponentDeck.Add(card);
             }
@@ -618,11 +626,11 @@ public class GameManager2 : MonoBehaviour
             winscreen.SetActive(true);
             Debug.Log("Player Wins the game!");
             fateText.text = "Player wins the game!";
-            if (ProgressData.opponentNumber < 3)
+            if (ProgressData.opponentNumber < 4)
             {
                 ProgressData.opponentNumber++;
             }
-            else if (ProgressData.opponentNumber >= 3)
+            else if (ProgressData.opponentNumber >= 4)
             {
                 fateText.text = "Player has beaten the house!";
                 ProgressData.opponentNumber = 0;
@@ -938,6 +946,10 @@ public class GameManager2 : MonoBehaviour
         if(deckToUse == 3)
         {
             opponent.text = "Lust";
+        }
+        if(deckToUse == 4)
+        {
+            opponent.text = "Gluttony";
         }
         yield return new WaitForSeconds(1.5f);
         introScreen.SetActive(false);

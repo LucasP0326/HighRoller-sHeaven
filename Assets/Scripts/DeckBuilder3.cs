@@ -13,6 +13,7 @@ public class DeckBuilder3 : MonoBehaviour
     public GameObject[] specificAvailableCards; // Specific card game objects to assign to available deck slots
     public TextMeshProUGUI cardDescription; //Add space for card description;
     public string SceneToLoad; // Name of the scene to load
+    public string SceneToLoad2; //Name of other scene to load
     public List<Card2> customPlayerDeck;
     public List<Card2> unchosenCards;
     public DeckData deckData; //Reference to Deck Data
@@ -40,6 +41,28 @@ public class DeckBuilder3 : MonoBehaviour
             }
             // Load the scene by its name
             UnityEngine.SceneManagement.SceneManager.LoadScene(SceneToLoad);
+        }
+        else
+        {
+            Debug.LogWarning("Scene to load is not assigned.");
+        }
+    }
+
+    public void TransitionToScene2()
+    {
+        // Check if the sceneToLoad reference is not null
+        if (!string.IsNullOrEmpty(SceneToLoad2))
+        {
+            foreach (Card2 card in customPlayerDeck)
+            {
+                card.gameObject.SetActive(false);
+            }
+            foreach (Card2 card in unchosenCards)
+            {
+                card.gameObject.SetActive(false);
+            }
+            // Load the scene by its name
+            UnityEngine.SceneManagement.SceneManager.LoadScene(SceneToLoad2);
         }
         else
         {

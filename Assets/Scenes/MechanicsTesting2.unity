@@ -8603,6 +8603,17 @@ MonoBehaviour:
   - {fileID: 1188946956}
   - {fileID: 679917422}
   - {fileID: 1768175416}
+  gluttonyDeck:
+  - {fileID: 1968758758}
+  - {fileID: 1297300220}
+  - {fileID: 953588906}
+  - {fileID: 1469338887}
+  - {fileID: 2126517093}
+  - {fileID: 1857531916}
+  - {fileID: 2116984139}
+  - {fileID: 1188946956}
+  - {fileID: 1727082448}
+  - {fileID: 679917422}
   discardPile: []
   playerLives: 5
   opponentLives: 5
