@@ -57,16 +57,13 @@ public class MainMenu : MonoBehaviour
         text1.enabled = false;
         text2.enabled = false;
         text3.enabled = false;
-        playButton2.SetActive(false);
+        playButton2.SetActive(true);
         yield return new WaitForSeconds(1f);
         text1.enabled = true;
         yield return new WaitForSeconds(3f);
         text2.enabled = true;
         yield return new WaitForSeconds(3f);
         text3.enabled = true;
-        yield return new WaitForSeconds(3f);
-        playButton2.SetActive(true);
-
         yield return null;
     }
 }
