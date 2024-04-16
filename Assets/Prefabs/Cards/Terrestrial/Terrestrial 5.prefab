@@ -112,6 +112,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 93fe96af87ddc644d9d514b0f7bf7429, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 1ce5058aa2e49a24e96b23cf93a8120a, type: 3}
+  faceDownSprite: {fileID: 21300000, guid: e1d7a798001b2c2449e93ba80bc49ac1, type: 3}
 --- !u!61 &382310002553214179
 BoxCollider2D:
   m_ObjectHideFlags: 0

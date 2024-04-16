@@ -105,7 +105,7 @@ public class DialogueController : MonoBehaviour
         Debug.Log("Working");
         nameText.text = dialogues[i].name;
         dialogueText.text = dialogues[i].message;
-        //portrait = dialogues[i].portrait;
+        portrait.sprite = dialogues[i].portrait;
         //if (writeRoutine != null) StopCoroutine(writeRoutine);
         //writeRoutine = StartCoroutine(WriteRoutine(dialogues[i].message, dialogues[i].writeWaitTime));
     }

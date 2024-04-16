@@ -7607,6 +7607,18 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 3032037481051409157, guid: bff0d76a105080149b09eafb2e24efc7, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Terrestrial
+
+        Value: VI
+
+        Information: The early
+        conquistador marked a turning point in mankind''s history during a westward
+        push to bring ''civilization'' to what were believed to be savage lands. 
+        The power of such individuals to conquer, enslave, and turn the tide of history
+        still sees its echoes in history today.'
+      objectReference: {fileID: 0}
     - target: {fileID: 7676321588632200439, guid: bff0d76a105080149b09eafb2e24efc7, type: 3}
       propertyPath: m_Name
       value: Terrestrial 6
@@ -7688,6 +7700,18 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 7772078403837487124, guid: 2051fa4044586b645adef1cecf8577a0, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Demonic
+
+        Value: II
+
+        Information: Marbas, the
+        fifth king of Hell, is traditionally depicted as a great lion capable of
+        possessing a human form at will.  Commander of numerous legions of Hell,
+        Marbas is known for his healing powers and revelations of hidden secrets,
+        bringing great knowledge to those ubservient to his will.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7949,11 +7973,11 @@ PrefabInstance:
 
         Value: VII
 
-        Information: The early
-        conquistador marked a turning point in mankind''s history during a westward
-        push to bring ''civilization'' to what were believed to be savage lands. 
-        The power of such individuals to conquer, enslave, and turn the tide of history
-        still sees its echoes in history today.'
+        Information: A soldier
+        of the first world war, this poor man represents when warfare truly began
+        to change, characterized by trench warfare, artillery, and rapid fire weaponry. 
+        The start of a new trend in mankind''s ability to destroy one another, this
+        war, sadly, was not the War to end all Wars.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8562,6 +8586,19 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 1737562646069442208, guid: 42c8be87d0536ad43821a385aa9773a6, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Terrestrial
+
+        Value: IV
+
+        Information: Following
+        the Dark Ages, the Medieval Knight served as the symbol of European military
+        prowess, experts in warfare, capable, on account of their advanced armor
+        and training, of facing legions of lesser-trained and equipped foes.  The
+        presence of a night on the battlefield would, for centuries, dominate, leaving
+        today their legacy on history.'
+      objectReference: {fileID: 0}
     - target: {fileID: 2366407031892495515, guid: 42c8be87d0536ad43821a385aa9773a6, type: 3}
       propertyPath: m_Name
       value: Terrestrial 4
@@ -9003,6 +9040,21 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 9205304866318484912, guid: 89045edb2fe66524a93c2aa03f4fc49a, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Demonic
+
+        Value: IV
+
+        Information: A great demon
+        of Lust, Sytri, the anthropoidal chimera, is a prince of Hell known for the
+        many legions under his command and his gift of fertility and lust unto women,
+        able to discover their secrets and use them to his pleasure.  As such, this
+        Hellish prince''s power should never be questioned lest the consequences
+        to one''s love life.
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

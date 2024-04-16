@@ -30,6 +30,9 @@ public class Card2 : MonoBehaviour
 
     public Sprite[] upgradedSprites;
     public Sprite[] changedSprites;
+    public bool faceDown = false;
+    public Sprite faceDownSprite;
+    public Sprite faceUpSprite;
 
     private void Start()
     {
@@ -37,11 +40,16 @@ public class Card2 : MonoBehaviour
         DontDestroyOnLoad(this);
         //Debug.Log("Card Created: " + name);
         spriteRenderer = GetComponent<SpriteRenderer>();
+        faceUpSprite = spriteRenderer.sprite;
     }
 
     void Update()
     {
         gm = FindObjectOfType<GameManager2>();
+        if (faceDown == true)
+            spriteRenderer.sprite = faceDownSprite;
+        else if(faceDown == false)
+            spriteRenderer.sprite = faceUpSprite;
     }
 
     public void OnMouseDown()

@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardDescription: 
   hasBeenPlayed: 0
+  revealed: 1
   playerCard: 0
   handIndex: 0
   cardType: 0
@@ -111,6 +112,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9df5dccf9a2ecc54f8298187b3043155, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: acf45ae5496b1e64fb5fbaf93cfd5462, type: 3}
+  faceDownSprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
 --- !u!61 &43530351408073752
 BoxCollider2D:
   m_ObjectHideFlags: 0

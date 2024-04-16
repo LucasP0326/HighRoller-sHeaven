@@ -850,6 +850,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &134975122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1743,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &230685909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1939,6 +1945,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &248033122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,6 +2006,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &248033125
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2546,6 +2558,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &306857604
 GameObject:
   m_ObjectHideFlags: 0
@@ -4002,6 +4017,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &676531823
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,6 +4162,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &679917423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4375,6 +4396,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &681113252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5226,6 +5250,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 66c05ec854812794ebf4a6bcbcc4920e, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 220eba5b8f0f985478c3f7cf0b01281b, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &776118212
 GameObject:
   m_ObjectHideFlags: 0
@@ -6033,6 +6060,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &901253388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6428,6 +6458,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &953588907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6983,6 +7016,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9d3151cebb60df447888098aebf326b7, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: fcc1febcaed1a08489043871f2da09c3, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1033286548
 GameObject:
   m_ObjectHideFlags: 0
@@ -8201,6 +8237,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &1130740164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8455,6 +8494,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e281592a80b32a74ea419c1634891343, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 9d3151cebb60df447888098aebf326b7, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1147371468
 GameObject:
   m_ObjectHideFlags: 0
@@ -8614,6 +8656,17 @@ MonoBehaviour:
   - {fileID: 1188946956}
   - {fileID: 1727082448}
   - {fileID: 679917422}
+  prideDeck:
+  - {fileID: 901253387}
+  - {fileID: 681113251}
+  - {fileID: 1188946956}
+  - {fileID: 248033124}
+  - {fileID: 679917422}
+  - {fileID: 1130740163}
+  - {fileID: 1768175416}
+  - {fileID: 1304097466}
+  - {fileID: 1727082448}
+  - {fileID: 2126517093}
   discardPile: []
   playerLives: 5
   opponentLives: 5
@@ -9012,6 +9065,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &1188946957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9266,6 +9322,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8e94513bca177b041b216222299c7e29, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 4e99b18faebb3c340bda8de675b709e9, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1234706240
 GameObject:
   m_ObjectHideFlags: 0
@@ -9423,6 +9482,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1ce5058aa2e49a24e96b23cf93a8120a, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 66c05ec854812794ebf4a6bcbcc4920e, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1246378130
 GameObject:
   m_ObjectHideFlags: 0
@@ -9853,6 +9915,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &1297300221
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10146,6 +10211,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1326815842
 GameObject:
   m_ObjectHideFlags: 0
@@ -10501,6 +10569,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fcc1febcaed1a08489043871f2da09c3, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 9f8c1764e319bf443bc7975e2749d6ff, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1352146879
 GameObject:
   m_ObjectHideFlags: 0
@@ -11007,6 +11078,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &1469338888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12188,6 +12262,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 93fe96af87ddc644d9d514b0f7bf7429, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 1ce5058aa2e49a24e96b23cf93a8120a, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1645807623
 GameObject:
   m_ObjectHideFlags: 0
@@ -12345,6 +12422,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4e99b18faebb3c340bda8de675b709e9, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 4505c5159f818444989f8652690faa45, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1650140802
 GameObject:
   m_ObjectHideFlags: 0
@@ -12950,6 +13030,9 @@ MonoBehaviour:
   upgradedSprites: []
   changedSprites:
   - {fileID: 21300000, guid: e281592a80b32a74ea419c1634891343, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1680492393
 GameObject:
   m_ObjectHideFlags: 0
@@ -13529,6 +13612,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1727266458
 GameObject:
   m_ObjectHideFlags: 0
@@ -13818,6 +13904,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &1768175417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14411,6 +14500,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1893815447
 GameObject:
   m_ObjectHideFlags: 0
@@ -15300,6 +15392,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1971885473
 GameObject:
   m_ObjectHideFlags: 0
@@ -15457,6 +15552,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9f8c1764e319bf443bc7975e2749d6ff, type: 3}
   changedSprites:
   - {fileID: 21300000, guid: 8e94513bca177b041b216222299c7e29, type: 3}
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &1982303192
 GameObject:
   m_ObjectHideFlags: 0
@@ -16387,6 +16485,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!1 &2126517091
 GameObject:
   m_ObjectHideFlags: 0
@@ -16445,6 +16546,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   upgradedSprites: []
   changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
 --- !u!61 &2126517094
 BoxCollider2D:
   m_ObjectHideFlags: 0

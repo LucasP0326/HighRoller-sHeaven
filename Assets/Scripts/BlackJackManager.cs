@@ -90,6 +90,20 @@ public class BlackJackManager : MonoBehaviour
                 gameHasBegun = true;
             }
         }
+        if (gameEnded == false)
+        {
+            foreach (Card2 card in opponentHand)
+            {
+                card.faceDown = true;
+            }
+        }
+        if (gameEnded == true)
+        {
+            foreach (Card2 card in opponentHand)
+            {
+                card.faceDown = true;
+            }
+        }
     }
 
     public void ResetGame()
@@ -362,6 +376,8 @@ public class BlackJackManager : MonoBehaviour
         if (playerDone == true && opponentDone == true && gameEnded == true)
         {
             gameEnded = true;
+            opponentCardText.text = opponentTotal.ToString();
+            yield return new WaitForSeconds(1f);
             CheckGameEnd();
             yield return null;
         }
@@ -384,11 +400,14 @@ public class BlackJackManager : MonoBehaviour
         {
             opponentTotal += card.cardValue;
         }
-        opponentCardText.text = opponentTotal.ToString();
+        //opponentCardText.text = opponentTotal.ToString();
 
         if (playerTurn == false && playerDone == true && opponentDone == true && gameEnded == false)
+        {
+            opponentCardText.text = opponentTotal.ToString();
+            yield return new WaitForSeconds(1f);
             CheckGameEnd();
-
+        }
         yield return new WaitForSeconds(1f);
 
         //Opponent Turn
@@ -446,12 +465,12 @@ public class BlackJackManager : MonoBehaviour
 
     public void CheckGameEnd()
     {
-        if (playerTotal < opponentTotal && opponentTotal < 21)
+        if (playerTotal < opponentTotal && opponentTotal <= 21)
         {
             textNotifications.text = "Player loses a life!";
             playerLives--;
         }
-        else if (opponentTotal < playerTotal && playerTotal < 21)
+        else if (opponentTotal < playerTotal && playerTotal <= 21)
         {
             textNotifications.text = "Opponent loses a life!";
             opponentLives--;
@@ -460,12 +479,12 @@ public class BlackJackManager : MonoBehaviour
         {
             textNotifications.text = "Tie!";
         }
-        else if (playerTotal > 21 && opponentTotal < 21)
+        else if (playerTotal > 21 && opponentTotal <= 21)
         {
             textNotifications.text = "Player loses a life!";
             playerLives--;
         }
-        else if (opponentTotal > 21 && playerTotal < 21)
+        else if (opponentTotal > 21 && playerTotal <= 21)
         {
             textNotifications.text = "Opponent loses a life!";
             opponentLives--;
