@@ -55,7 +55,7 @@ public class DialogueController : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (inConversation == false && Time.timeScale != 0)
+        if (inConversation == false && Time.timeScale != 0 && casinoNavigator.inConversation == false)
         {
             BeginConversation();
             GoNext();

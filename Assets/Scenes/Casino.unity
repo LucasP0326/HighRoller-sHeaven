@@ -7231,7 +7231,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &357749786
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7637,7 +7637,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &366129061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13139,7 +13139,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &622701879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27160,7 +27160,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &1317630595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29659,7 +29659,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &1433179542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30326,7 +30326,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!1 &1477809096
 GameObject:
   m_ObjectHideFlags: 0
@@ -30502,7 +30502,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &1477840784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34335,7 +34335,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &1674615801
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36301,7 +36301,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &1766331043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37907,7 +37907,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &1854387124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39719,7 +39719,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &1933743824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40802,7 +40802,7 @@ MonoBehaviour:
         m_Calls: []
   dialogueIndex: 0
   inConversation: 0
-  casinoNavigator: {fileID: 0}
+  casinoNavigator: {fileID: 1892930715}
 --- !u!65 &1961002302
 BoxCollider:
   m_ObjectHideFlags: 0
