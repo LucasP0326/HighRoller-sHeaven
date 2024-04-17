@@ -47,9 +47,13 @@ public class Card2 : MonoBehaviour
     {
         gm = FindObjectOfType<GameManager2>();
         if (faceDown == true)
+        {
             spriteRenderer.sprite = faceDownSprite;
+        }
         else if(faceDown == false)
+        {
             spriteRenderer.sprite = faceUpSprite;
+        }
     }
 
     public void OnMouseDown()
