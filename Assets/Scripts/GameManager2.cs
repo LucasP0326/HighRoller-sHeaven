@@ -914,7 +914,7 @@ public class GameManager2 : MonoBehaviour
             return;
         }
 
-        if (card.cardValue < 7) // Check if the card value is less than 7
+        if (card.cardValue < 9) // Check if the card value is less than 9
         {
             card.cardValue++; // Increase the card value by 1
             Debug.Log("Card value updated: " + card.cardValue);
@@ -924,7 +924,7 @@ public class GameManager2 : MonoBehaviour
         }
         else
         {
-            Debug.Log("Card value cannot be updated further as it is already 7 or higher.");
+            Debug.Log("Card value cannot be updated further as it is already 9 or higher.");
             card.LockCard(); // Lock the card
                              // Increase player's life by 1
             playerLives++;
