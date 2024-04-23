@@ -853,6 +853,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &134975122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,6 +1747,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &230685909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,6 +1950,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &248033122
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2012,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &248033125
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2561,6 +2565,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &306857604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,6 +3652,165 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582068622}
   m_CullTransparentMesh: 1
+--- !u!1 &598861465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 598861466}
+  - component: {fileID: 598861469}
+  - component: {fileID: 598861468}
+  - component: {fileID: 598861467}
+  m_Layer: 0
+  m_Name: Opponent Card (23)
+  m_TagString: Terrestrial
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &598861466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598861465}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 117.2594, y: 74.34688, z: 24.996288}
+  m_LocalScale: {x: 1.3, y: 1.4, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1982303193}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598861467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598861465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardDescription: 
+  hasBeenPlayed: 0
+  revealed: 1
+  playerCard: 0
+  handIndex: 0
+  cardType: 1
+  cardValue: 8
+  deckBuilder: {fileID: 0}
+  inCustomDeck: 0
+  spriteRenderer: {fileID: 598861469}
+  upgradedSprites: []
+  changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
+  blackJackGame: 0
+--- !u!61 &598861468
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598861465}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 15}
+  m_EdgeRadius: 0
+--- !u!212 &598861469
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598861465}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: b37bedca37abcfd4299147ce8b2d6d33, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &625449393
 GameObject:
   m_ObjectHideFlags: 0
@@ -4020,6 +4184,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &676531823
 GameObject:
   m_ObjectHideFlags: 0
@@ -4165,6 +4330,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &679917423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4399,6 +4565,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &681113252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5253,6 +5420,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &776118212
 GameObject:
   m_ObjectHideFlags: 0
@@ -6063,6 +6231,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &901253388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6461,6 +6630,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &953588907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7019,6 +7189,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1033286548
 GameObject:
   m_ObjectHideFlags: 0
@@ -8240,6 +8411,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &1130740164
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8327,6 +8499,165 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9d3151cebb60df447888098aebf326b7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1134179622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1134179623}
+  - component: {fileID: 1134179626}
+  - component: {fileID: 1134179625}
+  - component: {fileID: 1134179624}
+  m_Layer: 0
+  m_Name: Opponent Card (24)
+  m_TagString: Terrestrial
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1134179623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134179622}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 117.2594, y: 74.34688, z: 24.996288}
+  m_LocalScale: {x: 1.3, y: 1.4, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1982303193}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1134179624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134179622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardDescription: 
+  hasBeenPlayed: 0
+  revealed: 1
+  playerCard: 0
+  handIndex: 0
+  cardType: 1
+  cardValue: 9
+  deckBuilder: {fileID: 0}
+  inCustomDeck: 0
+  spriteRenderer: {fileID: 1134179626}
+  upgradedSprites: []
+  changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
+  blackJackGame: 0
+--- !u!61 &1134179625
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134179622}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 15}
+  m_EdgeRadius: 0
+--- !u!212 &1134179626
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134179622}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: dda2855a7a93de940b952e67c044187c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8497,6 +8828,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1147371468
 GameObject:
   m_ObjectHideFlags: 0
@@ -8621,16 +8953,16 @@ MonoBehaviour:
   - {fileID: 2116984139}
   - {fileID: 1727082448}
   - {fileID: 1297300220}
-  - {fileID: 248033124}
+  - {fileID: 1702047332}
   - {fileID: 1768175416}
   greedDeck:
-  - {fileID: 1304097466}
+  - {fileID: 1702047332}
   - {fileID: 2116984139}
   - {fileID: 290351064}
-  - {fileID: 953588906}
+  - {fileID: 1134179624}
   - {fileID: 1469338887}
   - {fileID: 2126517093}
-  - {fileID: 248033124}
+  - {fileID: 1426161052}
   - {fileID: 679917422}
   - {fileID: 1130740163}
   - {fileID: 1768175416}
@@ -8655,7 +8987,7 @@ MonoBehaviour:
   - {fileID: 2116984139}
   - {fileID: 1188946956}
   - {fileID: 1727082448}
-  - {fileID: 679917422}
+  - {fileID: 1134179624}
   prideDeck:
   - {fileID: 901253387}
   - {fileID: 681113251}
@@ -8666,7 +8998,7 @@ MonoBehaviour:
   - {fileID: 1768175416}
   - {fileID: 1304097466}
   - {fileID: 1727082448}
-  - {fileID: 2126517093}
+  - {fileID: 1426161052}
   discardPile: []
   playerLives: 5
   opponentLives: 5
@@ -9068,6 +9400,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &1188946957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9325,6 +9658,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1234706240
 GameObject:
   m_ObjectHideFlags: 0
@@ -9485,6 +9819,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1246378130
 GameObject:
   m_ObjectHideFlags: 0
@@ -9918,6 +10253,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &1297300221
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10214,6 +10550,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1326815842
 GameObject:
   m_ObjectHideFlags: 0
@@ -10572,6 +10909,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1352146879
 GameObject:
   m_ObjectHideFlags: 0
@@ -10980,6 +11318,165 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1426161050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426161051}
+  - component: {fileID: 1426161054}
+  - component: {fileID: 1426161053}
+  - component: {fileID: 1426161052}
+  m_Layer: 0
+  m_Name: Opponent Card (26)
+  m_TagString: Terrestrial
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1426161051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426161050}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 117.2594, y: 74.34688, z: 24.996288}
+  m_LocalScale: {x: 1.3, y: 1.4, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1982303193}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1426161052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426161050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardDescription: 
+  hasBeenPlayed: 0
+  revealed: 1
+  playerCard: 0
+  handIndex: 0
+  cardType: 2
+  cardValue: 9
+  deckBuilder: {fileID: 0}
+  inCustomDeck: 0
+  spriteRenderer: {fileID: 1426161054}
+  upgradedSprites: []
+  changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
+  blackJackGame: 0
+--- !u!61 &1426161053
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426161050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 15}
+  m_EdgeRadius: 0
+--- !u!212 &1426161054
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426161050}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 574051884e12df4419f995294ef8aa3e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1445104015
 GameObject:
   m_ObjectHideFlags: 0
@@ -11081,6 +11578,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &1469338888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12265,6 +12763,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1645807623
 GameObject:
   m_ObjectHideFlags: 0
@@ -12425,6 +12924,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1650140802
 GameObject:
   m_ObjectHideFlags: 0
@@ -13033,6 +13533,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1680492393
 GameObject:
   m_ObjectHideFlags: 0
@@ -13322,6 +13823,165 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696016797}
   m_CullTransparentMesh: 1
+--- !u!1 &1702047330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1702047331}
+  - component: {fileID: 1702047334}
+  - component: {fileID: 1702047333}
+  - component: {fileID: 1702047332}
+  m_Layer: 0
+  m_Name: Opponent Card (21)
+  m_TagString: Terrestrial
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1702047331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702047330}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 117.2594, y: 74.34688, z: 24.996288}
+  m_LocalScale: {x: 1.3, y: 1.4, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1982303193}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1702047332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702047330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardDescription: 
+  hasBeenPlayed: 0
+  revealed: 1
+  playerCard: 0
+  handIndex: 0
+  cardType: 0
+  cardValue: 8
+  deckBuilder: {fileID: 0}
+  inCustomDeck: 0
+  spriteRenderer: {fileID: 1702047334}
+  upgradedSprites: []
+  changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
+  blackJackGame: 0
+--- !u!61 &1702047333
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702047330}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 15}
+  m_EdgeRadius: 0
+--- !u!212 &1702047334
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702047330}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 0ba0d44efb362d94684e29d499d65b18, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1708077464
 GameObject:
   m_ObjectHideFlags: 0
@@ -13615,6 +14275,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1727266458
 GameObject:
   m_ObjectHideFlags: 0
@@ -13907,6 +14568,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &1768175417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14261,6 +14923,165 @@ Transform:
   m_Father: {fileID: 1108417230}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1807645424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807645425}
+  - component: {fileID: 1807645428}
+  - component: {fileID: 1807645427}
+  - component: {fileID: 1807645426}
+  m_Layer: 0
+  m_Name: Opponent Card (25)
+  m_TagString: Terrestrial
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1807645425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807645424}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 117.2594, y: 74.34688, z: 24.996288}
+  m_LocalScale: {x: 1.3, y: 1.4, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1982303193}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1807645426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807645424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardDescription: 
+  hasBeenPlayed: 0
+  revealed: 1
+  playerCard: 0
+  handIndex: 0
+  cardType: 2
+  cardValue: 8
+  deckBuilder: {fileID: 0}
+  inCustomDeck: 0
+  spriteRenderer: {fileID: 1807645428}
+  upgradedSprites: []
+  changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
+  blackJackGame: 0
+--- !u!61 &1807645427
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807645424}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 15}
+  m_EdgeRadius: 0
+--- !u!212 &1807645428
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807645424}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: cd12f38bd1f427b408b6d447458c3b42, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1825578115
 GameObject:
   m_ObjectHideFlags: 0
@@ -14503,6 +15324,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1893815447
 GameObject:
   m_ObjectHideFlags: 0
@@ -15395,6 +16217,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1971885473
 GameObject:
   m_ObjectHideFlags: 0
@@ -15555,6 +16378,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &1982303192
 GameObject:
   m_ObjectHideFlags: 0
@@ -15605,6 +16429,12 @@ Transform:
   - {fileID: 679917421}
   - {fileID: 1130740162}
   - {fileID: 1768175415}
+  - {fileID: 1702047331}
+  - {fileID: 2105713369}
+  - {fileID: 598861466}
+  - {fileID: 1134179623}
+  - {fileID: 1807645425}
+  - {fileID: 1426161051}
   m_Father: {fileID: 1075523155}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16195,6 +17025,165 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091251100}
   m_CullTransparentMesh: 1
+--- !u!1 &2105713368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105713369}
+  - component: {fileID: 2105713372}
+  - component: {fileID: 2105713371}
+  - component: {fileID: 2105713370}
+  m_Layer: 0
+  m_Name: Opponent Card (22)
+  m_TagString: Terrestrial
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2105713369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105713368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 117.2594, y: 74.34688, z: 24.996288}
+  m_LocalScale: {x: 1.3, y: 1.4, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1982303193}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2105713370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105713368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardDescription: 
+  hasBeenPlayed: 0
+  revealed: 1
+  playerCard: 0
+  handIndex: 0
+  cardType: 0
+  cardValue: 9
+  deckBuilder: {fileID: 0}
+  inCustomDeck: 0
+  spriteRenderer: {fileID: 2105713372}
+  upgradedSprites: []
+  changedSprites: []
+  faceDown: 0
+  faceDownSprite: {fileID: 0}
+  faceUpSprite: {fileID: 0}
+  blackJackGame: 0
+--- !u!61 &2105713371
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105713368}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.8, y: 15.12}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 15}
+  m_EdgeRadius: 0
+--- !u!212 &2105713372
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105713368}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 9d17d6c67acc4cc48affa6c896afad8c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2108065556
 GameObject:
   m_ObjectHideFlags: 0
@@ -16488,6 +17477,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!1 &2126517091
 GameObject:
   m_ObjectHideFlags: 0
@@ -16549,6 +17539,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 0}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &2126517094
 BoxCollider2D:
   m_ObjectHideFlags: 0

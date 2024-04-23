@@ -98,15 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardDescription: 'Type: Demonic
-
-    Value: VII
-
-    Information: A Grand Marquis
-    of Hell who governs 40 infernal legions, Amon is the demon of life and reproduction. 
-    Let this not mistake them for a positive influence, as the horror they''ve brought
-    unto the armies of Heaven still is talked about in the history of the War of
-    Heaven and Hell.'
+  cardDescription: 
   hasBeenPlayed: 0
   revealed: 1
   playerCard: 0
@@ -123,6 +115,7 @@ MonoBehaviour:
   faceDown: 0
   faceDownSprite: {fileID: 21300000, guid: 638b73a4e808e9d419abe2cc44e04256, type: 3}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 0
 --- !u!61 &-1551852121459263449
 BoxCollider2D:
   m_ObjectHideFlags: 0

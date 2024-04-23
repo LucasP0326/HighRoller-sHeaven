@@ -62,6 +62,7 @@ public class BlackJackManager : MonoBehaviour
         // Initialize player's hand
         foreach (Card2 card in availableCards)
         {
+            card.faceDown = false;
             card.gameObject.SetActive(false);
         }
         playerHand.Clear();
@@ -373,10 +374,6 @@ public class BlackJackManager : MonoBehaviour
 
     public IEnumerator StartBattle()
     {
-        foreach (Card2 card in playerHand)
-        {
-            card.faceDown = false;
-        }
         if (playerDone == true && opponentDone == true && gameEnded == false)
         {
             gameEnded = true;

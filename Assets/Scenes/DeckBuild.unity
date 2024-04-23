@@ -924,7 +924,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To Casino
+  m_text: To Lobby
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b77303e148fc1048b60af91fe1c23a2, type: 2}
   m_sharedMaterial: {fileID: -6393424504887518969, guid: 0b77303e148fc1048b60af91fe1c23a2, type: 2}
@@ -2907,6 +2907,19 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 9150485238316572659, guid: f645f7ba10c6af74a9473c68cf36b6af, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Terrestrial
+
+        Value: IX
+
+        Information: An explorer
+        of space, of new worlds, contrary to any soldier of any time, this individual
+        would represent, rather than destruction, humanity''s capacity for growth,
+        innovation, and will.  Reaching the stars and coming back, such an event
+        marks one of mankind''s greatest achievements and its capacity to seek a
+        future not of destruction, but of creation.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5675,6 +5688,19 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 1631398835264974210, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Holy
+
+        Value: IX
+
+        Information: As opposed to
+        the Voice of God, these angels are the Sword of God, his right hand, his
+        Justice in War, and the bringers of His will against the fallen legions of
+        Hell.  Stalwart do they protect the realms of man and God alike, ensuring
+        the forces of Hell shall advance, and as such so shall Heaven not take one
+        step back.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -5748,6 +5774,17 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 754108579353585362, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Demonic
+
+        Value: VIII
+
+        Information: Ruler of 60
+        legions of demons, Botis, sometimes also referred to as Otis, brings favor
+        from allies and enemies alike.  This serpo-human demon, known for their cunning
+        ways, occupies an understandably high standing among the ranks of Hell.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
       propertyPath: m_Name
       value: Demonic 8
@@ -6855,6 +6892,18 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 9150485238316572659, guid: 8cdcc09462609aa4cbb76948279d3e5b, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Terrestrial
+
+        Value: VIII
+
+        Information: A soldier
+        of the Second World War, these men would face down the worst realities of
+        mankind''s brutish instincts in the greatest loss of life ever know to this
+        species.  With losses in the tens of millions, this event would forever mark
+        the pinnacle of mankind in its potential for ruelty, and destroying itself.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8347,6 +8396,18 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 754108579353585362, guid: 83aca1428b700b64daa6773457e21396, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Demonic
+
+        Value: IX
+
+        Information: Once an angel
+        of powers, this rider of a Pale Horse is known as Baleth, king of Hell and
+        commander of 85 demon legions.  His might and fright second only to that
+        of Lucifer himself, this King''s power goes without question, and one can
+        only shudder in his wake.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: 83aca1428b700b64daa6773457e21396, type: 3}
       propertyPath: m_Name
       value: Demonic 9
@@ -8428,6 +8489,18 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 1631398835264974210, guid: f1422749db83e7d46abd907076337550, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Holy
+
+        Value: VIII
+
+        Information: An archetypal
+        angel, this being is what one most think of when they picture an angel, a
+        benevolent intermediary between God and mankind, protectors, guides, and
+        bearer of news, good and ill alike.  These beings are the messengers of God,
+        and, as such, HIS voice.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: f1422749db83e7d46abd907076337550, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -9080,11 +9153,11 @@ PrefabInstance:
 
         Value: III
 
-        Information: This Bronze
-        Age warrior represents the evolution of warfare over the millenia, trading
-        out stone weapons for those of forged metals.  Though a weak metal like bronze,
-        the technological innovation of manking to discover new methods of waging
-        war goes unquestioned.'
+        Information: A Greek
+        Spartan, these warriors and their prowess cannot be understated, representing
+        the mightiest hoplites of the many Greek city states.  Known for their roles
+        in the Greco-Persian and Peloponnesian wars, these mighty warriors represent
+        not just advancement in man''s technology, but so too their tactics and strategies.'
       objectReference: {fileID: 0}
     - target: {fileID: 3870472170943021258, guid: a9d3ce07a22fbcb498b21cdb3cc619a2, type: 3}
       propertyPath: m_Name
@@ -9194,12 +9267,10 @@ PrefabInstance:
 
         Value: VI
 
-        Information: Known for their
-        control of the elements, virtues assist in guiding the forces of the world. 
-        As well as this, they assist in carrying out miracles and reinforcing the
-        faith of man in God.
-
-'
+        Information: Simply deemed
+        ''Dominions,'' the power of such angels should not be confused with their
+        simple title, as they are the movers of all things in the universe, governing
+        the movements of starts, planets, and other celestial bodies.'
       objectReference: {fileID: 0}
     - target: {fileID: 5463601035015038753, guid: 699a1f1e2d53bed4d9c29d14560f9382, type: 3}
       propertyPath: m_RootOrder
@@ -9284,10 +9355,11 @@ PrefabInstance:
 
         Value: V
 
-        Information: A High Ranking
-        Demon, yet still obedient to Lucifer, Paimon still yet is a King of Hell. 
-        While understood to still be vulnerably to the might of God, this Hellish
-        King''s power amongst the legions of Hell should not be underestimated.'
+        Information: A Grand Marquis
+        of Hell who governs 40 infernal legions, Amon is the demon of life and reproduction. 
+        Let this not mistake them for a positive influence, as the horror they''ve
+        brought unto the armies of Heaven still is talked about in the history of
+        the War of Heaven and Hell.'
       objectReference: {fileID: 0}
     - target: {fileID: 7227615783789752663, guid: ea87d258c32dbfc449c7d1d5148f4cdc, type: 3}
       propertyPath: m_RootOrder
@@ -9366,6 +9438,20 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 1631398835264974210, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Holy
+
+        Value: VII
+
+        Information: Also known as
+        Ophanin, this angel known as a throne is deemed an angel of significant power
+        and authority.  Said to have been the natural evolution of the angels who
+        distinguished themselves as heroes doing the War of Heaven and Hell, the
+        significance of such angels remains undisputed.
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -9583,11 +9669,11 @@ PrefabInstance:
 
         Value: II
 
-        Information: A Greek
-        Spartan, these warriors and their prowess cannot be understated, representing
-        the mightiest hoplites of the many Greek city states.  Known for their roles
-        in the Greco-Persian and Peloponnesian wars, these mighty warriors represent
-        not just advancement in man''s technology, but so too their tactics and strategies.'
+        Information: This Bronze
+        Age warrior represents the evolution of warfare over the millenia, trading
+        out stone weapons for those of forged metals.  Though a weak metal like bronze,
+        the technological innovation of manking to discover new methods of waging
+        war goes unquestioned.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10120,13 +10206,10 @@ PrefabInstance:
 
         Value: V
 
-        Information: Also known as Ophanin,
-        this angel known as a throne is deemed an angel of significant power and
-        authority.  Said to have been the natural evolution of the angels who distinguished
-        themselves as heroes doing the War of Heaven and Hell, the significance of
-        such angels remains undisputed.
-
-'
+        Information: Known for their
+        control of the elements, virtues assist in guiding the forces of the world. 
+        As well as this, they assist in carrying out miracles and reinforcing the
+        faith of man in God.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10237,6 +10320,17 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
+    - target: {fileID: 754108579353585362, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
+      propertyPath: cardDescription
+      value: 'Type: Demonic
+
+        Value: VII
+
+        Information: A High Ranking
+        Demon, yet still obedient to Lucifer, Paimon still yet is a King of Hell. 
+        While understood to still be vulnerably to the might of God, this Hellish
+        King''s power amongst the legions of Hell should not be underestimated.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
       propertyPath: m_Name
       value: Demonic 7
