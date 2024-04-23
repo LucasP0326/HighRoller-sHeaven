@@ -373,6 +373,10 @@ public class BlackJackManager : MonoBehaviour
 
     public IEnumerator StartBattle()
     {
+        foreach (Card2 card in playerHand)
+        {
+            card.faceDown = false;
+        }
         if (playerDone == true && opponentDone == true && gameEnded == false)
         {
             gameEnded = true;

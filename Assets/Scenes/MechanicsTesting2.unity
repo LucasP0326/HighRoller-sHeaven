@@ -847,7 +847,7 @@ MonoBehaviour:
   cardValue: 1
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 107363008}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -1740,7 +1740,7 @@ MonoBehaviour:
   cardValue: 2
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 224530403}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   cardValue: 1
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 236763015}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -2003,7 +2003,7 @@ MonoBehaviour:
   cardValue: 4
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 248033126}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -2555,7 +2555,7 @@ MonoBehaviour:
   cardValue: 7
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 290351063}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -4014,7 +4014,7 @@ MonoBehaviour:
   cardValue: 4
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 644998194}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -4159,7 +4159,7 @@ MonoBehaviour:
   cardValue: 5
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 679917424}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -4393,7 +4393,7 @@ MonoBehaviour:
   cardValue: 2
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 681113253}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -5245,7 +5245,7 @@ MonoBehaviour:
   cardValue: 3
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 752050106}
   upgradedSprites:
   - {fileID: 21300000, guid: 66c05ec854812794ebf4a6bcbcc4920e, type: 3}
   changedSprites:
@@ -6057,7 +6057,7 @@ MonoBehaviour:
   cardValue: 1
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 901253389}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -6455,7 +6455,7 @@ MonoBehaviour:
   cardValue: 5
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 953588908}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -7011,7 +7011,7 @@ MonoBehaviour:
   cardValue: 5
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 992116313}
   upgradedSprites:
   - {fileID: 21300000, guid: 9d3151cebb60df447888098aebf326b7, type: 3}
   changedSprites:
@@ -8234,7 +8234,7 @@ MonoBehaviour:
   cardValue: 6
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1130740165}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -8489,7 +8489,7 @@ MonoBehaviour:
   cardValue: 6
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1136546495}
   upgradedSprites:
   - {fileID: 21300000, guid: e281592a80b32a74ea419c1634891343, type: 3}
   changedSprites:
@@ -9062,7 +9062,7 @@ MonoBehaviour:
   cardValue: 3
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1188946958}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -9317,7 +9317,7 @@ MonoBehaviour:
   cardValue: 2
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1233868342}
   upgradedSprites:
   - {fileID: 21300000, guid: 8e94513bca177b041b216222299c7e29, type: 3}
   changedSprites:
@@ -9477,7 +9477,7 @@ MonoBehaviour:
   cardValue: 4
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1234706242}
   upgradedSprites:
   - {fileID: 21300000, guid: 1ce5058aa2e49a24e96b23cf93a8120a, type: 3}
   changedSprites:
@@ -9912,7 +9912,7 @@ MonoBehaviour:
   cardValue: 4
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1297300222}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -10208,7 +10208,7 @@ MonoBehaviour:
   cardValue: 5
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1304097465}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -10564,7 +10564,7 @@ MonoBehaviour:
   cardValue: 4
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1349121187}
   upgradedSprites:
   - {fileID: 21300000, guid: fcc1febcaed1a08489043871f2da09c3, type: 3}
   changedSprites:
@@ -11075,7 +11075,7 @@ MonoBehaviour:
   cardValue: 6
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1469338889}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -12257,7 +12257,7 @@ MonoBehaviour:
   cardValue: 5
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1634945412}
   upgradedSprites:
   - {fileID: 21300000, guid: 93fe96af87ddc644d9d514b0f7bf7429, type: 3}
   changedSprites:
@@ -12417,7 +12417,7 @@ MonoBehaviour:
   cardValue: 1
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1645807625}
   upgradedSprites:
   - {fileID: 21300000, guid: 4e99b18faebb3c340bda8de675b709e9, type: 3}
   changedSprites:
@@ -13026,7 +13026,7 @@ MonoBehaviour:
   cardValue: 7
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1676724659}
   upgradedSprites: []
   changedSprites:
   - {fileID: 21300000, guid: e281592a80b32a74ea419c1634891343, type: 3}
@@ -13609,7 +13609,7 @@ MonoBehaviour:
   cardValue: 3
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1727082447}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -13901,7 +13901,7 @@ MonoBehaviour:
   cardValue: 7
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1768175418}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -14497,7 +14497,7 @@ MonoBehaviour:
   cardValue: 3
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1857531913}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -15389,7 +15389,7 @@ MonoBehaviour:
   cardValue: 2
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1968758757}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -15547,7 +15547,7 @@ MonoBehaviour:
   cardValue: 3
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1971885475}
   upgradedSprites:
   - {fileID: 21300000, guid: 9f8c1764e319bf443bc7975e2749d6ff, type: 3}
   changedSprites:
@@ -16482,7 +16482,7 @@ MonoBehaviour:
   cardValue: 6
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 2116984138}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0
@@ -16543,7 +16543,7 @@ MonoBehaviour:
   cardValue: 7
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 2126517095}
   upgradedSprites: []
   changedSprites: []
   faceDown: 0

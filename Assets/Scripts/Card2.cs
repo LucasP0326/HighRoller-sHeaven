@@ -33,24 +33,25 @@ public class Card2 : MonoBehaviour
     public bool faceDown = false;
     public Sprite faceDownSprite;
     public Sprite faceUpSprite;
+    public bool blackJackGame = false;
 
     private void Start()
     {
         gm = FindObjectOfType<GameManager2>();
-        DontDestroyOnLoad(this);
-        //Debug.Log("Card Created: " + name);
         spriteRenderer = GetComponent<SpriteRenderer>();
         faceUpSprite = spriteRenderer.sprite;
+        DontDestroyOnLoad(this);
+        //Debug.Log("Card Created: " + name);
     }
 
     void Update()
     {
         gm = FindObjectOfType<GameManager2>();
-        if (faceDown == true)
+        if (faceDown == true && blackJackGame == true)
         {
             spriteRenderer.sprite = faceDownSprite;
         }
-        else if(faceDown == false)
+        else if(faceDown == false && blackJackGame == true)
         {
             spriteRenderer.sprite = faceUpSprite;
         }
@@ -115,6 +116,7 @@ public class Card2 : MonoBehaviour
         if (index >= 0 && index < upgradedSprites.Length)
         {
             spriteRenderer.sprite = upgradedSprites[index];
+            Debug.Log("Upgrade 2");
         }
     }
 
@@ -123,17 +125,20 @@ public class Card2 : MonoBehaviour
         if (index >= 0 && index < changedSprites.Length)
         {
             spriteRenderer.sprite = changedSprites[index];
+            Debug.Log("Change Type 2");
         }
     }
 
     public void UpgradeCardTypeAndSprite(int index)
     {
         UpgradeCardSprite(index);
+        Debug.Log("Upgrade 1");
     }
 
     public void ChangeCardTypeAndSprite(int index)
     {
         ChangeCardSprite(index);
+        Debug.Log("Change Type 1");
     }
 
     public void LockCard()

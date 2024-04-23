@@ -107,7 +107,7 @@ MonoBehaviour:
   cardValue: 6
   deckBuilder: {fileID: 0}
   inCustomDeck: 0
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 3561136023492958583}
   upgradedSprites:
   - {fileID: 21300000, guid: f18e8435c21088b498dc90034619ed00, type: 3}
   changedSprites:
