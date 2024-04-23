@@ -6812,18 +6812,6 @@ PrefabInstance:
       value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3775608850000091356, guid: 8cdcc09462609aa4cbb76948279d3e5b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.94008446
-      objectReference: {fileID: 0}
-    - target: {fileID: 3775608850000091356, guid: 8cdcc09462609aa4cbb76948279d3e5b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0123987
-      objectReference: {fileID: 0}
-    - target: {fileID: 3775608850000091356, guid: 8cdcc09462609aa4cbb76948279d3e5b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.043388512
-      objectReference: {fileID: 0}
-    - target: {fileID: 3775608850000091356, guid: 8cdcc09462609aa4cbb76948279d3e5b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 574.01
       objectReference: {fileID: 0}
@@ -9179,18 +9167,6 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 9150485238316572659, guid: 280bb8e2e2645404eabb530230a93251, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Terrestrial
-
-        Value: VII
-
-        Information: A soldier
-        of the first world war, this poor man represents when warfare truly began
-        to change, characterized by trench warfare, artillery, and rapid fire weaponry. 
-        The start of a new trend in mankind''s ability to destroy one another, this
-        war, sadly, was not the War to end all Wars.'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9390,32 +9366,9 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 1631398835264974210, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Holy
-
-        Value: VII
-
-        Information: Simply deemed
-        ''Dominions,'' the power of such angels should not be confused with their
-        simple title, as they are the movers of all things in the universe, governing
-        the movements of starts, planets, and other celestial bodies.'
-      objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
       propertyPath: m_RootOrder
       value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.94008446
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0123987
-      objectReference: {fileID: 0}
-    - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.043388512
       objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10284,18 +10237,6 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 754108579353585362, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Demonic
-
-        Value: VII
-
-        Information: A Grand Marquis
-        of Hell who governs 40 infernal legions, Amon is the demon of life and reproduction. 
-        Let this not mistake them for a positive influence, as the horror they''ve
-        brought unto the armies of Heaven still is talked about in the history of
-        the War of Heaven and Hell.'
-      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
       propertyPath: m_Name
       value: Demonic 7
