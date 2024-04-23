@@ -721,13 +721,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\t         Special Actions\n|Upgrade Card or Change Type|\n-Spend 1
-    life to either increase the numerical value of a card by 1 or change a card's
-    type.\n|Reverse Rules|\n-Spend 1 life to make the rules of the game the opposite
-    of the standard for the duration of the match.\n|Reshuffle Hand|\n-Spend 1 life
-    to reshuffle your current hand and draw 3 new cards.\n|Regain Life|\n-Discard
-    the current cards in your hand to gain 1 life and draw 3 new cards. These cards
-    are removed for the duration of the match, and this can only be done twice."
+  m_text: -Players receive all cards face up and the dealer's first card is face
+    up and the second is face down. The object of the game is to get closer to 21
+    than the dealer without going over 21
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b77303e148fc1048b60af91fe1c23a2, type: 2}
   m_sharedMaterial: {fileID: -6393424504887518969, guid: 0b77303e148fc1048b60af91fe1c23a2, type: 2}
@@ -1148,7 +1144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &187297691
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1156,18 +1152,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187297690}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 266015834}
-  m_Father: {fileID: 1864792659}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: -200}
+  m_AnchoredPosition: {x: 1110, y: 340}
   m_SizeDelta: {x: 180, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &187297692
@@ -5543,7 +5539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35, y: 191}
+  m_AnchoredPosition: {x: 8, y: 191}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &887958650
@@ -5566,8 +5562,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\t Rules\n\n-Demonic beats Terrestrial.\n\n-Terrestrial beats Holy.\n\n-Holy
-    beats Demonic.\n\n-Higher Number wins in Same Type Matchups."
+  m_text: "\t            Blackjack Rules\n\n-Players and Opponents are each given
+    2 cards to begin.\n-The Opponent and the Player then can either choose to stay
+    with their current cards or draw one card each.\n-This continues until both Player
+    and Opponent have decided to stay.\n-The individual with the highest number equal
+    to or below 21 wins.\n-If both Player and Opponent have the same value or are
+    above 21, the game is tied."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b77303e148fc1048b60af91fe1c23a2, type: 2}
   m_sharedMaterial: {fileID: -6393424504887518969, guid: 0b77303e148fc1048b60af91fe1c23a2, type: 2}
@@ -5594,8 +5594,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13401,7 +13401,6 @@ RectTransform:
   - {fileID: 725030290}
   - {fileID: 2090446728}
   - {fileID: 887958649}
-  - {fileID: 187297691}
   m_Father: {fileID: 854922531}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
