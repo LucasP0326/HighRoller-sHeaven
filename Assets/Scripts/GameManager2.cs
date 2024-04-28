@@ -51,6 +51,8 @@ public class GameManager2 : MonoBehaviour
     public List<Card2> lustDeck = new List<Card2>(); //Lust Deck
     public List<Card2> gluttonyDeck = new List<Card2>(); //Gluttony Deck
     public List<Card2> prideDeck = new List<Card2>(); //Pride Deck
+    public List<Card2> slothDeck = new List<Card2>(); //Sloth Deck
+    public List<Card2> wrathDeck = new List<Card2>(); //Wrath Deck
 
     [Header("Other Settings")]
     public List<Card2> discardPile = new List<Card2>(); // Create a list to represent the discard pile
@@ -82,12 +84,17 @@ public class GameManager2 : MonoBehaviour
 
     [Header("Game Intro")]
     public GameObject introScreen;
+    public GameObject[] opponentImages;
     public TextMeshProUGUI opponentDeclare;
     public TextMeshProUGUI opponent;
 
     // Start is called before the first frame update
     void Start()
     {
+        for (int i = 0; i < opponentImages.Length; i++)
+        {
+            opponentImages[i].SetActive(false);
+        }
         deckToUse = ProgressData.opponentNumber;
         StartCoroutine(GameIntro());
     }
@@ -148,9 +155,23 @@ public class GameManager2 : MonoBehaviour
                 opponentDeck.Add(card);
             }
         }
-        if(deckToUse == 4)
+        if(deckToUse == 5)
         {
             foreach (Card2 card in prideDeck)
+            {
+                opponentDeck.Add(card);
+            }
+        }
+        if(deckToUse == 6)
+        {
+            foreach (Card2 card in slothDeck)
+            {
+                opponentDeck.Add(card);
+            }
+        }
+        if(deckToUse == 7)
+        {
+            foreach (Card2 card in wrathDeck)
             {
                 opponentDeck.Add(card);
             }
@@ -963,6 +984,16 @@ public class GameManager2 : MonoBehaviour
         {
             opponent.text = "Pride";
         }
+        if(deckToUse == 6)
+        {
+            opponent.text = "Pride";
+        }
+        if(deckToUse == 7)
+        {
+            opponent.text = "Pride";
+        }
+        if (deckToUse != 0)
+            opponentImages[deckToUse].SetActive(true);
         yield return new WaitForSeconds(1.5f);
         introScreen.SetActive(false);
         Start2();
