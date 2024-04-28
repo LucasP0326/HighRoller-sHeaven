@@ -655,11 +655,11 @@ public class GameManager2 : MonoBehaviour
             winscreen.SetActive(true);
             Debug.Log("Player Wins the game!");
             fateText.text = "Player wins the game!";
-            if (ProgressData.opponentNumber < 5)
+            if (ProgressData.opponentNumber < 7)
             {
                 ProgressData.opponentNumber++;
             }
-            else if (ProgressData.opponentNumber >= 5)
+            else if (ProgressData.opponentNumber >= 7)
             {
                 fateText.text = "Player has beaten the house!";
                 ProgressData.opponentNumber = 0;
