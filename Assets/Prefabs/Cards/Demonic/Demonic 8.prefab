@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4833571971852450314}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -198.67453, y: 0, z: -24.599007}
-  m_LocalScale: {x: 1.2, y: 1.4, z: 1.2}
+  m_LocalScale: {x: 0.94008446, y: 1.0123987, z: 0.043388512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7590930100581309691
 SpriteRenderer:
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cd12f38bd1f427b408b6d447458c3b42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc9da2e882dfbe347bbf4b6e696003b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef210cedf8b3d34498e34e27f4e2b958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardDescription: 
+  cardDescription: 'Type: Demonic
+
+    Value: VIII
+
+    Information: Ruler of 60
+    legions of demons, Botis, sometimes also referred to as Otis, brings favor from
+    allies and enemies alike.  This serpo-human demon, known for their cunning ways,
+    occupies an understandably high standing among the ranks of Hell.'
   hasBeenPlayed: 0
   revealed: 1
   playerCard: 0
@@ -109,9 +116,9 @@ MonoBehaviour:
   inCustomDeck: 0
   spriteRenderer: {fileID: 7590930100581309691}
   upgradedSprites:
-  - {fileID: 21300000, guid: 574051884e12df4419f995294ef8aa3e, type: 3}
+  - {fileID: 21300000, guid: 8ca84bd73548d2e49ac85916ead4cf98, type: 3}
   changedSprites:
-  - {fileID: 21300000, guid: 0ba0d44efb362d94684e29d499d65b18, type: 3}
+  - {fileID: 21300000, guid: db9a1073b3d94104f9b4b1da00e3f4e8, type: 3}
   faceDown: 0
   faceDownSprite: {fileID: 21300000, guid: 638b73a4e808e9d419abe2cc44e04256, type: 3}
   faceUpSprite: {fileID: 0}
@@ -152,7 +159,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 15.12}
+    oldSize: {x: 10.72, y: 15}
     newSize: {x: 10.8, y: 15.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

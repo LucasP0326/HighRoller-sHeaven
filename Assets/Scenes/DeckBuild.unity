@@ -2907,19 +2907,6 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 9150485238316572659, guid: f645f7ba10c6af74a9473c68cf36b6af, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Terrestrial
-
-        Value: IX
-
-        Information: An explorer
-        of space, of new worlds, contrary to any soldier of any time, this individual
-        would represent, rather than destruction, humanity''s capacity for growth,
-        innovation, and will.  Reaching the stars and coming back, such an event
-        marks one of mankind''s greatest achievements and its capacity to seek a
-        future not of destruction, but of creation.'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5138,8 +5125,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 601, y: -100.5}
-  m_SizeDelta: {x: 300, y: 70}
+  m_AnchoredPosition: {x: 568, y: -111.63074}
+  m_SizeDelta: {x: 300, y: 79.7421}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1428793151
 MonoBehaviour:
@@ -5688,19 +5675,6 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 1631398835264974210, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Holy
-
-        Value: IX
-
-        Information: As opposed to
-        the Voice of God, these angels are the Sword of God, his right hand, his
-        Justice in War, and the bringers of His will against the fallen legions of
-        Hell.  Stalwart do they protect the realms of man and God alike, ensuring
-        the forces of Hell shall advance, and as such so shall Heaven not take one
-        step back.'
-      objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -5774,17 +5748,6 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 754108579353585362, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Demonic
-
-        Value: VIII
-
-        Information: Ruler of 60
-        legions of demons, Botis, sometimes also referred to as Otis, brings favor
-        from allies and enemies alike.  This serpo-human demon, known for their cunning
-        ways, occupies an understandably high standing among the ranks of Hell.'
-      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
       propertyPath: m_Name
       value: Demonic 8
@@ -5792,18 +5755,6 @@ PrefabInstance:
     - target: {fileID: 7711174830131011825, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
       propertyPath: m_RootOrder
       value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 7711174830131011825, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.94008446
-      objectReference: {fileID: 0}
-    - target: {fileID: 7711174830131011825, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0123987
-      objectReference: {fileID: 0}
-    - target: {fileID: 7711174830131011825, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.043388512
       objectReference: {fileID: 0}
     - target: {fileID: 7711174830131011825, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6892,18 +6843,6 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 9150485238316572659, guid: 8cdcc09462609aa4cbb76948279d3e5b, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Terrestrial
-
-        Value: VIII
-
-        Information: A soldier
-        of the Second World War, these men would face down the worst realities of
-        mankind''s brutish instincts in the greatest loss of life ever know to this
-        species.  With losses in the tens of millions, this event would forever mark
-        the pinnacle of mankind in its potential for ruelty, and destroying itself.'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8047,8 +7986,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 259, y: -100.5}
-  m_SizeDelta: {x: 300, y: 70}
+  m_AnchoredPosition: {x: 226, y: -111.63074}
+  m_SizeDelta: {x: 300, y: 79.7421}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2057284185
 MonoBehaviour:
@@ -8396,18 +8335,6 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 754108579353585362, guid: 83aca1428b700b64daa6773457e21396, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Demonic
-
-        Value: IX
-
-        Information: Once an angel
-        of powers, this rider of a Pale Horse is known as Baleth, king of Hell and
-        commander of 85 demon legions.  His might and fright second only to that
-        of Lucifer himself, this King''s power goes without question, and one can
-        only shudder in his wake.'
-      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: 83aca1428b700b64daa6773457e21396, type: 3}
       propertyPath: m_Name
       value: Demonic 9
@@ -8489,18 +8416,6 @@ PrefabInstance:
       propertyPath: deckBuilder
       value: 
       objectReference: {fileID: 1228880684}
-    - target: {fileID: 1631398835264974210, guid: f1422749db83e7d46abd907076337550, type: 3}
-      propertyPath: cardDescription
-      value: 'Type: Holy
-
-        Value: VIII
-
-        Information: An archetypal
-        angel, this being is what one most think of when they picture an angel, a
-        benevolent intermediary between God and mankind, protectors, guides, and
-        bearer of news, good and ill alike.  These beings are the messengers of God,
-        and, as such, HIS voice.'
-      objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: f1422749db83e7d46abd907076337550, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -9267,10 +9182,10 @@ PrefabInstance:
 
         Value: VI
 
-        Information: Simply deemed
-        ''Dominions,'' the power of such angels should not be confused with their
-        simple title, as they are the movers of all things in the universe, governing
-        the movements of starts, planets, and other celestial bodies.'
+        Information: Simply deemed ''Dominions,''
+        the power of such angels should not be confused with their simple title,
+        as they are the movers of all things in the universe, governing the movements
+        of starts, planets, and other celestial bodies.'
       objectReference: {fileID: 0}
     - target: {fileID: 5463601035015038753, guid: 699a1f1e2d53bed4d9c29d14560f9382, type: 3}
       propertyPath: m_RootOrder
