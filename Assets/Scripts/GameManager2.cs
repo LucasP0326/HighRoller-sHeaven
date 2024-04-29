@@ -113,6 +113,7 @@ public class GameManager2 : MonoBehaviour
         }
         foreach (Card2 card in startingPlayerDeck)
         {
+            card.transform.localScale = new Vector3(1.1f, 1.2f, 0.6f);
             playerDeck.Add(card);
         }
         
