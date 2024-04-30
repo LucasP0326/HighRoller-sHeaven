@@ -135,10 +135,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heaven 6
       objectReference: {fileID: 0}
-    - target: {fileID: 3319790303918022656, guid: 699a1f1e2d53bed4d9c29d14560f9382, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5463601035015038753, guid: 699a1f1e2d53bed4d9c29d14560f9382, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -593,10 +589,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385468501}
     m_Modifications:
-    - target: {fileID: 754108579353585362, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
       propertyPath: m_Name
       value: Demonic 8 (1)
@@ -928,10 +920,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2071315715317864921, guid: a9d3ce07a22fbcb498b21cdb3cc619a2, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3870472170943021258, guid: a9d3ce07a22fbcb498b21cdb3cc619a2, type: 3}
       propertyPath: m_Name
       value: Terrestrial 3
@@ -1105,6 +1093,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9205304866318484912, guid: 89045edb2fe66524a93c2aa03f4fc49a, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1480,10 +1472,6 @@ PrefabInstance:
     - target: {fileID: 3258006544977457552, guid: 49f9491483b59224f8121c825f40955e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5472477532601647659, guid: 49f9491483b59224f8121c825f40955e, type: 3}
-      propertyPath: blackJackGame
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2097,6 +2085,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1163828898327953864, guid: 4468d8213b15c4f4c99990fdafda2c1e, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     - target: {fileID: 7511101878405307607, guid: 4468d8213b15c4f4c99990fdafda2c1e, type: 3}
       propertyPath: m_Name
       value: Terrestrial 5 (1)
@@ -2487,6 +2479,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 754108579353585362, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     - target: {fileID: 4833571971852450314, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
       propertyPath: m_Name
       value: Demonic 7
@@ -2632,6 +2628,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9150485238316572659, guid: 280bb8e2e2645404eabb530230a93251, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2801,6 +2801,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1737562646069442208, guid: 42c8be87d0536ad43821a385aa9773a6, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     - target: {fileID: 2366407031892495515, guid: 42c8be87d0536ad43821a385aa9773a6, type: 3}
       propertyPath: m_Name
       value: Terrestrial 4 (1)
@@ -2970,6 +2974,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3910942984918615621, guid: 4d65113420386054d89e569a0354ef03, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3055,10 +3063,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9150485238316572659, guid: f645f7ba10c6af74a9473c68cf36b6af, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3132,10 +3136,6 @@ PrefabInstance:
     - target: {fileID: 2124050643391405282, guid: 4d65113420386054d89e569a0354ef03, type: 3}
       propertyPath: m_Name
       value: Terrestrial 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3910942984918615621, guid: 4d65113420386054d89e569a0354ef03, type: 3}
-      propertyPath: blackJackGame
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3335,10 +3335,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385468501}
     m_Modifications:
-    - target: {fileID: 1959695364813092755, guid: df3fb6c01ba6baa44815c9e7c7576cd4, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6633489754728698207, guid: df3fb6c01ba6baa44815c9e7c7576cd4, type: 3}
       propertyPath: m_Name
       value: Heaven 2
@@ -3476,10 +3472,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1737562646069442208, guid: 42c8be87d0536ad43821a385aa9773a6, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2366407031892495515, guid: 42c8be87d0536ad43821a385aa9773a6, type: 3}
       propertyPath: m_Name
       value: Terrestrial 4
@@ -3592,10 +3584,6 @@ PrefabInstance:
     - target: {fileID: 61408624781624045, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
       propertyPath: m_Name
       value: Heaven 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1631398835264974210, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
-      propertyPath: blackJackGame
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
       propertyPath: m_RootOrder
@@ -4327,10 +4315,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9150485238316572659, guid: 8cdcc09462609aa4cbb76948279d3e5b, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4364,6 +4348,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 754108579353585362, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     - target: {fileID: 4833571971852450314, guid: 50f81a777285f3a41879f2e0c5dce796, type: 3}
       propertyPath: m_Name
       value: Demonic 8
@@ -4490,10 +4478,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3032037481051409157, guid: bff0d76a105080149b09eafb2e24efc7, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7676321588632200439, guid: bff0d76a105080149b09eafb2e24efc7, type: 3}
       propertyPath: m_Name
       value: Terrestrial 6
@@ -4530,10 +4514,6 @@ PrefabInstance:
     - target: {fileID: 61408624781624045, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
       propertyPath: m_Name
       value: Heaven 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1631398835264974210, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
-      propertyPath: blackJackGame
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
       propertyPath: m_RootOrder
@@ -4613,6 +4593,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3319790303918022656, guid: 699a1f1e2d53bed4d9c29d14560f9382, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     - target: {fileID: 5463601035015038753, guid: 699a1f1e2d53bed4d9c29d14560f9382, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5177,6 +5161,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7957301369798486785, guid: 95d4c4412732c7b4a8efa2bff6166fee, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5206,10 +5194,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385468501}
     m_Modifications:
-    - target: {fileID: 3556190139976422258, guid: b8cbb2311072b4e4cbe3fe80841c9fc8, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7036109995746391054, guid: b8cbb2311072b4e4cbe3fe80841c9fc8, type: 3}
       propertyPath: m_Name
       value: Demonic 1
@@ -5350,10 +5334,6 @@ PrefabInstance:
     - target: {fileID: 5860630726194184679, guid: 89045edb2fe66524a93c2aa03f4fc49a, type: 3}
       propertyPath: m_Name
       value: Demonic 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9205304866318484912, guid: 89045edb2fe66524a93c2aa03f4fc49a, type: 3}
-      propertyPath: blackJackGame
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5851,10 +5831,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8466529852296629296, guid: e2451b10e6299844aafbcd6da3087f5c, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8520647084799849208, guid: e2451b10e6299844aafbcd6da3087f5c, type: 3}
       propertyPath: m_Name
       value: Heaven 4
@@ -5974,10 +5950,6 @@ PrefabInstance:
     - target: {fileID: 7178006410609949229, guid: 606357bfdd0198c4bb20737ca8ce2c11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8834439730524401311, guid: 606357bfdd0198c4bb20737ca8ce2c11, type: 3}
-      propertyPath: blackJackGame
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6545,6 +6517,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7772078403837487124, guid: 2051fa4044586b645adef1cecf8577a0, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6630,10 +6606,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7957301369798486785, guid: 95d4c4412732c7b4a8efa2bff6166fee, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6667,6 +6639,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 993398525918079476, guid: 1397a1e71235bd9429923aaf91f4f37a, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     - target: {fileID: 1445092506421701055, guid: 1397a1e71235bd9429923aaf91f4f37a, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7049,6 +7025,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2071315715317864921, guid: a9d3ce07a22fbcb498b21cdb3cc619a2, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     - target: {fileID: 3870472170943021258, guid: a9d3ce07a22fbcb498b21cdb3cc619a2, type: 3}
       propertyPath: m_Name
       value: Terrestrial 3 (1)
@@ -7423,6 +7403,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 754108579353585362, guid: 83aca1428b700b64daa6773457e21396, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     - target: {fileID: 4833571971852450314, guid: 83aca1428b700b64daa6773457e21396, type: 3}
       propertyPath: m_Name
       value: Demonic 9
@@ -7539,10 +7523,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385468501}
     m_Modifications:
-    - target: {fileID: 993398525918079476, guid: 1397a1e71235bd9429923aaf91f4f37a, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1445092506421701055, guid: 1397a1e71235bd9429923aaf91f4f37a, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7628,10 +7608,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385468501}
     m_Modifications:
-    - target: {fileID: 754108579353585362, guid: 83aca1428b700b64daa6773457e21396, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: 83aca1428b700b64daa6773457e21396, type: 3}
       propertyPath: m_Name
       value: Demonic 9 (1)
@@ -8364,6 +8340,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8850250822255009141, guid: e4b8e5e599f215e4f9437e4cd3b365a4, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8449,6 +8429,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8466529852296629296, guid: e2451b10e6299844aafbcd6da3087f5c, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     - target: {fileID: 8520647084799849208, guid: e2451b10e6299844aafbcd6da3087f5c, type: 3}
       propertyPath: m_Name
       value: Heaven 4
@@ -8839,10 +8823,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heaven 3
       objectReference: {fileID: 0}
-    - target: {fileID: 8850250822255009141, guid: e4b8e5e599f215e4f9437e4cd3b365a4, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9015,6 +8995,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1631398835264974210, guid: f1422749db83e7d46abd907076337550, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     - target: {fileID: 6338571378419704468, guid: f1422749db83e7d46abd907076337550, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -9371,10 +9355,6 @@ PrefabInstance:
     - target: {fileID: 61408624781624045, guid: f1422749db83e7d46abd907076337550, type: 3}
       propertyPath: m_Name
       value: Heaven 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1631398835264974210, guid: f1422749db83e7d46abd907076337550, type: 3}
-      propertyPath: blackJackGame
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6338571378419704468, guid: f1422749db83e7d46abd907076337550, type: 3}
       propertyPath: m_RootOrder
@@ -9739,6 +9719,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9150485238316572659, guid: f645f7ba10c6af74a9473c68cf36b6af, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9897,6 +9881,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7146969736596821310, guid: b83d84072cc226649a2eb05215788923, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10011,10 +9999,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385468501}
     m_Modifications:
-    - target: {fileID: 1163828898327953864, guid: 4468d8213b15c4f4c99990fdafda2c1e, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7511101878405307607, guid: 4468d8213b15c4f4c99990fdafda2c1e, type: 3}
       propertyPath: m_Name
       value: Terrestrial 5
@@ -10200,6 +10184,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9150485238316572659, guid: 8cdcc09462609aa4cbb76948279d3e5b, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10289,6 +10277,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5472477532601647659, guid: 49f9491483b59224f8121c825f40955e, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11097,6 +11089,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1959695364813092755, guid: df3fb6c01ba6baa44815c9e7c7576cd4, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     - target: {fileID: 6633489754728698207, guid: df3fb6c01ba6baa44815c9e7c7576cd4, type: 3}
       propertyPath: m_Name
       value: Heaven 2
@@ -11242,6 +11238,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8834439730524401311, guid: 606357bfdd0198c4bb20737ca8ce2c11, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11499,6 +11499,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1631398835264974210, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     - target: {fileID: 6338571378419704468, guid: 9b81717bb56b2bb44a53c4eca05e9963, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11723,6 +11727,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1631398835264974210, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
     - target: {fileID: 6338571378419704468, guid: 3e81fe36ee9e1ca47ac6b6adf6dfa969, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -12365,10 +12373,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heaven 5
       objectReference: {fileID: 0}
-    - target: {fileID: 7146969736596821310, guid: b83d84072cc226649a2eb05215788923, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12484,10 +12488,6 @@ PrefabInstance:
     - target: {fileID: 3775608850000091356, guid: 280bb8e2e2645404eabb530230a93251, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9150485238316572659, guid: 280bb8e2e2645404eabb530230a93251, type: 3}
-      propertyPath: blackJackGame
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13155,6 +13155,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3032037481051409157, guid: bff0d76a105080149b09eafb2e24efc7, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5df3489649842504d8ac4b28c43f23d2, type: 3}
     - target: {fileID: 7676321588632200439, guid: bff0d76a105080149b09eafb2e24efc7, type: 3}
       propertyPath: m_Name
       value: Terrestrial 6 (1)
@@ -13498,10 +13502,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Demonic 5
       objectReference: {fileID: 0}
-    - target: {fileID: 7227590241163902004, guid: ea87d258c32dbfc449c7d1d5148f4cdc, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7227615783789752663, guid: ea87d258c32dbfc449c7d1d5148f4cdc, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -13618,6 +13618,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3556190139976422258, guid: b8cbb2311072b4e4cbe3fe80841c9fc8, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     - target: {fileID: 7036109995746391054, guid: b8cbb2311072b4e4cbe3fe80841c9fc8, type: 3}
       propertyPath: m_Name
       value: Demonic 1
@@ -13966,10 +13970,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Demonic 2
       objectReference: {fileID: 0}
-    - target: {fileID: 7772078403837487124, guid: 2051fa4044586b645adef1cecf8577a0, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14018,6 +14018,10 @@ PrefabInstance:
       propertyPath: blackJackGame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7227590241163902004, guid: ea87d258c32dbfc449c7d1d5148f4cdc, type: 3}
+      propertyPath: faceDownSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf117e33314be49498da2b0f857b4c68, type: 3}
     - target: {fileID: 7227615783789752663, guid: ea87d258c32dbfc449c7d1d5148f4cdc, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -14266,10 +14270,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385468501}
     m_Modifications:
-    - target: {fileID: 754108579353585362, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
-      propertyPath: blackJackGame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4833571971852450314, guid: e99405fd4dfcefa49b063b04d466fffd, type: 3}
       propertyPath: m_Name
       value: Demonic 7
