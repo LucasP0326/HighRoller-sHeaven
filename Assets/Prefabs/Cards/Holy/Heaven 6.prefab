@@ -113,8 +113,9 @@ MonoBehaviour:
   changedSprites:
   - {fileID: 21300000, guid: 93fe96af87ddc644d9d514b0f7bf7429, type: 3}
   faceDown: 0
-  faceDownSprite: {fileID: 21300000, guid: c9be7c7769ee3a64e813a2d21667aad5, type: 3}
+  faceDownSprite: {fileID: 21300000, guid: e8be362667e045b4c8160b030bee10bc, type: 3}
   faceUpSprite: {fileID: 0}
+  blackJackGame: 1
 --- !u!61 &2552728149707915195
 BoxCollider2D:
   m_ObjectHideFlags: 0
