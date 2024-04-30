@@ -406,6 +406,8 @@ public class GameManager2 : MonoBehaviour
                 else
                 {
                     Debug.LogWarning("Trying to draw the same card again: " + randomCard.name);
+                    playerHand.Clear();
+                    StartCoroutine(DrawPlayerCards());
                 }
             }
         }
@@ -454,6 +456,9 @@ public class GameManager2 : MonoBehaviour
                 else
                 {
                     Debug.LogWarning("Trying to draw the same card again: " + randomCard.name);
+                    opponentHand.Clear();
+                    opponentAvailableCardSlots[i] = true;
+                    StartCoroutine(DrawOpponentCards());
                 }
             }
         }
